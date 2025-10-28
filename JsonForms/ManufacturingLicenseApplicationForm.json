@@ -1,0 +1,110 @@
+{
+  "formId": "manufacturing-license-application-form",
+  "formName": "Manufacturing License Application Form",
+  "sections": [
+    {
+      "sectionTitle": "Applicant Details",
+      "fields": [
+        {
+          "id": "fullName",
+          "label": "FULL NAME OF APPLICANT",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "application.FullName"
+        },
+        {
+          "id": "postalAddress",
+          "label": "POSTAL ADDRESS",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "application.PostalAddress"
+        },
+        {
+          "id": "phoneNumber",
+          "label": "PHONE NO",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "application.PhoneNumber"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Business Information",
+      "fields": [
+        {
+          "id": "businessName",
+          "label": "BUSINESS NAME (IF ANY)",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "application.BusinessName"
+        }
+      ],
+      "subSections": [
+        {
+          "sectionTitle": "PREMISES AT WHICH GOODS WILL BE MANUFACTURED",
+          "fields": [
+            {
+              "id": "standNo",
+              "label": "STAND NO",
+              "type": "text",
+              "required": false,
+              "bindingProperty": "application.Premises.StandNo"
+            },
+            {
+              "id": "streetName",
+              "label": "STREET NAME",
+              "type": "text",
+              "required": false,
+              "bindingProperty": "application.Premises.StreetName"
+            },
+            {
+              "id": "town",
+              "label": "TOWN",
+              "type": "text",
+              "required": false,
+              "bindingProperty": "application.Premises.Town"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Manufacturing Details",
+      "fields": [
+        {
+          "id": "descriptionOfGoods",
+          "label": "DESCRIPTION OF GOODS TO BE MANUFACTURED",
+          "type": "textarea",
+          "required": false,
+          "bindingProperty": "application.DescriptionOfGoods"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Declaration",
+      "fields": [
+        {
+          "id": "declarantName",
+          "label": "Declarant Name",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "application.Declaration.DeclarantName"
+        },
+        {
+          "id": "declarantAddress",
+          "label": "Declarant Address",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "application.Declaration.DeclarantAddress"
+        },
+        {
+          "id": "declarationDate",
+          "label": "DATE",
+          "type": "date",
+          "required": true,
+          "bindingProperty": "application.Declaration.Date"
+        }
+      ]
+    }
+  ]
+}
