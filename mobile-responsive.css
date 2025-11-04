@@ -1,0 +1,627 @@
+/*
+ * eCitizen Mobile-First Responsive Framework
+ * Priority: Make everything work on 360px screens first
+ */
+
+/* ========================================
+   1. CSS VARIABLES - Zambian Theme
+   ======================================== */
+:root {
+  /* Zambian National Colors */
+  --zambia-green: #198754;
+  --zambia-orange: #FF6B35;
+  --zambia-red: #DC3545;
+  --zambia-copper: #B87333;
+
+  /* UI Colors */
+  --primary: var(--zambia-green);
+  --secondary: #6c757d;
+  --success: #28a745;
+  --warning: #ffc107;
+  --danger: var(--zambia-red);
+  --info: #17a2b8;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  /* Touch Targets */
+  --touch-min: 44px;
+  --button-height: 48px;
+
+  /* Typography */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 32px;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 2px 8px rgba(0,0,0,0.1);
+  --shadow-lg: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* ========================================
+   2. RESET & BASE STYLES
+   ======================================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* Prevents zoom on iOS form inputs */
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: #212529;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================
+   3. RESPONSIVE UTILITIES
+   ======================================== */
+
+/* Mobile-first flex utilities */
+.mobile-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.mobile-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* Form fields - full width on mobile */
+.form-field-mobile {
+  width: 100% !important;
+  margin-bottom: var(--spacing-md);
+}
+
+.form-field-mobile .rz-textbox,
+.form-field-mobile .rz-dropdown,
+.form-field-mobile .rz-datepicker,
+.form-field-mobile .rz-numeric,
+.form-field-mobile input,
+.form-field-mobile select,
+.form-field-mobile textarea {
+  width: 100% !important;
+  min-height: var(--touch-min);
+  font-size: var(--font-size-base);
+  padding: 12px 16px;
+}
+
+/* Hide on mobile */
+.hide-mobile {
+  display: none !important;
+}
+
+.show-mobile {
+  display: block !important;
+}
+
+/* ========================================
+   4. BUTTONS - Touch Friendly
+   ======================================== */
+.rz-button,
+.btn,
+button:not(.close) {
+  min-height: var(--button-height) !important;
+  min-width: var(--touch-min);
+  padding: 12px 24px !important;
+  font-size: var(--font-size-base) !important;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+}
+
+/* Full-width buttons on mobile */
+.btn-mobile-full,
+.rz-button.btn-mobile-full {
+  width: 100% !important;
+  display: flex;
+}
+
+/* Button groups stack on mobile */
+.rz-button-group,
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  width: 100%;
+}
+
+.rz-button-group > *,
+.btn-group > * {
+  width: 100%;
+}
+
+/* ========================================
+   5. CARDS & CONTAINERS
+   ======================================== */
+.rz-card,
+.card {
+  margin-bottom: var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.rz-card-content,
+.card-body {
+  padding: var(--spacing-md);
+}
+
+/* Mobile Card Component */
+.mobile-card {
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mobile-card-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem 0.5rem;
+  font-weight: 600;
+}
+
+.mobile-card-body {
+  padding: 0 1rem 1rem;
+}
+
+.mobile-card-actions {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #e9ecef;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.mobile-card-actions > * {
+  flex: 1;
+  min-width: 120px;
+}
+
+/* ========================================
+   6. FORMS
+   ======================================== */
+.rz-textbox,
+.rz-dropdown,
+.rz-datepicker,
+.rz-numeric,
+.form-control,
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+  width: 100%;
+  min-height: var(--touch-min);
+  padding: 12px 16px;
+  font-size: var(--font-size-base);
+  border: 1px solid #ced4da;
+  border-radius: var(--radius-sm);
+  background-color: #fff;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.rz-textbox:focus,
+.rz-dropdown:focus,
+.form-control:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary);
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.25);
+}
+
+/* Labels */
+.rz-label,
+label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-weight: 500;
+  font-size: var(--font-size-base);
+  color: #495057;
+}
+
+/* Required indicator */
+.rz-label.required::after,
+label.required::after {
+  content: " *";
+  color: var(--danger);
+}
+
+/* Mobile Form Field Component */
+.mobile-form-field {
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
+.mobile-form-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 15px;
+  color: #495057;
+}
+
+.mobile-form-field label.required::after {
+  content: " *";
+  color: #dc3545;
+}
+
+.mobile-form-field .help-text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 0.5rem;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.mobile-form-field .field-input {
+  position: relative;
+}
+
+.mobile-form-field .error-message {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 0.5rem;
+  font-size: 13px;
+  color: #dc3545;
+}
+
+/* ========================================
+   7. DATA GRIDS & TABLES
+   ======================================== */
+.rz-datatable,
+.rz-grid,
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: var(--spacing-md);
+}
+
+.rz-datatable table,
+.rz-grid table,
+table {
+  width: 100%;
+  min-width: 100%;
+  font-size: var(--font-size-sm);
+}
+
+/* Hide less critical columns on mobile */
+.rz-datatable th:nth-child(n+4),
+.rz-datatable td:nth-child(n+4) {
+  display: none;
+}
+
+/* ========================================
+   8. NAVIGATION
+   ======================================== */
+.rz-sidebar {
+  width: 280px;
+}
+
+.rz-panel-menu-item {
+  min-height: var(--touch-min);
+  padding: 12px 16px !important;
+}
+
+.rz-panel-menu-item-text {
+  font-size: var(--font-size-base);
+}
+
+/* ========================================
+   9. ALERTS & NOTIFICATIONS
+   ======================================== */
+.rz-alert,
+.alert {
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+}
+
+/* ========================================
+   10. MOBILE ACTION BAR
+   ======================================== */
+.mobile-action-bar {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid #e9ecef;
+  padding: 1rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.mobile-action-bar.top {
+  top: 0;
+  bottom: auto;
+  border-top: none;
+  border-bottom: 1px solid #e9ecef;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-action-bar .action-bar-content {
+  display: flex;
+  gap: 0.75rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mobile-action-bar .action-bar-content > * {
+  flex: 1;
+}
+
+/* ========================================
+   11. ACCESSIBILITY
+   ======================================== */
+
+/* Focus visible for keyboard navigation */
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Skip to main content link */
+.skip-to-main {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--primary);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 9999;
+}
+
+.skip-to-main:focus {
+  top: 0;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  * {
+    border-width: 2px !important;
+  }
+
+  .rz-button,
+  .btn {
+    border: 2px solid currentColor !important;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ========================================
+   12. TABLET BREAKPOINT (768px+)
+   ======================================== */
+@media (min-width: 768px) {
+  .mobile-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form-field-mobile {
+    width: calc(50% - 0.5rem) !important;
+  }
+
+  .hide-mobile {
+    display: block !important;
+  }
+
+  .show-mobile {
+    display: none !important;
+  }
+
+  /* Buttons can be inline on tablet */
+  .rz-button-group,
+  .btn-group {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .rz-button-group > *,
+  .btn-group > * {
+    width: auto;
+  }
+
+  /* Show more table columns */
+  .rz-datatable th:nth-child(n+4),
+  .rz-datatable td:nth-child(n+4) {
+    display: table-cell;
+  }
+
+  /* Mobile action bar becomes static */
+  .mobile-action-bar {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin-top: 1.5rem;
+  }
+
+  .mobile-action-bar .action-bar-content {
+    justify-content: flex-end;
+  }
+
+  .mobile-action-bar .action-bar-content > * {
+    flex: 0 0 auto;
+    min-width: 120px;
+  }
+
+  .mobile-form-field {
+    width: calc(50% - 0.5rem);
+  }
+
+  .mobile-form-field.full-width {
+    width: 100%;
+  }
+}
+
+/* ========================================
+   13. DESKTOP BREAKPOINT (1024px+)
+   ======================================== */
+@media (min-width: 1024px) {
+  :root {
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+  }
+
+  .rz-card-content,
+  .card-body {
+    padding: var(--spacing-lg);
+  }
+
+  .mobile-stack {
+    gap: var(--spacing-lg);
+  }
+}
+
+/* ========================================
+   14. LARGE DESKTOP (1440px+)
+   ======================================== */
+@media (min-width: 1440px) {
+  .container-custom {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+}
+
+/* ========================================
+   15. PRINT STYLES
+   ======================================== */
+@media print {
+  .rz-sidebar,
+  .rz-header,
+  .no-print,
+  .mobile-action-bar {
+    display: none !important;
+  }
+
+  .rz-card,
+  .card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+/* ========================================
+   16. UTILITY CLASSES
+   ======================================== */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mt-1 { margin-top: var(--spacing-sm); }
+.mt-2 { margin-top: var(--spacing-md); }
+.mt-3 { margin-top: var(--spacing-lg); }
+
+.mb-1 { margin-bottom: var(--spacing-sm); }
+.mb-2 { margin-bottom: var(--spacing-md); }
+.mb-3 { margin-bottom: var(--spacing-lg); }
+
+.p-1 { padding: var(--spacing-sm); }
+.p-2 { padding: var(--spacing-md); }
+.p-3 { padding: var(--spacing-lg); }
+
+.w-100 { width: 100%; }
+.h-100 { height: 100%; }
+
+.d-none { display: none; }
+.d-block { display: block; }
+.d-flex { display: flex; }
+
+.flex-column { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.flex-wrap { flex-wrap: wrap; }
+
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+
+.items-start { align-items: flex-start; }
+.items-center { align-items: center; }
+.items-end { align-items: flex-end; }
+
+.gap-1 { gap: var(--spacing-sm); }
+.gap-2 { gap: var(--spacing-md); }
+.gap-3 { gap: var(--spacing-lg); }
+
+/* ========================================
+   17. RADZEN OVERRIDES FOR MOBILE
+   ======================================== */
+
+/* Stack orientation responsive */
+.rz-stack[orientation="Horizontal"] {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .rz-stack[orientation="Horizontal"] {
+    flex-direction: row;
+  }
+}
+
+/* Radzen cards on mobile */
+.rz-card {
+  width: 100% !important;
+}
+
+/* Radzen tabs scrollable on mobile */
+.rz-tabview-nav {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.rz-tabview-nav-content {
+  flex-wrap: nowrap;
+}
+
+/* Radzen steps responsive */
+.rz-steps .rz-steps-nav {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}

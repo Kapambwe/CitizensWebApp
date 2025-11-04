@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Redirect all 404 routes to index.html and preserve path/query
+        var redirectTo = '/CitizensWebApp/index.html' + location.search + location.hash;
+        var path = location.pathname.replace('/CitizensWebApp', '');
+      if (path && path !== '/index.html') {
+        redirectTo += '?path=' + encodeURIComponent(path);
+      }
+      window.location.replace(redirectTo);
+    </script>
+</head>
+<body>
+</body>
+</html>
