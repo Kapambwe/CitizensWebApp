@@ -1,0 +1,51 @@
+{
+  "formId": "application-form",
+  "formName": "General Application Form",
+  "sections": [
+    {
+      "sectionTitle": "Application Details",
+      "fields": [
+        {
+          "id": "applicationName",
+          "label": "Application Name:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Application.Name"
+        },
+        {
+          "id": "description",
+          "label": "Description:",
+          "type": "textarea",
+          "required": false,
+          "bindingProperty": "Application.Description"
+        },
+        {
+          "id": "startDate",
+          "label": "Start Date:",
+          "type": "date",
+          "required": true,
+          "bindingProperty": "Application.StartDate"
+        },
+        {
+          "id": "endDate",
+          "label": "End Date:",
+          "type": "date",
+          "required": true,
+          "bindingProperty": "Application.EndDate"
+        },
+        {
+          "id": "status",
+          "label": "Status:",
+          "type": "select",
+          "required": true,
+          "bindingProperty": "Application.Status",
+          "options": [
+            { "value": "Pending", "text": "Pending" },
+            { "value": "Approved", "text": "Approved" },
+            { "value": "Rejected", "text": "Rejected" }
+          ]
+        }
+      ]
+    }
+  ]
+}

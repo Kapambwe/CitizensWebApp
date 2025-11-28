@@ -1,0 +1,131 @@
+{
+  "formId": "wholesale-trading-license-application-form",
+  "formName": "Wholesale Trading License Application Form",
+  "sections": [
+    {
+      "sectionTitle": "Basic Information",
+      "fields": [
+        {
+          "id": "fullName",
+          "label": "Full name of Applicant",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "application.FullName"
+        },
+        {
+          "id": "postalAddress",
+          "label": "Postal Address",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "application.PostalAddress"
+        },
+        {
+          "id": "phoneNumber",
+          "label": "Phone Number",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "application.PhoneNumber"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Business Details",
+      "fields": [
+        {
+          "id": "businessName",
+          "label": "Business Name",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "application.BusinessName"
+        },
+        {
+          "id": "goodsDescription",
+          "label": "Description of goods to be sold",
+          "type": "textarea",
+          "required": true,
+          "bindingProperty": "application.GoodsDescription"
+        }
+      ],
+      "subSections": [
+        {
+          "sectionTitle": "Premises Details",
+          "fields": [
+            {
+              "id": "premisesStandNo",
+              "label": "Stand No",
+              "type": "text",
+              "required": true,
+              "bindingProperty": "application.PremisesStandNo"
+            },
+            {
+              "id": "premisesShopNo",
+              "label": "Shop No",
+              "type": "text",
+              "required": false,
+              "bindingProperty": "application.PremisesShopNo"
+            },
+            {
+              "id": "premisesStreetNo",
+              "label": "Street No",
+              "type": "text",
+              "required": true,
+              "bindingProperty": "application.PremisesStreetNo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Personal Information",
+      "fields": [
+        {
+          "id": "homeAddress",
+          "label": "Home Address",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "application.HomeAddress"
+        },
+        {
+          "id": "dateOfBirth",
+          "label": "Date of Birth",
+          "type": "date",
+          "required": false,
+          "bindingProperty": "application.DateOfBirth"
+        },
+        {
+          "id": "nrcNumber",
+          "label": "National Registration Card No",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "application.NrcNumber"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Declaration",
+      "fields": [
+        {
+          "id": "declarationConfirmed",
+          "label": "That the information given in this application is correct to the best of my knowledge and belief",
+          "type": "checkbox",
+          "required": true,
+          "bindingProperty": "application.DeclarationConfirmed"
+        },
+        {
+          "id": "declarationDate",
+          "label": "Declaration Date",
+          "type": "date",
+          "required": true,
+          "bindingProperty": "declarationDate"
+        },
+        {
+          "id": "applicantSignature",
+          "label": "SIGNATURE OF APPLICANT",
+          "type": "signature",
+          "required": false,
+          "bindingProperty": "application.ApplicantSignature"
+        }
+      ]
+    }
+  ]
+}

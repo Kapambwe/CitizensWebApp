@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta name="theme-color" content="#198754" />
+    <meta name="description" content="eCitizen Zambia - Government services for citizens" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="eCitizen" />
+    <title>eCitizen Zambia</title>
+    <base href="/" id="dynamic-base">
+    <script>
+        // Dynamically set base path for GitHub Pages deployment
+        (function () {
+            var base = document.getElementById('dynamic-base');
+            var path = window.location.pathname.includes('/CitizensWebApp')
+                ? '/CitizensWebApp/'
+                : '/';
+            base.setAttribute('href', path);
+        })();
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="_content/Radzen.Blazor/css/material-base.css" rel="stylesheet">
+    <link href="app.css" rel="stylesheet" />
+    <link href="mobile-responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js"></script>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
+    <script>
+        // If redirected from 404.html, restore path
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const path = params.get('path');
+            if (path) {
+                window.history.replaceState(null, '', '/CitizensWebApp' + decodeURIComponent(path));
+            }
+        })();
+    </script>
+</body>
+
+</html>

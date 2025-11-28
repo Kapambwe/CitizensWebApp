@@ -1,0 +1,39 @@
+{
+  "formId": "business-permit-application-form",
+  "formName": "Business Permit Application Form",
+  "sections": [
+    {
+      "sectionTitle": "Business Details",
+      "fields": [
+        {
+          "id": "businessName",
+          "label": "Business Name:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Application.BusinessName"
+        },
+        {
+          "id": "businessType",
+          "label": "Business Type:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Application.BusinessType"
+        },
+        {
+          "id": "tin",
+          "label": "TIN:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Application.TIN"
+        },
+        {
+          "id": "address",
+          "label": "Address:",
+          "type": "textarea",
+          "required": true,
+          "bindingProperty": "Application.Address"
+        }
+      ]
+    }
+  ]
+}
