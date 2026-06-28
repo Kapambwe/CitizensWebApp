@@ -1,0 +1,101 @@
+{
+  "ServiceId": "FIN-BANK-ACC-OPEN",
+  "ServiceName": "Open Zanaco Smart Account",
+  "AgencyName": "Zanaco Bank",
+  "Category": "Banking",
+  "TenantId": "ZANACO-BANK",
+  "FormId": "FORM-ZANACO-OPEN-001",
+  "FormName": "Zanaco Smart Account Application",
+  "ApplicationFee": 0.0,
+  "ComplianceDetails": "Zanaco Bank requires full KYC (Know Your Customer) and AML (Anti-Money Laundering) verification for all new account openings. Digital verification of identity and liveness is mandatory.",
+  "ComplianceRequirements": [
+    "Biometric Face Verification (Liveness Check)",
+    "Digital Identity Verification (NRC)",
+    "Proof of Residence Verification",
+    "Compliance with Banking and Financial Services Act",
+    "AML/CFT Risk Assessment"
+  ],
+  "Requirements": [
+    {
+      "Id": "REQ-NRC",
+      "Label": "National Registration Card (NRC)",
+      "Description": "Digital proof of identity issued by DNR.",
+      "IsMandatory": true,
+      "CredentialType": "NationalIDCredential",
+      "FieldMapping": "fullName:ApplicantName,nrcNumber:ApplicantNrc,dateOfBirth:DateOfBirth",
+      "ComplianceContext": "Primary identity verification for banking records."
+    },
+    {
+      "Id": "REQ-EKYC",
+      "Label": "Biometric Face Verification",
+      "Description": "Ensure you are the owner of the provided NRC through a liveness check.",
+      "IsMandatory": true,
+      "CredentialType": "FaceVerificationProof",
+      "ComplianceContext": "Prevents identity theft and ensures liveness."
+    },
+    {
+      "Id": "REQ-RESIDENCE",
+      "Label": "Proof of Residence",
+      "Description": "Upload a recent utility bill (ZESCO/Water) or Tenancy Agreement.",
+      "IsMandatory": true,
+      "AllowedFileTypes": [ "pdf", "jpg" ],
+      "ComplianceContext": "Verification of physical address for banking regulations."
+    },
+    {
+      "Id": "REQ-TPIN",
+      "Label": "TPIN Certificate",
+      "Description": "ZRA Tax Payer Identification Number.",
+      "IsMandatory": false,
+      "CredentialType": "TpinCredential",
+      "ComplianceContext": "Required for tax reporting on interest-bearing accounts."
+    }
+  ],
+  "Sections": [
+    {
+      "SectionTitle": "Account Preferences",
+      "Fields": [
+        {
+          "Id": "acc_type",
+          "Label": "Account Type",
+          "Type": "select",
+          "Required": true,
+          "BindingProperty": "AccountType",
+          "Options": [
+            { "Value": "SmartSavings", "Text": "Smart Savings Account (High Interest)" },
+            { "Value": "SmartCurrent", "Text": "Smart Current Account (with Visa Debit)" },
+            { "Value": "XpressAccount", "Text": "Zanaco Xpress Account (Basic)" }
+          ]
+        },
+        { "Id": "branch", "Label": "Preferred Branch", "Type": "text", "Required": true, "BindingProperty": "PreferredBranch", "Placeholder": "e.g., Cairo Road, Lusaka" }
+      ]
+    },
+    {
+      "SectionTitle": "Financial Details",
+      "Fields": [
+        {
+          "Id": "income_source",
+          "Label": "Main Source of Income",
+          "Type": "select",
+          "Required": true,
+          "BindingProperty": "SourceOfIncome",
+          "Options": [
+            { "Value": "Salary", "Text": "Monthly Salary" },
+            { "Value": "Business", "Text": "Business Profits" },
+            { "Value": "Investment", "Text": "Investments" },
+            { "Value": "Remittances", "Text": "Remittances / Family Support" },
+            { "Value": "Other", "Text": "Other" }
+          ]
+        },
+        { "Id": "monthly_income", "Label": "Estimated Monthly Income (ZMW)", "Type": "number", "Required": true, "BindingProperty": "MonthlyIncome", "Placeholder": "Enter amount" }
+      ]
+    },
+    {
+      "SectionTitle": "Next of Kin / Beneficiary",
+      "Fields": [
+        { "Id": "nok_name", "Label": "Full Name", "Type": "text", "Required": true, "BindingProperty": "NextOfKinName" },
+        { "Id": "nok_phone", "Label": "Phone Number", "Type": "tel", "Required": true, "BindingProperty": "NextOfKinPhone" },
+        { "Id": "nok_relation", "Label": "Relationship", "Type": "text", "Required": true, "BindingProperty": "NextOfKinRelationship" }
+      ]
+    }
+  ]
+}

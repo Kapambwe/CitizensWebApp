@@ -1,0 +1,30 @@
+{
+  "tasksEnabled": true,
+  "emailNotifications": true,
+  "smsNotifications": false,
+  "pushNotifications": true,
+  "notificationFrequency": "daily",
+  "pageFeatures": [
+    { "route": "/dashboard", "label": "Dashboard", "isEnabled": true },
+    { "route": "/tasks", "label": "Task Board", "isEnabled": true },
+    { "route": "/application/portal", "label": "Application Center", "isEnabled": true },
+    { "route": "/application/myapplications", "label": "My Applications", "isEnabled": true },
+    { "route": "/community/projectmap", "label": "Community Projects", "isEnabled": true },
+    { "route": "/community/consultations", "label": "Public Consultations", "isEnabled": true },
+    { "route": "/landandproperty/portal", "label": "Land Management Hub", "isEnabled": true },
+    { "route": "/waste/wastemanagement", "label": "Waste Management", "isEnabled": true },
+    { "route": "/identity/verifiable-credentials", "label": "Identity Wallet", "isEnabled": true },
+    { "route": "/notifications", "label": "Notification Center", "isEnabled": true },
+    { "route": "/ai-assistant", "label": "AI Assistant", "isEnabled": true }
+  ],
+  "notificationTypes": [
+    { "type": "General", "label": "General", "isEnabled": true },
+    { "type": "DocumentIssued", "label": "Document Issued", "isEnabled": true },
+    { "type": "DocumentExpiring", "label": "Document Expiring", "isEnabled": true },
+    { "type": "ConsentRequest", "label": "Consent Request", "isEnabled": true },
+    { "type": "SecurityAlert", "label": "Security Alert", "isEnabled": true },
+    { "type": "PaymentDue", "label": "Payment Due", "isEnabled": true },
+    { "type": "GovernmentAnnouncement", "label": "Government Announcements", "isEnabled": true },
+    { "type": "PublicConsultation", "label": "Public Consultations", "isEnabled": true }
+  ]
+}

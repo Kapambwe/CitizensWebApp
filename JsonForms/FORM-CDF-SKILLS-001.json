@@ -1,0 +1,12 @@
+{
+  "FormId": "FORM-CDF-SKILLS-001",
+  "FormName": "Skills Development Bursary Application",
+  "Sections": [
+    {
+      "SectionTitle": "Placeholder Section",
+      "Fields": [
+        { "Id": "placeholder_field", "Label": "This is a placeholder field for Skills Development Bursary.", "Type": "text", "Required": false }
+      ]
+    }
+  ]
+}

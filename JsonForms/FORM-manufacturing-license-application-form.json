@@ -1,0 +1,105 @@
+{
+  "FormId": "manufacturing-license-application-form",
+  "FormName": "Manufacturing License",
+  "Sections": [
+    {
+      "SectionTitle": "Applicant and Business Information",
+      "Fields": [
+        {
+          "Id": "fullName",
+          "Label": "Full Name of Applicant:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.FullName"
+        },
+        {
+          "Id": "postalAddress",
+          "Label": "Postal Address:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.PostalAddress"
+        },
+        {
+          "Id": "phoneNo",
+          "Label": "Phone No:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.PhoneNo"
+        },
+        {
+          "Id": "businessName",
+          "Label": "Business Name (if any):",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Applicant.BusinessName"
+        }
+      ]
+    },
+    {
+      "SectionTitle": "Premises and Manufacturing Details",
+      "Fields": [
+        {
+          "Id": "standNo",
+          "Label": "Stand No:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Business.Premises.StandNo"
+        },
+        {
+          "Id": "streetName",
+          "Label": "Street Name:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Business.Premises.StreetName"
+        },
+        {
+          "Id": "town",
+          "Label": "Town:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Business.Premises.Town"
+        },
+        {
+          "Id": "goodsDescription",
+          "Label": "Description of Goods to be Manufactured by Applicant:",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "Business.GoodsDescription"
+        }
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        {
+          "Id": "declarantName",
+          "Label": "I (Name):",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Declaration.DeclarantName"
+        },
+        {
+          "Id": "declarantAddress",
+          "Label": "of (Address):",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Declaration.DeclarantAddress"
+        },
+        {
+          "Id": "declarationDate",
+          "Label": "Date:",
+          "Type": "date",
+          "Required": true,
+          "BindingProperty": "Declaration.Date"
+        },
+        {
+          "Id": "signature",
+          "Label": "Signature:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Declaration.Signature"
+        }
+      ]
+    }
+  ]
+}

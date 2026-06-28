@@ -1,0 +1,14 @@
+{
+  "FormId": "FORM-ELDERLY-PENSION-001",
+  "FormName": "Elderly Pension Application",
+  "Sections": [
+    {
+      "SectionTitle": "Personal Details",
+      "Fields": [
+        { "Id": "fullName", "Label": "Full Name", "Type": "text", "Required": true, "BindingProperty": "Applicant.FullName" },
+        { "Id": "nrc", "Label": "NRC Number", "Type": "text", "Required": true, "BindingProperty": "Applicant.NRC" },
+        { "Id": "dob", "Label": "Date of Birth", "Type": "date", "Required": true, "BindingProperty": "Applicant.DOB" }
+      ]
+    }
+  ]
+}

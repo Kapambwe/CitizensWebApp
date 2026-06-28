@@ -1,0 +1,12 @@
+{
+  "countries": [
+    {
+      "slug": "zambia",
+      "name": "Zambia",
+      "people": [
+        { "personName": "john-banda", "displayName": "John Banda" },
+        { "personName": "mary-phiri", "displayName": "Mary Phiri" }
+      ]
+    }
+  ]
+}

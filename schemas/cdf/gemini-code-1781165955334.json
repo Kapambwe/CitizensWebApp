@@ -1,0 +1,131 @@
+{
+  "formId": "retail-trading-license-application-form",
+  "formName": "Retail Trading License",
+  "sections": [
+    {
+      "sectionTitle": "Applicant and Business Details",
+      "fields": [
+        {
+          "id": "fullName",
+          "label": "Full name of Applicant:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.FullName"
+        },
+        {
+          "id": "postalAddress",
+          "label": "Postal address:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.PostalAddress"
+        },
+        {
+          "id": "phoneNo",
+          "label": "Phone No:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.PhoneNo"
+        },
+        {
+          "id": "businessName",
+          "label": "Business Name:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.BusinessName"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Premises and Goods Description",
+      "fields": [
+        {
+          "id": "goodsDescription",
+          "label": "Description of goods to be sold:",
+          "type": "textarea",
+          "required": true,
+          "bindingProperty": "Business.GoodsDescription"
+        },
+        {
+          "id": "standNo",
+          "label": "Stand No:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Business.Premises.StandNo"
+        },
+        {
+          "id": "shopNo",
+          "label": "Shop No:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Business.Premises.ShopNo"
+        },
+        {
+          "id": "streetNo",
+          "label": "Street No:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Business.Premises.StreetNo"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "PART II: Individual Applicant Details",
+      "fields": [
+        {
+          "id": "homeAddress",
+          "label": "Home Address:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Applicant.Individual.HomeAddress"
+        },
+        {
+          "id": "dob",
+          "label": "Date of Birth:",
+          "type": "date",
+          "required": false,
+          "bindingProperty": "Applicant.Individual.DateOfBirth"
+        },
+        {
+          "id": "nrc",
+          "label": "National Registration Card No:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Applicant.Individual.NRC"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Declaration",
+      "fields": [
+        {
+          "id": "declarationDay",
+          "label": "Dated the (Day):",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Declaration.Day"
+        },
+        {
+          "id": "declarationMonth",
+          "label": "Day of (Month):",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Declaration.Month"
+        },
+        {
+          "id": "declarationYear",
+          "label": "Year (202...):",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Declaration.Year"
+        },
+        {
+          "id": "signature",
+          "label": "SIGNATURE OF APPLICANT:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Declaration.Signature"
+        }
+      ]
+    }
+  ]
+}

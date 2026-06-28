@@ -1,0 +1,40 @@
+{
+  "ServiceId": "SERVICE-STARTER-PACK-APP-001",
+  "ServiceName": "Apply for Business Starter Pack",
+  "AgencyName": "Ministry of Agriculture / Commerce",
+  "Category": "Empowerment",
+  "TenantId": "MINISTRY-OF-COMMERCE",
+  "FormId": "FORM-STARTER-PACK-APP",
+  "FormName": "Business Starter Pack Application",
+  "ApplicationFee": 0.0,
+  "Sections": [
+    {
+      "SectionTitle": "Business Information",
+      "Fields": [
+        { "Id": "biz_name", "Label": "Business Name", "Type": "text", "Required": true, "BindingProperty": "BusinessName", "Options": [] },
+        { "Id": "pacra_no", "Label": "PACRA Registration Number", "Type": "text", "Required": true, "BindingProperty": "RegistrationNumber", "Options": [] }
+      ]
+    },
+    {
+      "SectionTitle": "Capacity and Commitment",
+      "Fields": [
+        { "Id": "current_capacity", "Label": "Current Production Capacity (per month)", "Type": "number", "Required": true, "BindingProperty": "CurrentCapacity", "Options": [] },
+        { "Id": "target_capacity", "Label": "Target Capacity (with Starter Pack)", "Type": "number", "Required": true, "BindingProperty": "TargetCapacity", "Options": [] },
+        { "Id": "location", "Label": "Operation Location (District/Province)", "Type": "text", "Required": true, "BindingProperty": "Location", "Options": [] }
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        { "Id": "signature", "Label": "Digital Signature", "Type": "signature", "Required": true, "BindingProperty": "CitizenSignature", "Options": [] }
+      ]
+    }
+  ],
+  "Requirements": [
+    { "Id": "REQ-PACRA", "Label": "Company Registration", "Description": "Verifiable PACRA Registration", "IsMandatory": true, "CredentialType": "CompanyRegistrationCredential", "FieldMapping": "registrationNumber:RegistrationNumber,companyName:BusinessName", "ComplianceContext": "Validated" },
+    { "Id": "REQ-NRC", "Label": "Director/Applicant NRC", "Description": "Identity verification", "IsMandatory": true, "CredentialType": "NationalIDCredential", "ComplianceContext": "Validated" },
+    { "Id": "REQ-TAX", "Label": "Tax Clearance", "Description": "Valid tax clearance certificate", "IsMandatory": true, "CredentialType": "TaxCertificateCredential", "ComplianceContext": "Validated" }
+  ],
+  "ComplianceDetails": "Standard compliance applied for Business Starter Pack",
+  "ComplianceRequirements": ["GDPR", "Local Data Residency"]
+}

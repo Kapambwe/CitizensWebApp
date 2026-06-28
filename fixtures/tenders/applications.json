@@ -1,0 +1,91 @@
+[
+  {
+    "ApplicationNumber": "TND-001-0001",
+    "TenderId": 1,
+    "TenderTitle": "Supply of Office Furniture",
+    "ApplicantReference": "123456/78/1",
+    "ApplicantName": "John Mwale",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "Status": "Submitted",
+    "SubmittedAt": "2026-05-18T08:00:00Z",
+    "SelectedDocumentIds": [1, 2],
+    "SelectedDocumentTitles": ["Business Registration Certificate", "Tax Clearance Certificate"],
+    "CoverNote": "Wallet documents attached.",
+    "RoutingStatus": "Queued"
+  },
+  {
+    "ApplicationNumber": "TND-002-0002",
+    "TenderId": 2,
+    "TenderTitle": "Provincial Supply Contract: School Desks",
+    "ApplicantReference": "123456/78/1",
+    "ApplicantName": "John Mwale",
+    "TenantId": "MINISTRY-OF-EDUCATION",
+    "Status": "Approved",
+    "SubmittedAt": "2026-05-10T08:00:00Z",
+    "SelectedDocumentIds": [7, 3],
+    "SelectedDocumentTitles": ["Company Registration", "Tax Clearance Certificate"],
+    "CoverNote": "We are ready to supply.",
+    "TargetContractId": "CON-EDU-26",
+    "RoutingStatus": "Completed Review"
+  },
+  {
+    "ApplicationNumber": "TND-007-0003",
+    "TenderId": 7,
+    "TenderTitle": "Supply of Medicines and Medical Consumables",
+    "ApplicantReference": "123456/78/1",
+    "ApplicantName": "John Mwale",
+    "TenantId": "ZAMMSA-ZM",
+    "Status": "Submitted",
+    "SubmittedAt": "2026-05-27T09:30:00Z",
+    "SelectedDocumentIds": [7, 2, 5],
+    "SelectedDocumentTitles": [
+      "Company Registration",
+      "Tax Clearance Certificate",
+      "Medical Supply Permit"
+    ],
+    "CoverNote": "We supply medical consumables and can support regional deliveries.",
+    "RoutingStatus": "Technical Review"
+  },
+  {
+    "ApplicationNumber": "TND-008-0004",
+    "TenderId": 8,
+    "TenderTitle": "Supply of Desks for Public Schools",
+    "ApplicantReference": "123456/78/1",
+    "ApplicantName": "John Mwale",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "Status": "Approved",
+    "SubmittedAt": "2026-05-22T11:15:00Z",
+    "SelectedDocumentIds": [7, 2, 8],
+    "SelectedDocumentTitles": [
+      "Company Registration",
+      "Tax Clearance Certificate",
+      "Furniture Supply Evidence"
+    ],
+    "RequirementDocumentIds": {
+      "REQ-REG": 7,
+      "REQ-TAX": 2,
+      "REQ-PREV": 8
+    },
+    "CoverNote": "Our workshop can manufacture and deliver desks in bulk.",
+    "TargetContractId": "CON-LCC-DESKS-26",
+    "RoutingStatus": "Completed Review"
+  },
+  {
+    "ApplicationNumber": "TND-009-0005",
+    "TenderId": 9,
+    "TenderTitle": "Build of Classrooms in Kanyama",
+    "ApplicantReference": "123456/78/1",
+    "ApplicantName": "John Mwale",
+    "TenantId": "MIN-EDUCATION-ZM",
+    "Status": "Under Review",
+    "SubmittedAt": "2026-05-25T14:40:00Z",
+    "SelectedDocumentIds": [7, 2, 9],
+    "SelectedDocumentTitles": [
+      "Company Registration",
+      "Tax Clearance Certificate",
+      "Construction Experience Letter"
+    ],
+    "CoverNote": "We have a construction team ready for classroom delivery.",
+    "RoutingStatus": "Intake Review"
+  }
+]

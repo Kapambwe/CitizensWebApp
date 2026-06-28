@@ -1,0 +1,187 @@
+{
+  "starterPacks": [
+    {
+      "id": "SP-AGRI-001",
+      "title": "Agriculture Export Pack: Gulf Region",
+      "ministry": "Ministry of Agriculture",
+      "category": "Agriculture Exports",
+      "description": "A comprehensive enablement pack designed to help local farmers meet the export demands for goat and beef supply to the Gulf countries.",
+      "targetContract": "Export Agreement EXP-2026-GULF",
+      "targetContractId": "CON-EXP-2026-GULF",
+      "includedItems": [
+        "Veterinary Clearance Certificates",
+        "Export Logistics Subsidy",
+        "Cold Chain Equipment Grant"
+      ],
+      "serviceId": "SERVICE-STARTER-PACK-APP-001",
+      "provisioningUrl": "https://agri-exports.gov.zm/provisioning",
+      "localityReasonRural": "This pack fits rural farming and aggregation businesses that can supply export markets.",
+      "localityReasonTown": "This pack works for a town-based aggregation hub that collects rural produce for export.",
+      "localityReasonCity": "This pack is available for city-based logistics teams supporting export coordination.",
+      "fitLabelBest": "Best fit for export farmers",
+      "fitLabelGood": "Strong regional fit",
+      "fitLabelGeneral": "Open to all locations",
+      "dependencies": [
+        {
+          "name": "PACRA Company Registration",
+          "description": "Verifiable Company Registration Credential",
+          "serviceId": "SERVICE-PACRA-REG-001",
+          "credentialType": "CompanyRegistrationCredential"
+        },
+        {
+          "name": "Tax Clearance",
+          "description": "Valid Tax Clearance Certificate",
+          "serviceId": "SERVICE-ZRA-TAX-001",
+          "credentialType": "TaxCertificateCredential"
+        },
+        {
+          "name": "National ID (NRC)",
+          "description": "Verified Identity",
+          "serviceId": "SERVICE-NRC-ISSUE-001",
+          "credentialType": "NationalIDCredential"
+        }
+      ]
+    },
+    {
+      "id": "SP-EDU-001",
+      "title": "Public School Desk Manufacturing",
+      "ministry": "Ministry of Education",
+      "category": "Manufacturing",
+      "description": "Equips local carpenters and SMEs to fulfill provincial contracts for the supply of public school desks.",
+      "targetContract": "Provincial Supply Contract EDU-26",
+      "targetContractId": "CON-EDU-26",
+      "includedItems": [
+        "Raw Material Line of Credit",
+        "Quality Assurance Certification",
+        "Tax Incentive Registration"
+      ],
+      "serviceId": "SERVICE-STARTER-PACK-APP-002",
+      "provisioningUrl": "https://edu-manufacturing.gov.zm/provisioning",
+      "localityReasonRural": "This pack supports rural carpenters who can deliver desks into district education supply chains.",
+      "localityReasonTown": "This pack is a strong town fit for local workshops serving provincial school contracts.",
+      "localityReasonCity": "This pack is available to city suppliers with workshop capacity and school contract logistics.",
+      "fitLabelBest": "Best fit for workshops",
+      "fitLabelGood": "Good fit for suppliers",
+      "fitLabelGeneral": "Available across locations",
+      "dependencies": [
+        {
+          "name": "PACRA Company Registration",
+          "description": "Verifiable Company Registration Credential",
+          "serviceId": "SERVICE-PACRA-REG-001",
+          "credentialType": "CompanyRegistrationCredential"
+        },
+        {
+          "name": "Tax Clearance",
+          "description": "Valid Tax Clearance Certificate",
+          "serviceId": "SERVICE-ZRA-TAX-001",
+          "credentialType": "TaxCertificateCredential"
+        }
+      ]
+    },
+    {
+      "id": "SP-MIN-001",
+      "title": "Copperbelts Mining Supplier Pack",
+      "ministry": "Ministry of Mines",
+      "category": "Mining Support",
+      "description": "Empowers local SMEs to provide PPE, specialized tools, and logistics support to Tier 1 mining concessions.",
+      "targetContract": "Local Content Contract MIN-2026-04",
+      "includedItems": [
+        "Mine Safety Training Certificate",
+        "Supplier Registration Fast-Track",
+        "Working Capital Guarantee"
+      ],
+      "serviceId": "SERVICE-STARTER-PACK-APP-003",
+      "provisioningUrl": "https://mining-suppliers.gov.zm/provisioning",
+      "localityReasonRural": "This pack can support rural SMEs that supply tools, PPE, and transport to mining routes.",
+      "localityReasonTown": "This pack fits town-based suppliers serving nearby mining operations and logistics hubs.",
+      "localityReasonCity": "This pack works for city-based procurement teams coordinating mining supply chains.",
+      "fitLabelBest": "Best fit for supply hubs",
+      "fitLabelGood": "Strong support fit",
+      "fitLabelGeneral": "Open to broader suppliers",
+      "dependencies": [
+        {
+          "name": "PACRA Company Registration",
+          "description": "Verifiable Company Registration Credential",
+          "serviceId": "SERVICE-PACRA-REG-001",
+          "credentialType": "CompanyRegistrationCredential"
+        },
+        {
+          "name": "Mine Safety Certificate",
+          "description": "Basic Mine Safety Certificate",
+          "serviceId": "SERVICE-MINES-SAFETY-001",
+          "credentialType": "MineSafetyCredential"
+        }
+      ]
+    },
+    {
+      "id": "SP-TECH-001",
+      "title": "Digital Service Provider Kit",
+      "ministry": "Ministry of Technology",
+      "category": "Tech & Services",
+      "description": "For local tech startups providing software maintenance and data entry services for municipal councils.",
+      "targetContract": "Municipal Digitization Contract TECH-99",
+      "includedItems": [
+        "Cloud Hosting Credits",
+        "ZICTA Registration Fee Waiver",
+        "Cybersecurity Baseline Audit"
+      ],
+      "serviceId": "SERVICE-STARTER-PACK-APP-004",
+      "provisioningUrl": "https://tech-services.gov.zm/provisioning",
+      "localityReasonRural": "This pack can still work for rural digital agents delivering remote service support.",
+      "localityReasonTown": "This pack fits town-based service providers that can support council and SME digitization.",
+      "localityReasonCity": "This pack is a strong city fit for software, data entry, and municipal digital services.",
+      "fitLabelBest": "Best fit for digital providers",
+      "fitLabelGood": "Strong service fit",
+      "fitLabelGeneral": "Available to all providers",
+      "dependencies": [
+        {
+          "name": "PACRA Company Registration",
+          "description": "Verifiable Company Registration Credential",
+          "serviceId": "SERVICE-PACRA-REG-001",
+          "credentialType": "CompanyRegistrationCredential"
+        },
+        {
+          "name": "ZICTA License",
+          "description": "ZICTA Technology Provider License",
+          "serviceId": "SERVICE-ZICTA-LICENSE-001",
+          "credentialType": "ZictaLicenseCredential"
+        }
+      ]
+    },
+    {
+      "id": "SP-AGRI-002",
+      "title": "Maize Aggregation & Processing",
+      "ministry": "Ministry of Agriculture",
+      "category": "Agriculture Exports",
+      "description": "Supports rural cooperatives in aggregating and milling maize for regional export to East Africa.",
+      "targetContract": "Regional Food Security Contract FRA-2026",
+      "includedItems": [
+        "Warehouse Receipt Tokenization Setup",
+        "Milling Equipment Lease",
+        "Export Permit Pre-Approval"
+      ],
+      "serviceId": "SERVICE-STARTER-PACK-APP-005",
+      "provisioningUrl": "https://agri-exports.gov.zm/provisioning",
+      "localityReasonRural": "This pack is ideal for rural maize cooperatives and millers close to production zones.",
+      "localityReasonTown": "This pack works for town-based aggregation, milling, and regional distribution hubs.",
+      "localityReasonCity": "This pack can support city-based traders and logistics teams handling food aggregation.",
+      "fitLabelBest": "Best fit for cooperatives",
+      "fitLabelGood": "Strong agro fit",
+      "fitLabelGeneral": "Open to all producers",
+      "dependencies": [
+        {
+          "name": "PACRA Company Registration",
+          "description": "Verifiable Company Registration Credential",
+          "serviceId": "SERVICE-PACRA-REG-001",
+          "credentialType": "CompanyRegistrationCredential"
+        },
+        {
+          "name": "Food Safety Certificate",
+          "description": "Certified by Food and Drugs Control Laboratory",
+          "serviceId": "SERVICE-HEALTH-FOOD-SAFETY-001",
+          "credentialType": "FoodSafetyCredential"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "FormId": "FORM-SERVICE-LAND-TITLE-001",
+  "FormName": "Ministry of Lands: Application for Title Deed",
+  "Sections": [
+    {
+      "SectionTitle": "Applicant Details",
+      "Fields": [
+        { "Id": "applicantName", "Label": "Full Name of Applicant", "Type": "text", "Required": true, "BindingProperty": "Applicant.Name", "Placeholder": "Verified from NRC" },
+        { "Id": "nrcNumber", "Label": "NRC Number", "Type": "text", "Required": true, "BindingProperty": "Applicant.Nrc", "Placeholder": "Verified from NRC" },
+        { "Id": "nationality", "Label": "Nationality", "Type": "text", "Required": true, "BindingProperty": "Applicant.Nationality" }
+      ]
+    },
+    {
+      "SectionTitle": "Property Specification",
+      "Fields": [
+        { "Id": "plotNumber", "Label": "Plot Number", "Type": "text", "Required": true, "BindingProperty": "Land.PlotNumber", "Placeholder": "e.g., LUS/1234/56" },
+        { "Id": "district", "Label": "District", "Type": "text", "Required": true, "BindingProperty": "Land.District" },
+        { "Id": "province", "Label": "Province", "Type": "select", "Required": true, "BindingProperty": "Land.Province", "Options": [
+          { "Value": "Lusaka", "Text": "Lusaka" }, { "Value": "Copperbelt", "Text": "Copperbelt" }, { "Value": "Central", "Text": "Central" },
+          { "Value": "Eastern", "Text": "Eastern" }, { "Value": "Luapula", "Text": "Luapula" }, { "Value": "Muchinga", "Text": "Muchinga" },
+          { "Value": "Northern", "Text": "Northern" }, { "Value": "NorthWestern", "Text": "North-Western" }, { "Value": "Southern", "Text": "Southern" }, { "Value": "Western", "Text": "Western" }
+        ]},
+        { "Id": "areaSize", "Label": "Approximate Area Size (Hectares)", "Type": "number", "Required": true, "BindingProperty": "Land.AreaSize" }
+      ]
+    },
+    {
+      "SectionTitle": "Zoning & Use",
+      "Fields": [
+        { "Id": "landUse", "Label": "Intended Land Use", "Type": "select", "Required": true, "BindingProperty": "Land.Use", "Options": [
+          { "Value": "Residential", "Text": "Residential" },
+          { "Value": "Commercial", "Text": "Commercial" },
+          { "Value": "Industrial", "Text": "Industrial" },
+          { "Value": "Agricultural", "Text": "Agricultural" }
+        ]},
+        { "Id": "zoningCompliance", "Label": "Has Zoning Compliance been obtained from Local Authority?", "Type": "select", "Required": true, "BindingProperty": "Land.ZoningCompliance", "Options": [
+          { "Value": "true", "Text": "Yes" }, { "Value": "false", "Text": "No" }
+        ]}
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        { "Id": "declDate", "Label": "Date of Application", "Type": "date", "Required": true, "BindingProperty": "Declaration.Date" },
+        { "Id": "signature", "Label": "Digital Signature", "Type": "signature", "Required": true, "BindingProperty": "CitizenSignature" }
+      ]
+    }
+  ]
+}

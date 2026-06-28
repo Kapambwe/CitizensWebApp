@@ -1,0 +1,211 @@
+[
+  {
+    "InvoiceId": 1,
+    "InvoiceNumber": "INV-2025-001",
+    "Date": "2025-05-01T00:00:00",
+    "InvoiceDate": "2025-05-01T00:00:00",
+    "DueDate": "2025-05-31T00:00:00",
+    "InvoiceStatus": "Pending",
+    "InvoiceStatusId": 1,
+    "InvoiceTypeId": 1,
+    "InvoiceTypeName": "Invoice",
+    "CustomerPersonId": "CUST-001",
+    "CustomerEmail": "accounts@zambiamining.co.zm",
+    "CustomerDetails": "Zambia Mining Corp",
+    "CategoryId": 1,
+    "CategoryTypeId": 1,
+    "PaymentMethodId": 1,
+    "SalesTermId": 1,
+    "SubTotal": 125000.50,
+    "TaxRate": 0,
+    "TaxIncludingAmount": 0,
+    "Total": 125000.50,
+    "BalanceDue": 125000.50,
+    "TotalBalance": 1250000.50,
+    "MessageOnInvoice": "Payment due within 30 days.",
+    "SalesItemViewModels": [
+      {
+        "Id": "INV-2025-001-1",
+        "Description": "Mining license renewal",
+        "SalePrice": 100000.00,
+        "Amount": 100000.00,
+        "Quantity": 1,
+        "UnitPrice": 100000.00
+      },
+      {
+        "Id": "INV-2025-001-2",
+        "Description": "Environmental compliance fee",
+        "SalePrice": 25000.50,
+        "Amount": 25000.50,
+        "Quantity": 1,
+        "UnitPrice": 25000.50
+      }
+    ],
+    "CustomerViewModel": {
+      "CustomerPersonId": "CUST-001",
+      "Name": "Zambia Mining Corp",
+      "Email": "accounts@zambiamining.co.zm",
+      "CompanyName": "Zambia Mining Corp"
+    }
+  },
+  {
+    "InvoiceId": 2,
+    "InvoiceNumber": "INV-2025-002",
+    "Date": "2025-05-05T00:00:00",
+    "InvoiceDate": "2025-05-05T00:00:00",
+    "DueDate": "2025-06-04T00:00:00",
+    "InvoiceStatus": "Partially Paid",
+    "InvoiceStatusId": 2,
+    "InvoiceTypeId": 1,
+    "InvoiceTypeName": "Invoice",
+    "CustomerPersonId": "CUST-002",
+    "CustomerEmail": "finance@copperbeltagro.com",
+    "CustomerDetails": "Copperbelt Agro Processing",
+    "CategoryId": 2,
+    "CategoryTypeId": 1,
+    "PaymentMethodId": 3,
+    "SalesTermId": 1,
+    "SubTotal": 87500.00,
+    "TaxRate": 0,
+    "TaxIncludingAmount": 0,
+    "Total": 87500.00,
+    "BalanceDue": 37500.00,
+    "TotalBalance": 750000.00,
+    "SalesItemViewModels": [
+      {
+        "Id": "INV-2025-002-1",
+        "Description": "Agro processing license fee",
+        "SalePrice": 87500.00,
+        "Amount": 37500.00,
+        "Quantity": 1,
+        "UnitPrice": 87500.00
+      }
+    ],
+    "CustomerViewModel": {
+      "CustomerPersonId": "CUST-002",
+      "Name": "Copperbelt Agro Processing",
+      "Email": "finance@copperbeltagro.com",
+      "CompanyName": "Copperbelt Agro Processing"
+    }
+  },
+  {
+    "InvoiceId": 3,
+    "InvoiceNumber": "EST-2025-001",
+    "Date": "2025-05-10T00:00:00",
+    "InvoiceDate": "2025-05-10T00:00:00",
+    "DueDate": "2025-06-10T00:00:00",
+    "InvoiceStatus": "Pending",
+    "InvoiceStatusId": 1,
+    "InvoiceTypeId": 2,
+    "InvoiceTypeName": "Estimate",
+    "CustomerPersonId": "CUST-003",
+    "CustomerEmail": "procurement@lusakamanufacturing.com",
+    "CustomerDetails": "Lusaka Manufacturing Ltd",
+    "CategoryId": 3,
+    "CategoryTypeId": 2,
+    "PaymentMethodId": 0,
+    "SalesTermId": 1,
+    "SubTotal": 42000.00,
+    "TaxRate": 0,
+    "TaxIncludingAmount": 0,
+    "Total": 42000.00,
+    "BalanceDue": 42000.00,
+    "TotalBalance": 42000.00,
+    "SalesItemViewModels": [
+      {
+        "Id": "EST-2025-001-1",
+        "Description": "Manufacturing permit estimate",
+        "SalePrice": 42000.00,
+        "Amount": 42000.00,
+        "Quantity": 1,
+        "UnitPrice": 42000.00
+      }
+    ],
+    "CustomerViewModel": {
+      "CustomerPersonId": "CUST-003",
+      "Name": "Lusaka Manufacturing Ltd",
+      "Email": "procurement@lusakamanufacturing.com",
+      "CompanyName": "Lusaka Manufacturing Ltd"
+    }
+  },
+  {
+    "InvoiceId": 4,
+    "InvoiceNumber": "RCPT-2025-001",
+    "Date": "2025-05-12T00:00:00",
+    "InvoiceDate": "2025-05-12T00:00:00",
+    "DueDate": "2025-05-12T00:00:00",
+    "InvoiceStatus": "Paid",
+    "InvoiceStatusId": 3,
+    "InvoiceTypeId": 3,
+    "InvoiceTypeName": "Receipt",
+    "CustomerPersonId": "CUST-004",
+    "CustomerEmail": "admin@southernfarms.co.zm",
+    "CustomerDetails": "Southern Farms Cooperative",
+    "CategoryId": 4,
+    "CategoryTypeId": 3,
+    "PaymentMethodId": 2,
+    "SalesTermId": 1,
+    "SubTotal": 15000.00,
+    "TaxRate": 0,
+    "TaxIncludingAmount": 0,
+    "Total": 15000.00,
+    "BalanceDue": 0,
+    "TotalBalance": 15000.00,
+    "SalesItemViewModels": [
+      {
+        "Id": "RCPT-2025-001-1",
+        "Description": "Payment received for service fee",
+        "SalePrice": 15000.00,
+        "Amount": 15000.00,
+        "Quantity": 1,
+        "UnitPrice": 15000.00
+      }
+    ],
+    "CustomerViewModel": {
+      "CustomerPersonId": "CUST-004",
+      "Name": "Southern Farms Cooperative",
+      "Email": "admin@southernfarms.co.zm",
+      "CompanyName": "Southern Farms Cooperative"
+    }
+  },
+  {
+    "InvoiceId": 5,
+    "InvoiceNumber": "INV-2025-003",
+    "Date": "2025-05-15T00:00:00",
+    "InvoiceDate": "2025-05-15T00:00:00",
+    "DueDate": "2025-05-20T00:00:00",
+    "InvoiceStatus": "Overdue",
+    "InvoiceStatusId": 4,
+    "InvoiceTypeId": 1,
+    "InvoiceTypeName": "Invoice",
+    "CustomerPersonId": "CUST-005",
+    "CustomerEmail": "accounts@nwminerals.co.zm",
+    "CustomerDetails": "North-Western Minerals",
+    "CategoryId": 5,
+    "CategoryTypeId": 1,
+    "PaymentMethodId": 0,
+    "SalesTermId": 1,
+    "SubTotal": 65000.00,
+    "TaxRate": 0,
+    "TaxIncludingAmount": 0,
+    "Total": 65000.00,
+    "BalanceDue": 65000.00,
+    "TotalBalance": 65000.00,
+    "SalesItemViewModels": [
+      {
+        "Id": "INV-2025-003-1",
+        "Description": "Exploration permit fee",
+        "SalePrice": 65000.00,
+        "Amount": 65000.00,
+        "Quantity": 1,
+        "UnitPrice": 65000.00
+      }
+    ],
+    "CustomerViewModel": {
+      "CustomerPersonId": "CUST-005",
+      "Name": "North-Western Minerals",
+      "Email": "accounts@nwminerals.co.zm",
+      "CompanyName": "North-Western Minerals"
+    }
+  }
+]

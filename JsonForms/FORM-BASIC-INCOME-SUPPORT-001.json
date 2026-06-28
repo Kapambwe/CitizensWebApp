@@ -1,0 +1,27 @@
+{
+  "FormId": "FORM-BASIC-INCOME-SUPPORT-001",
+  "FormName": "Basic Income Support Application",
+  "Sections": [
+    {
+      "SectionTitle": "Applicant Details",
+      "Fields": [
+        { "Id": "fullName", "Label": "Full Name", "Type": "text", "Required": true, "BindingProperty": "Applicant.FullName" },
+        { "Id": "nrc", "Label": "NRC Number", "Type": "text", "Required": true, "BindingProperty": "Applicant.NRC" },
+        { "Id": "dob", "Label": "Date of Birth", "Type": "date", "Required": true, "BindingProperty": "Applicant.DOB" }
+      ]
+    },
+    {
+      "SectionTitle": "Financial Details",
+      "Fields": [
+        { "Id": "monthlyIncome", "Label": "Monthly Income (ZMW)", "Type": "number", "Required": true, "BindingProperty": "Financial.MonthlyIncome" },
+        { "Id": "employmentStatus", "Label": "Employment Status", "Type": "select", "Required": true, "BindingProperty": "Financial.EmploymentStatus",
+          "Options": [
+            { "Value": "unemployed", "Text": "Unemployed" },
+            { "Value": "self-employed", "Text": "Self-Employed" },
+            { "Value": "casual", "Text": "Casual Worker" }
+          ]
+        }
+      ]
+    }
+  ]
+}

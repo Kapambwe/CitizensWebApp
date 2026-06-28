@@ -1,0 +1,12 @@
+{
+  "FormId": "FORM-COUNCIL-PLOT-001",
+  "FormName": "Council Plot Application Form",
+  "Sections": [
+    {
+      "SectionTitle": "Placeholder Section",
+      "Fields": [
+        { "Id": "placeholder_field", "Label": "This is a placeholder field for Council Plot Application.", "Type": "text", "Required": false }
+      ]
+    }
+  ]
+}

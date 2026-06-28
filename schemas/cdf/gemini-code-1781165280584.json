@@ -1,0 +1,302 @@
+{
+  "formId": "cdf-grant-application-form",
+  "formName": "Constituency Development Fund (CDF) Grant Application Form for Youth, Women and Community Empowerment",
+  "sections": [
+    {
+      "sectionTitle": "Official Use Only (Header)",
+      "fields": [
+        {
+          "id": "projectIdentificationNumber",
+          "label": "Project identification Number (for official use only):",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.ProjectIdentificationNumber"
+        },
+        {
+          "id": "yeZoneWardCodeNumber",
+          "label": "YE/Zone/Ward Code Number:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.YeZoneWardCodeNumber"
+        },
+        {
+          "id": "weZoneWardCodeNumber",
+          "label": "WE/Zone/Ward Code Number:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.WeZoneWardCodeNumber"
+        },
+        {
+          "id": "ceZoneWardCodeNumber",
+          "label": "CE/Zone/Ward Code Number:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.CeZoneWardCodeNumber"
+        },
+        {
+          "id": "grantType",
+          "label": "Grant Type:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Application.GrantType"
+        },
+        {
+          "id": "grantAmount",
+          "label": "Grant Amount (ZMW):",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Application.GrantAmount"
+        },
+        {
+          "id": "dateOfApplication",
+          "label": "Date of Application:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Application.DateOfApplication"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section A: General Details (To be filled by the applicant)",
+      "fields": [
+        {
+          "id": "organizationName",
+          "label": "Name of Club/Organised Group/Enterprise/Cooperative making application:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Organization.Name"
+        },
+        {
+          "id": "district",
+          "label": "Name of District:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "ProjectLocation.District"
+        },
+        {
+          "id": "constituency",
+          "label": "Name of Constituency:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "ProjectLocation.Constituency"
+        },
+        {
+          "id": "ward",
+          "label": "Name of Ward:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "ProjectLocation.Ward"
+        },
+        {
+          "id": "zone",
+          "label": "Name of Zone:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "ProjectLocation.Zone"
+        },
+        {
+          "id": "physicalAddress",
+          "label": "Business Physical Address:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Organization.PhysicalAddress"
+        },
+        {
+          "id": "registrationDate",
+          "label": "Date when Club/Organised Group/Enterprise/Cooperative was registered with relevant authorities:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Organization.RegistrationDate"
+        },
+        {
+          "id": "hasPriorExperience",
+          "label": "Does the Club/Organised Group/Enterprise/Cooperative have any experience in a project of similar nature? (Yes/No):",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Organization.HasPriorExperience"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Project Details and Committee Members",
+      "fields": [
+        {
+          "id": "committeeMembers",
+          "label": "Committee Members (List: S/N, Name, Position, NRC, Phone Number, Signature):",
+          "type": "textarea",
+          "required": true,
+          "bindingProperty": "Organization.CommitteeMembers"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Contact Person(s)",
+      "fields": [
+        {
+          "id": "firstApplicantName",
+          "label": "First Applicant Name:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Contact.FirstApplicant.Name"
+        },
+        {
+          "id": "firstApplicantAddress",
+          "label": "First Applicant Physical Address:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Contact.FirstApplicant.PhysicalAddress"
+        },
+        {
+          "id": "firstApplicantPhone",
+          "label": "First Applicant Phone:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Contact.FirstApplicant.Phone"
+        },
+        {
+          "id": "firstApplicantNrc",
+          "label": "First Applicant NRC:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Contact.FirstApplicant.Nrc"
+        },
+        {
+          "id": "firstApplicantSignature",
+          "label": "First Applicant Signature:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Contact.FirstApplicant.Signature"
+        },
+        {
+          "id": "firstApplicantDate",
+          "label": "First Applicant Date:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Contact.FirstApplicant.Date"
+        },
+        {
+          "id": "secondApplicantName",
+          "label": "Second Applicant Name:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Contact.SecondApplicant.Name"
+        },
+        {
+          "id": "secondApplicantAddress",
+          "label": "Second Applicant Physical Address:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Contact.SecondApplicant.PhysicalAddress"
+        },
+        {
+          "id": "secondApplicantPhone",
+          "label": "Second Applicant Phone:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Contact.SecondApplicant.Phone"
+        },
+        {
+          "id": "secondApplicantNrc",
+          "label": "Second Applicant NRC:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Contact.SecondApplicant.Nrc"
+        },
+        {
+          "id": "secondApplicantSignature",
+          "label": "Second Applicant Signature:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Contact.SecondApplicant.Signature"
+        },
+        {
+          "id": "secondApplicantDate",
+          "label": "Second Applicant Date:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Contact.SecondApplicant.Date"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "SECTION D: RECOMMENDATION BY THE WARD DEVELOPMENT COMMITTEE",
+      "fields": [
+        {
+          "id": "wdcRecommendationStatus",
+          "label": "Recommended/Not Recommended/Deferred:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Wdc.RecommendationStatus"
+        },
+        {
+          "id": "wdcReasons",
+          "label": "Reasons:",
+          "type": "textarea",
+          "required": false,
+          "bindingProperty": "Official.Wdc.Reasons"
+        },
+        {
+          "id": "wdcChairpersonName",
+          "label": "Name (Chairperson):",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Wdc.ChairpersonName"
+        },
+        {
+          "id": "wdcSignature",
+          "label": "Sign:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Wdc.Signature"
+        },
+        {
+          "id": "wdcDate",
+          "label": "Date:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Wdc.Date"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "SECTION E: DECISION BY THE CONSTITUENCY DEVELOPMENT FUND COMMITTEE",
+      "fields": [
+        {
+          "id": "cdfcApprovalStatus",
+          "label": "Approved/Not Approved:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Cdfc.ApprovalStatus"
+        },
+        {
+          "id": "cdfcReasons",
+          "label": "Reasons:",
+          "type": "textarea",
+          "required": false,
+          "bindingProperty": "Official.Cdfc.Reasons"
+        },
+        {
+          "id": "cdfcChairpersonName",
+          "label": "Name (Chairperson):",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Cdfc.ChairpersonName"
+        },
+        {
+          "id": "cdfcSignature",
+          "label": "Sign:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Cdfc.Signature"
+        },
+        {
+          "id": "cdfcDate",
+          "label": "Date:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Cdfc.Date"
+        }
+      ]
+    }
+  ]
+}

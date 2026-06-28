@@ -1,0 +1,32 @@
+{
+  "FormId": "FORM-SERVICE-STARTER-PACK-APP-001",
+  "FormName": "Agriculture Export Pack: Gulf Region Application",
+  "Sections": [
+    {
+      "SectionTitle": "Applicant & Cooperative Information",
+      "Fields": [
+        { "Id": "applicantName", "Label": "Applicant Name:", "Type": "text", "Required": true, "BindingProperty": "Applicant.Name", "Placeholder": "Verified from NRC" },
+        { "Id": "coopName", "Label": "Farm / Cooperative Name:", "Type": "text", "Required": true, "BindingProperty": "Business.Name", "Placeholder": "Verified from PACRA" },
+        { "Id": "nrcNumber", "Label": "NRC Number:", "Type": "text", "Required": true, "BindingProperty": "Applicant.Nrc", "Placeholder": "Verified from NRC" }
+      ]
+    },
+    {
+      "SectionTitle": "Production & Export Capacity",
+      "Fields": [
+        { "Id": "farmLocation", "Label": "Farm Location (District/Province):", "Type": "text", "Required": true, "BindingProperty": "Farm.Location" },
+        { "Id": "currentCapacity", "Label": "Current Monthly Capacity (Heads):", "Type": "number", "Required": true, "BindingProperty": "Production.CurrentCapacity" },
+        { "Id": "targetCapacity", "Label": "Target Export Capacity (Heads):", "Type": "number", "Required": true, "BindingProperty": "Production.TargetCapacity" },
+        { "Id": "hasVetClearance", "Label": "Do you currently hold Veterinary Clearance?", "Type": "select", "Required": true, "BindingProperty": "Compliance.VetClearance", "Options": [
+          { "Value": "Yes", "Text": "Yes" }, { "Value": "No", "Text": "No, requesting assistance" }
+        ]}
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        { "Id": "declDate", "Label": "Date:", "Type": "date", "Required": true, "BindingProperty": "Declaration.Date" },
+        { "Id": "signature", "Label": "Signature:", "Type": "signature", "Required": true, "BindingProperty": "Declaration.Signature" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "formId": "cdf-secondary-boarding-bursary-application-form",
+  "formName": "Constituency Development Fund (CDF) Secondary Boarding School Bursary Application Form",
+  "sections": [
+    {
+      "sectionTitle": "A. APPLICANT’S PERSONAL INFORMATION",
+      "fields": [
+        {
+          "id": "surname",
+          "label": "Surname:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.Surname"
+        },
+        {
+          "id": "firstName",
+          "label": "First Name:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.FirstName"
+        },
+        {
+          "id": "otherNames",
+          "label": "Other Names:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.OtherNames"
+        },
+        {
+          "id": "sex",
+          "label": "Sex (F/M):",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.Sex"
+        },
+        {
+          "id": "dateOfBirth",
+          "label": "Date of Birth:",
+          "type": "date",
+          "required": true,
+          "bindingProperty": "Applicant.DateOfBirth"
+        },
+        {
+          "id": "nationality",
+          "label": "Nationality:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.Nationality"
+        },
+        {
+          "id": "nrcNo",
+          "label": "NRC NO:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Applicant.NrcNo"
+        },
+        {
+          "id": "province",
+          "label": "Province:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.Residence.Province"
+        },
+        {
+          "id": "district",
+          "label": "District:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.Residence.District"
+        },
+        {
+          "id": "constituency",
+          "label": "Constituency:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.Residence.Constituency"
+        },
+        {
+          "id": "ward",
+          "label": "Ward:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.Residence.Ward"
+        },
+        {
+          "id": "villageTownship",
+          "label": "Village/Township:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.Residence.VillageTownship"
+        },
+        {
+          "id": "hasDisability",
+          "label": "Do you have a disability/special need? (Yes/No):",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.Disability.HasDisability"
+        },
+        {
+          "id": "disabilityDetails",
+          "label": "If yes, please specify:",
+          "type": "textarea",
+          "required": false,
+          "bindingProperty": "Applicant.Disability.Details"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "OFFICIAL USE",
+      "fields": [
+        {
+          "id": "wdcApprovalStatus",
+          "label": "Approved/Not Approved (WDC):",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Wdc.ApprovalStatus"
+        },
+        {
+          "id": "wdcReasons",
+          "label": "Reasons (WDC):",
+          "type": "textarea",
+          "required": false,
+          "bindingProperty": "Official.Wdc.Reasons"
+        },
+        {
+          "id": "wdcName",
+          "label": "Name (WDC):",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Wdc.Name"
+        },
+        {
+          "id": "wdcDesignation",
+          "label": "Designation (WDC):",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Wdc.Designation"
+        },
+        {
+          "id": "wdcSignature",
+          "label": "Signature (WDC):",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Wdc.Signature"
+        },
+        {
+          "id": "wdcDate",
+          "label": "Date (WDC):",
+          "type": "date",
+          "required": false,
+          "bindingProperty": "Official.Wdc.Date"
+        },
+        {
+          "id": "cdfcApprovalStatus",
+          "label": "Approved/Not Approved (CDFC):",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Cdfc.ApprovalStatus"
+        },
+        {
+          "id": "cdfcReasons",
+          "label": "Reasons (CDFC):",
+          "type": "textarea",
+          "required": false,
+          "bindingProperty": "Official.Cdfc.Reasons"
+        },
+        {
+          "id": "cdfcName",
+          "label": "Name (CDFC):",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Cdfc.Name"
+        },
+        {
+          "id": "cdfcDesignation",
+          "label": "Designation (CDFC):",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Cdfc.Designation"
+        },
+        {
+          "id": "cdfcSignature",
+          "label": "Signature (CDFC):",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Cdfc.Signature"
+        },
+        {
+          "id": "cdfcDate",
+          "label": "Date (CDFC):",
+          "type": "date",
+          "required": false,
+          "bindingProperty": "Official.Cdfc.Date"
+        }
+      ]
+    }
+  ]
+}

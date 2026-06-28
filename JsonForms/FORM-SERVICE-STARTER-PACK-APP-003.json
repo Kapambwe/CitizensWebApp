@@ -1,0 +1,34 @@
+{
+  "FormId": "FORM-SERVICE-STARTER-PACK-APP-003",
+  "FormName": "Copperbelts Mining Supplier Pack Application",
+  "Sections": [
+    {
+      "SectionTitle": "Supplier Information",
+      "Fields": [
+        { "Id": "applicantName", "Label": "Applicant Name:", "Type": "text", "Required": true, "BindingProperty": "Applicant.Name", "Placeholder": "Verified from NRC" },
+        { "Id": "businessName", "Label": "Business Name:", "Type": "text", "Required": true, "BindingProperty": "Business.Name", "Placeholder": "Verified from PACRA" },
+        { "Id": "nrcNumber", "Label": "NRC Number:", "Type": "text", "Required": true, "BindingProperty": "Applicant.Nrc" }
+      ]
+    },
+    {
+      "SectionTitle": "Service Details",
+      "Fields": [
+        { "Id": "supplyCategory", "Label": "Primary Supply Category:", "Type": "select", "Required": true, "BindingProperty": "Business.Category", "Options": [
+          { "Value": "PPE", "Text": "Personal Protective Equipment (PPE)" },
+          { "Value": "Tools", "Text": "Specialized Tools & Equipment" },
+          { "Value": "Logistics", "Text": "Transport & Logistics" },
+          { "Value": "Services", "Text": "Maintenance & Services" }
+        ]},
+        { "Id": "targetMine", "Label": "Target Mining Operation:", "Type": "text", "Required": true, "BindingProperty": "Business.TargetMine" },
+        { "Id": "hasSafetyCert", "Label": "Valid Mine Safety Certificate?", "Type": "text", "Required": true, "BindingProperty": "Compliance.SafetyCert", "Placeholder": "Verified from Wallet" }
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        { "Id": "declDate", "Label": "Date:", "Type": "date", "Required": true, "BindingProperty": "Declaration.Date" },
+        { "Id": "signature", "Label": "Signature:", "Type": "signature", "Required": true, "BindingProperty": "Declaration.Signature" }
+      ]
+    }
+  ]
+}

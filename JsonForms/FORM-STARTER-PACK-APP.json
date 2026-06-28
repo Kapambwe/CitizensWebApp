@@ -1,0 +1,27 @@
+{
+  "formId": "FORM-STARTER-PACK-APP",
+  "formName": "Business Starter Pack Application",
+  "sections": [
+    {
+      "sectionTitle": "Business Information",
+      "fields": [
+        { "id": "biz_name", "label": "Business Name", "type": "text", "required": true, "bindingProperty": "BusinessName" },
+        { "id": "pacra_no", "label": "PACRA Registration Number", "type": "text", "required": true, "bindingProperty": "RegistrationNumber" }
+      ]
+    },
+    {
+      "sectionTitle": "Capacity and Commitment",
+      "fields": [
+        { "id": "current_capacity", "label": "Current Production Capacity (per month)", "type": "number", "required": true, "bindingProperty": "CurrentCapacity" },
+        { "id": "target_capacity", "label": "Target Capacity (with Starter Pack)", "type": "number", "required": true, "bindingProperty": "TargetCapacity" },
+        { "id": "location", "label": "Operation Location (District/Province)", "type": "text", "required": true, "bindingProperty": "Location" }
+      ]
+    },
+    {
+      "sectionTitle": "Declaration",
+      "fields": [
+        { "id": "signature", "label": "Digital Signature", "type": "signature", "required": true, "bindingProperty": "CitizenSignature" }
+      ]
+    }
+  ]
+}

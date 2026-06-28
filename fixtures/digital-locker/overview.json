@@ -1,0 +1,80 @@
+{
+  "GovernmentEndpoints": [
+    {
+      "Method": "POST",
+      "Path": "/api/government/documents/issue",
+      "Description": "Issue a single document to a citizen"
+    },
+    {
+      "Method": "POST",
+      "Path": "/api/government/documents/bulk-issue",
+      "Description": "Bulk issuance of documents"
+    },
+    {
+      "Method": "PUT",
+      "Path": "/api/government/documents/{id}/revoke",
+      "Description": "Revoke a previously issued document"
+    },
+    {
+      "Method": "GET",
+      "Path": "/api/government/audit/{entityId}",
+      "Description": "View audit logs for entity"
+    }
+  ],
+  "CitizenEndpoints": [
+    {
+      "Method": "GET",
+      "Path": "/api/citizen/documents",
+      "Description": "List all documents in wallet"
+    },
+    {
+      "Method": "GET",
+      "Path": "/api/citizen/documents/{id}",
+      "Description": "Get specific document details"
+    },
+    {
+      "Method": "POST",
+      "Path": "/api/citizen/documents/{id}/share",
+      "Description": "Generate secure share link"
+    },
+    {
+      "Method": "GET",
+      "Path": "/api/citizen/audit",
+      "Description": "View access logs for documents"
+    }
+  ],
+  "VerificationEndpoints": [
+    {
+      "Method": "GET",
+      "Path": "/api/verify/document/{secureUri}",
+      "Description": "Verify document via secure URI"
+    },
+    {
+      "Method": "POST",
+      "Path": "/api/verify/signature/{documentId}",
+      "Description": "Verify digital signature"
+    }
+  ],
+  "GovernmentIssuers": [
+    {
+      "EntityId": "MOH-001",
+      "Name": "Ministry of Health",
+      "AuthorizedDocuments": "Birth Certificate, Death Certificate, Health Card"
+    },
+    {
+      "EntityId": "RTSA-001",
+      "Name": "Road Transport & Safety Agency",
+      "AuthorizedDocuments": "Driver's License, Vehicle Registration"
+    },
+    {
+      "EntityId": "NAPSA-001",
+      "Name": "National Pension Scheme Authority",
+      "AuthorizedDocuments": "Pension Card, Contribution Statement"
+    },
+    {
+      "EntityId": "ZRA-001",
+      "Name": "Zambia Revenue Authority",
+      "AuthorizedDocuments": "Tax Clearance, TPIN"
+    }
+  ]
+}

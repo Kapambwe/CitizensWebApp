@@ -1,0 +1,33 @@
+{
+  "formId": "FORM-PACRA-ANNUAL-RETURN-001",
+  "formName": "PACRA Annual Return (Form 71)",
+  "sections": [
+    {
+      "sectionTitle": "Company Identification",
+      "fields": [
+        { "id": "reg_no", "label": "Registration Number", "type": "text", "required": true, "bindingProperty": "RegistrationNumber" },
+        { "id": "co_name", "label": "Company Name", "type": "text", "required": true, "bindingProperty": "CompanyName" }
+      ]
+    },
+    {
+      "sectionTitle": "Return Period",
+      "fields": [
+        { "id": "return_year", "label": "Return Year", "type": "number", "required": true, "bindingProperty": "ReturnYear" },
+        { "id": "made_up_date", "label": "Date Return Made Up To", "type": "date", "required": true, "bindingProperty": "MadeUpDate" }
+      ]
+    },
+    {
+      "sectionTitle": "Status Confirmation",
+      "fields": [
+        { "id": "is_active", "label": "Is the company still active?", "type": "select", "required": true, "bindingProperty": "IsActive", "options": [{ "value": "true", "text": "Yes" }, { "value": "false", "text": "No" }] },
+        { "id": "address_changed", "label": "Has the registered address changed?", "type": "select", "required": true, "bindingProperty": "AddressChanged", "options": [{ "value": "true", "text": "Yes" }, { "value": "false", "text": "No" }] }
+      ]
+    },
+    {
+      "sectionTitle": "Declaration",
+      "fields": [
+        { "id": "signature", "label": "Signature of Director/Secretary", "type": "signature", "required": true, "bindingProperty": "CitizenSignature" }
+      ]
+    }
+  ]
+}

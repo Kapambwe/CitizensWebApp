@@ -1,0 +1,40 @@
+{
+  "formId": "FORM-LAND-CONV-ANNEX-A",
+  "formName": "Annexure A: Application to Convert Customary Land to Leasehold (Individuals)",
+  "sections": [
+    {
+      "sectionTitle": "Applicant Identification",
+      "fields": [
+        { "id": "app_name", "label": "Full Name of Applicant", "type": "text", "required": true, "bindingProperty": "ApplicantName" },
+        { "id": "app_nrc", "label": "NRC / Passport Number", "type": "text", "required": true, "bindingProperty": "ApplicantNrc" },
+        { "id": "app_nationality", "label": "Nationality", "type": "text", "required": true, "bindingProperty": "Nationality" }
+      ]
+    },
+    {
+      "sectionTitle": "Traditional Authority Details",
+      "fields": [
+        { "id": "chief_name", "label": "Name of Chief", "type": "text", "required": true, "bindingProperty": "ChiefName" },
+        { "id": "village_name", "label": "Village / Locality", "type": "text", "required": true, "bindingProperty": "VillageName" },
+        { "id": "district", "label": "District", "type": "text", "required": true, "bindingProperty": "District" }
+      ]
+    },
+    {
+      "sectionTitle": "Land Specification",
+      "fields": [
+        { "id": "land_size", "label": "Approximate Size (Hectares)", "type": "number", "required": true, "bindingProperty": "LandSizeHectares" },
+        { "id": "intended_use", "label": "Intended Use of Land", "type": "select", "required": true, "bindingProperty": "IntendedUse", "options": [
+          { "value": "Residential", "text": "Residential" },
+          { "value": "Agricultural", "text": "Agricultural" },
+          { "value": "Commercial", "text": "Commercial" }
+        ]}
+      ]
+    },
+    {
+      "sectionTitle": "Declaration",
+      "fields": [
+        { "id": "decl_confirm", "label": "I confirm that I have resided on this land for more than 5 years (where applicable)", "type": "select", "required": true, "bindingProperty": "ResidenceConfirmation", "options": [{ "value": "true", "text": "Yes" }, { "value": "false", "text": "No" }] },
+        { "id": "signature", "label": "Digital Signature of Applicant", "type": "signature", "required": true, "bindingProperty": "CitizenSignature" }
+      ]
+    }
+  ]
+}

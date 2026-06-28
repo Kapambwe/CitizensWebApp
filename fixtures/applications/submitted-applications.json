@@ -1,0 +1,93 @@
+[
+  {
+    "ApplicationId": "APP-SUB-0001",
+    "ApplicationType": "Business Permit",
+    "ApplicationTypeId": "PERMIT-BUSINESS-001",
+    "ApplicantNrc": "123456/78/1",
+    "ApplicantName": "John Mwale",
+    "SubmissionDate": "2026-05-21T08:30:00Z",
+    "DateSubmitted": "2026-05-21T08:30:00Z",
+    "Status": "Under Review",
+    "PaymentStatus": "Paid",
+    "PaymentAmount": 500.00,
+    "ApplicationFee": 500.00,
+    "IsPaymentRequired": true,
+    "TrackingNumber": "TRK-APP-SUB-0001",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "TenantName": "Lusaka City Council",
+    "RoutingQueueId": "LCC-GENERAL-QUEUE",
+    "RoutingQueueName": "Lusaka City Council General Intake",
+    "RoutingStatus": "Queued",
+    "ReviewerComments": "Queued for permits intake and supporting evidence review.",
+    "Documents": [
+      "business-registration.pdf",
+      "tax-clearance.pdf",
+      "lease-agreement.pdf"
+    ],
+    "DocumentUrls": [
+      "business-registration.pdf",
+      "tax-clearance.pdf",
+      "lease-agreement.pdf"
+    ]
+  },
+  {
+    "ApplicationId": "APP-SUB-0002",
+    "ApplicationType": "Manufacturing License",
+    "ApplicationTypeId": "LICENSE-MANUFACTURING-001",
+    "ApplicantNrc": "234567/89/1",
+    "ApplicantName": "Mary Banda",
+    "SubmissionDate": "2026-05-20T10:00:00Z",
+    "DateSubmitted": "2026-05-20T10:00:00Z",
+    "Status": "Payment Pending",
+    "PaymentStatus": "Pending",
+    "PaymentAmount": 1500.00,
+    "ApplicationFee": 1500.00,
+    "IsPaymentRequired": true,
+    "TrackingNumber": "TRK-APP-SUB-0002",
+    "TenantId": "MIN-INDUSTRY-ZM",
+    "TenantName": "Ministry of Industry & Agri-Business",
+    "RoutingQueueId": "MIN-INDUSTRY-LICENSING-QUEUE",
+    "RoutingQueueName": "Ministry of Industry Licensing Intake",
+    "RoutingStatus": "Payment Pending",
+    "ReviewerComments": "Awaiting application fee before routing to technical review.",
+    "Documents": [
+      "manufacturing-plan.pdf",
+      "zema-clearance.pdf"
+    ],
+    "DocumentUrls": [
+      "manufacturing-plan.pdf",
+      "zema-clearance.pdf"
+    ]
+  },
+  {
+    "ApplicationId": "APP-SUB-0003",
+    "ApplicationType": "CDF Secondary School Bursary",
+    "ApplicationTypeId": "CDF-BURSARY-001",
+    "ApplicantNrc": "345678/90/1",
+    "ApplicantName": "Peter Phiri",
+    "SubmissionDate": "2026-05-18T14:15:00Z",
+    "DateSubmitted": "2026-05-18T14:15:00Z",
+    "Status": "Under Review",
+    "PaymentStatus": "Not Required",
+    "PaymentAmount": 0.00,
+    "ApplicationFee": 0.00,
+    "IsPaymentRequired": false,
+    "TrackingNumber": "TRK-APP-SUB-0003",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "TenantName": "Lusaka City Council",
+    "RoutingQueueId": "LCC-GENERAL-QUEUE",
+    "RoutingQueueName": "Lusaka City Council General Intake",
+    "RoutingStatus": "Queued",
+    "ReviewerComments": "Forwarded to CDF committee for eligibility review.",
+    "Documents": [
+      "birth-certificate.pdf",
+      "parent-nrc.pdf",
+      "acceptance-letter.pdf"
+    ],
+    "DocumentUrls": [
+      "birth-certificate.pdf",
+      "parent-nrc.pdf",
+      "acceptance-letter.pdf"
+    ]
+  }
+]

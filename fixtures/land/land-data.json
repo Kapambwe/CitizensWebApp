@@ -1,0 +1,157 @@
+{
+  "properties": [
+    {
+      "propertyId": "PROP001",
+      "propertyNumber": "KAN/001/2024",
+      "plotNumber": "123/A",
+      "titleNumber": "LT-123456",
+      "titleDeedNumber": "LT-123456",
+      "latitude": -15.4167,
+      "longitude": 28.2833,
+      "gps": { "latitude": -15.4167, "longitude": 28.2833, "address": "Kanyama Main Road, Plot 123A", "ward": "Kanyama", "district": "Lusaka", "province": "Lusaka" },
+      "ownerName": "John Mwale",
+      "ownerNrc": "123456/78/1",
+      "ownerType": "Owner",
+      "address": "Kanyama Main Road, Plot 123A",
+      "ward": "Kanyama",
+      "district": "Lusaka",
+      "province": "Lusaka",
+      "propertyType": "Residential",
+      "landSize": 1200.00,
+      "landSizeUnit": "sqm",
+      "zoningClassification": "Residential Zone 1",
+      "approvedLandUse": "Residential",
+      "actualLandUse": "Residential",
+      "tenureType": "Leasehold",
+      "hasValidPermit": true,
+      "hasBuildingPermit": true,
+      "hasEncroachment": false,
+      "hasViolation": false,
+      "status": "Active",
+      "rates": 1200.50,
+      "nearbyAmenities": ["Kanyama Health Post", "Basic School", "Market"]
+    },
+    {
+      "propertyId": "PROP002",
+      "propertyNumber": "CHE/002/2024",
+      "plotNumber": "456/B",
+      "titleNumber": "LT-789012",
+      "titleDeedNumber": "LT-789012",
+      "latitude": -15.41,
+      "longitude": 28.3,
+      "gps": { "latitude": -15.41, "longitude": 28.3, "address": "Chelston Avenue, Plot 456B", "ward": "Chelston", "district": "Lusaka", "province": "Lusaka" },
+      "ownerName": "Mary Banda",
+      "ownerNrc": "234567/89/1",
+      "ownerType": "Owner",
+      "address": "Chelston Avenue, Plot 456B",
+      "ward": "Chelston",
+      "district": "Lusaka",
+      "province": "Lusaka",
+      "propertyType": "Commercial",
+      "landSize": 2500.00,
+      "landSizeUnit": "sqm",
+      "zoningClassification": "Commercial Zone 2",
+      "approvedLandUse": "Commercial",
+      "actualLandUse": "Commercial",
+      "tenureType": "Freehold",
+      "hasValidPermit": true,
+      "hasBuildingPermit": true,
+      "hasEncroachment": false,
+      "hasViolation": false,
+      "status": "Active",
+      "rates": 3500.75,
+      "nearbyAmenities": ["Chelston Shopping Centre", "Police Station", "Bus Stop"]
+    }
+  ],
+  "violationReports": [
+    {
+      "reportId": "VR001",
+      "complaintReferenceNumber": "CR-2024-001",
+      "propertyId": "PROP003",
+      "propertyAddress": "Meanwood Extension, Plot 789C",
+      "location": { "latitude": -15.38, "longitude": 28.32 },
+      "reporterName": "Anonymous",
+      "reporterContact": "0977111222",
+      "violationType": "Zoning Violation",
+      "description": "Running commercial shop in residential zone without permit",
+      "dateReported": "2024-04-30T10:00:00",
+      "status": "Under Investigation",
+      "severity": "Medium",
+      "assignedInspector": "Inspector James Mbewe"
+    }
+  ],
+  "complianceRecords": [
+    {
+      "propertyId": "PROP001",
+      "landId": "LND001",
+      "zoningClassification": "Residential Zone 1",
+      "complianceStatus": "Compliant",
+      "lastInspectionDate": "2023-11-30T10:00:00",
+      "inspectorName": "Inspector John Banda"
+    }
+  ],
+  "verifications": [
+    {
+      "verificationId": "VER001",
+      "propertyId": "PROP001",
+      "ownerName": "John Mwale",
+      "titleNumber": "LT-123456",
+      "isValid": true,
+      "verificationDate": "2024-05-30T10:00:00"
+    }
+  ],
+  "applications": [
+    {
+      "applicationId": "APP001",
+      "applicationNumber": "LND-APP-2024-001",
+      "applicationType": "Title Deed Issuance",
+      "propertyType": "Residential",
+      "district": "Lusaka",
+      "status": "Under Review",
+      "applicationDate": "2024-05-15T10:00:00",
+      "applicantContact": "0977123456"
+    }
+  ],
+  "payments": [
+    {
+      "transactionId": "PAY001",
+      "paymentReference": "GR-2024-8890",
+      "paymentType": "Ground Rent",
+      "amount": 1500.00,
+      "paymentMethod": "Mobile Money",
+      "status": "Completed",
+      "transactionDate": "2024-03-15T10:00:00",
+      "payerContact": "0977123456",
+      "receiptNumber": "REC-778899"
+    }
+  ],
+  "appointments": [
+    {
+      "appointmentId": "APT001",
+      "appointmentDate": "2024-06-15T00:00:00",
+      "appointmentTime": "10:30 AM",
+      "serviceType": "Title Deed Verification",
+      "location": "Mulungushi House, Lusaka",
+      "status": "Scheduled",
+      "applicantContact": "0977123456"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "FAQ001",
+      "question": "How do I apply for a Title Deed?",
+      "answer": "You can apply through the 'New Application' section in the dashboard.",
+      "category": "General"
+    }
+  ],
+  "feedbacks": [
+    {
+      "feedbackId": "FB001",
+      "feedbackType": "Complaint",
+      "subject": "Delay in processing",
+      "status": "Under Review",
+      "submissionDate": "2024-05-20T10:00:00",
+      "applicantContact": "0977123456"
+    }
+  ]
+}

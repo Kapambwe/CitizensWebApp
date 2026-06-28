@@ -1,0 +1,30 @@
+[
+  {
+    "ReceiptId": "rct-1",
+    "ReceiptNumber": "RCPT-202505250001",
+    "BillId": "5",
+    "BillNumber": "MTN-2025-4122",
+    "IssuerName": "MTN Mobile Money",
+    "PayerReference": "WALLET-101",
+    "PaidAmount": 250.00,
+    "Method": "Mobile Money",
+    "PaymentDate": "2025-05-25T10:15:00",
+    "VerificationCode": "A1B2C3D4E5F6",
+    "PdfUrl": "/receipts/RCPT-202505250001.pdf",
+    "QrUrl": "/receipts/RCPT-202505250001.png"
+  },
+  {
+    "ReceiptId": "rct-2",
+    "ReceiptNumber": "RCPT-202505180044",
+    "BillId": "2",
+    "BillNumber": "ZESCO-2025-0044",
+    "IssuerName": "ZESCO",
+    "PayerReference": "ACC-778812",
+    "PaidAmount": 1400.00,
+    "Method": "Bank Transfer",
+    "PaymentDate": "2025-05-18T14:45:00",
+    "VerificationCode": "Z9Y8X7W6V5U4",
+    "PdfUrl": "/receipts/RCPT-202505180044.pdf",
+    "QrUrl": "/receipts/RCPT-202505180044.png"
+  }
+]

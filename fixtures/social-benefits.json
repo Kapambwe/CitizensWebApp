@@ -1,0 +1,125 @@
+{
+  "Programs": [
+    {
+      "Id": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
+      "Name": "Basic Income Support (Social Cash Transfer)",
+      "Description": "Provides a monthly cash transfer to eligible low-income citizens and vulnerable households.",
+      "EligibilityCriteria": "Must be over 18, unemployed or earning below minimum wage.",
+      "BenefitAmount": 800.00,
+      "BenefitType": "Cash",
+      "Frequency": "Monthly",
+      "StartDate": "2023-01-01T00:00:00",
+      "IsActive": true,
+      "ServiceId": "basic-income-support"
+    },
+    {
+      "Id": "b0eebc99-9c0b-4ef8-bb6d-6bb9bd380a22",
+      "Name": "Elderly Pension Scheme",
+      "Description": "Monthly pension for citizens over 65 years of age.",
+      "EligibilityCriteria": "Must be over 65, resident citizen.",
+      "BenefitAmount": 450.00,
+      "BenefitType": "Pension",
+      "Frequency": "Monthly",
+      "StartDate": "2020-01-01T00:00:00",
+      "IsActive": true,
+      "ServiceId": "elderly-pension-scheme"
+    },
+    {
+      "Id": "c0eebc99-9c0b-4ef8-bb6d-6bb9bd380a33",
+      "Name": "Child Support Grant",
+      "Description": "Financial assistance for guardians of minor children.",
+      "EligibilityCriteria": "Guardian of a child under 18, income-tested.",
+      "BenefitAmount": 250.00,
+      "BenefitType": "Cash",
+      "Frequency": "Monthly",
+      "StartDate": "2022-05-01T00:00:00",
+      "IsActive": true,
+      "ServiceId": "child-support-grant"
+    },
+    {
+      "Id": "d0eebc99-9c0b-4ef8-bb6d-6bb9bd380a44",
+      "Name": "CDF Secondary School Bursary",
+      "Description": "Constituency Development Fund support for boarding fees and school requirements.",
+      "EligibilityCriteria": "Resident in constituency, vulnerable student status.",
+      "BenefitAmount": 1500.00,
+      "BenefitType": "Bursary",
+      "Frequency": "Termly",
+      "StartDate": "2024-01-01T00:00:00",
+      "IsActive": true,
+      "ServiceId": "cdf-bursary"
+    },
+    {
+      "Id": "e0eebc99-9c0b-4ef8-bb6d-6bb9bd380a55",
+      "Name": "University Higher Education Loan",
+      "Description": "Tuition and meal allowance support for public university students.",
+      "EligibilityCriteria": "Accepted into public university, Zambian citizen.",
+      "BenefitAmount": 12000.00,
+      "BenefitType": "Bursary/Loan",
+      "Frequency": "Per Semester",
+      "StartDate": "2022-01-01T00:00:00",
+      "IsActive": true,
+      "ServiceId": "university-bursary"
+    },
+    {
+      "Id": "f0eebc99-9c0b-4ef8-bb6d-6bb9bd380a66",
+      "Name": "Farmer Input Support Programme (FISP)",
+      "Description": "Subsidized agricultural inputs (fertilizer and seed) for small-scale farmers.",
+      "EligibilityCriteria": "Small-scale farmer, registered with a cooperative, minimum land requirement.",
+      "BenefitAmount": 2100.00,
+      "BenefitType": "Subsidized Inputs",
+      "Frequency": "Annual",
+      "StartDate": "2021-10-01T00:00:00",
+      "IsActive": true,
+      "ServiceId": "fisp-program"
+    }
+  ],
+  "Applications": [
+    {
+      "Id": "11111111-2222-3333-4444-555555555555",
+      "CitizenId": "12345678-1234-1234-1234-123456789012",
+      "ProgramId": "d0eebc99-9c0b-4ef8-bb6d-6bb9bd380a44",
+      "ApplicationDate": "2026-04-12T10:00:00",
+      "Status": "Approved"
+    },
+    {
+      "Id": "22222222-3333-4444-5555-666666666666",
+      "CitizenId": "12345678-1234-1234-1234-123456789012",
+      "ProgramId": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
+      "ApplicationDate": "2025-12-12T10:00:00",
+      "Status": "Approved"
+    },
+    {
+      "Id": "33333333-4444-5555-6666-777777777777",
+      "CitizenId": "12345678-1234-1234-1234-123456789012",
+      "ProgramId": "f0eebc99-9c0b-4ef8-bb6d-6bb9bd380a66",
+      "ApplicationDate": "2025-10-12T10:00:00",
+      "Status": "Approved"
+    }
+  ],
+  "Disbursements": [
+    {
+      "Id": "d1111111-2222-3333-4444-555555555555",
+      "ApplicationId": "11111111-2222-3333-4444-555555555555",
+      "Amount": 1500.00,
+      "DisbursementDate": "2026-05-28T09:00:00",
+      "Method": "Bank Transfer (Zanaco)",
+      "Status": "Completed"
+    },
+    {
+      "Id": "d2222222-3333-4444-5555-666666666666",
+      "ApplicationId": "22222222-3333-4444-5555-666666666666",
+      "Amount": 800.00,
+      "DisbursementDate": "2026-05-28T09:00:00",
+      "Method": "Mobile Money (Airtel)",
+      "Status": "Completed"
+    },
+    {
+      "Id": "d3333333-4444-5555-6666-777777777777",
+      "ApplicationId": "33333333-4444-5555-6666-777777777777",
+      "Amount": 2100.00,
+      "DisbursementDate": "2026-05-28T09:00:00",
+      "Method": "Cooperative Distribution",
+      "Status": "Completed"
+    }
+  ]
+}

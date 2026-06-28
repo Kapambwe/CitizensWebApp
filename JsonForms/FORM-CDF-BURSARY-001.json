@@ -1,0 +1,33 @@
+{
+  "FormId": "FORM-CDF-BURSARY-001",
+  "FormName": "Secondary Boarding School Bursary Application",
+  "Sections": [
+    {
+      "SectionTitle": "Student Information",
+      "Fields": [
+        { "Id": "first_name", "Label": "Student First Name", "Type": "text", "Required": true, "BindingProperty": "FirstName", "Placeholder": "Verified from NRC" },
+        { "Id": "surname", "Label": "Student Surname", "Type": "text", "Required": true, "BindingProperty": "Surname" },
+        { "Id": "dob", "Label": "Date of Birth", "Type": "date", "Required": true, "BindingProperty": "DateOfBirth" },
+        { "Id": "sex", "Label": "Sex", "Type": "select", "Required": true, "BindingProperty": "Sex", "Options": [
+          { "Value": "Male", "Text": "Male" }, { "Value": "Female", "Text": "Female" }
+        ]}
+      ]
+    },
+    {
+      "SectionTitle": "School & Ward Details",
+      "Fields": [
+        { "Id": "school_name", "Label": "Name of School", "Type": "text", "Required": true, "BindingProperty": "SchoolName" },
+        { "Id": "grade", "Label": "Current/Target Grade", "Type": "text", "Required": true, "BindingProperty": "Grade" },
+        { "Id": "ward", "Label": "Residential Ward", "Type": "text", "Required": true, "BindingProperty": "Ward" },
+        { "Id": "constituency", "Label": "Constituency", "Type": "text", "Required": true, "BindingProperty": "Constituency" }
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        { "Id": "decl_date", "Label": "Declaration Date", "Type": "date", "Required": true, "BindingProperty": "DeclarationDate" },
+        { "Id": "signature", "Label": "Signature", "Type": "signature", "Required": true, "BindingProperty": "CitizenSignature" }
+      ]
+    }
+  ]
+}

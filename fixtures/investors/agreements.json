@@ -1,0 +1,22 @@
+{
+  "Agreements": [
+    {
+      "Id": "AGR-DEMO-001",
+      "ProjectId": "A1",
+      "ProjectTitle": "Zambia Wheat Farm Initiative",
+      "EntrepreneurId": "12345678-1234-1234-1234-123456789012",
+      "EntrepreneurName": "Abraham Mwale",
+      "InvestorName": "Lusaka Equity Partners",
+      "InvestorId": "88888888-4444-4444-4444-888888888888",
+      "InvestmentAmount": 5000000.0,
+      "EquityPercent": 12.5,
+      "Terms": "Seed round funding for irrigation equipment. 12.5% equity stake with one board seat.",
+      "Status": 2,
+      "CreatedDate": "2026-06-01T09:00:00Z",
+      "EntrepreneurSigned": true,
+      "EntrepreneurSignatureDid": "did:key:z6MkhfAbrahamMwale123456789",
+      "EntrepreneurSignedAt": "2026-06-02T10:00:00Z",
+      "InvestorSigned": false
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "formId": "cdf-community-projects-application-form",
+  "formName": "Constituency Development Fund (CDF) Application Form for Community Projects",
+  "sections": [
+    {
+      "sectionTitle": "Official Use Only (Header)",
+      "fields": [
+        {
+          "id": "projectIdentificationNumber",
+          "label": "Project identification number (for official use only):",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.ProjectIdentificationNumber"
+        },
+        {
+          "id": "cpZoneWardCodeNumber",
+          "label": "CP/Zone/Ward Code Number:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.CpZoneWardCodeNumber"
+        },
+        {
+          "id": "dateOfApplication",
+          "label": "Date of Application:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Application.DateOfApplication"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "SECTION A: GENERAL PROPOSAL DETAILS (To be filled by the applicant)",
+      "fields": [
+        {
+          "id": "communityName",
+          "label": "Name of Community making the proposal:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Proposal.CommunityName"
+        },
+        {
+          "id": "district",
+          "label": "Name of District:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Proposal.Location.District"
+        },
+        {
+          "id": "constituency",
+          "label": "Name of Constituency:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Proposal.Location.Constituency"
+        },
+        {
+          "id": "ward",
+          "label": "Name of Ward:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Proposal.Location.Ward"
+        },
+        {
+          "id": "zone",
+          "label": "Name of Zone:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Proposal.Location.Zone"
+        },
+        {
+          "id": "landTitleOwnership",
+          "label": "Land Title/Ownership (where applicable):",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Proposal.LandTitleOwnership"
+        },
+        {
+          "id": "projectTypeSector",
+          "label": "Type of Project (which sector does it fall in e.g. Water, Education or Health):",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Proposal.ProjectTypeSector"
+        },
+        {
+          "id": "estimatedBeneficiaryPopulation",
+          "label": "Estimated population benefiting from the project:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Proposal.EstimatedBeneficiaryPopulation"
+        },
+        {
+          "id": "hasPriorProjectInvolvement",
+          "label": "Has the community been involved in any community based project before? (If yes please give details):",
+          "type": "textarea",
+          "required": false,
+          "bindingProperty": "Proposal.HasPriorProjectInvolvement"
+        },
+        {
+          "id": "hasPriorFunding",
+          "label": "Has the Community received any funding from any organization? (If yes which organization and when and for what activities?):",
+          "type": "textarea",
+          "required": false,
+          "bindingProperty": "Proposal.HasPriorFunding"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "SECTION B: PROJECT IDENTIFICATION",
+      "fields": [
+        {
+          "id": "mainAreaProblems",
+          "label": "What are the main problems in the area?:",
+          "type": "textarea",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.MainAreaProblems"
+        },
+        {
+          "id": "addressedProblemExplanation",
+          "label": "Which of these problems is the proposed project trying to address and how?:",
+          "type": "textarea",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.AddressedProblemExplanation"
+        },
+        {
+          "id": "projectIdentificationMethod",
+          "label": "How did the community identify the project? (Attach minutes where applicable):",
+          "type": "textarea",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.ProjectIdentificationMethod"
+        },
+        {
+          "id": "hasPreviousImplementation",
+          "label": "Has anything been done before to address the problem and if any, was it successfully implemented? Yes/No:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.HasPreviousImplementation"
+        },
+        {
+          "id": "previousImplementationExplanation",
+          "label": "Explain (previous implementation history):",
+          "type": "textarea",
+          "required": false,
+          "bindingProperty": "ProjectIdentification.PreviousImplementationExplanation"
+        },
+        {
+          "id": "projectBeneficiaries",
+          "label": "State the beneficiaries of the proposed project?:",
+          "type": "textarea",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.ProjectBeneficiaries"
+        },
+        {
+          "id": "estimatedProjectCost",
+          "label": "What is the estimated cost of the project: ZMK:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.EstimatedProjectCost"
+        },
+        {
+          "id": "communityContributionDetails",
+          "label": "How will the Community contribute towards the cost of the project? (In terms of maintenance fees, water supply, labor etc.):",
+          "type": "textarea",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.CommunityContributionDetails"
+        },
+        {
+          "id": "projectCommitteeMembers",
+          "label": "Proposed Project Committee Members (List details for up to 10 members including S/No, Name, Position, Sex, NRC, Signature):",
+          "type": "textarea",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.ProjectCommitteeMembers"
+        },
+        {
+          "id": "projectSustainabilityStrategy",
+          "label": "How will the community ensure project sustainability?:",
+          "type": "textarea",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.ProjectSustainabilityStrategy"
+        },
+        {
+          "id": "proposerName",
+          "label": "Contact Person - Proposer Name:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.ContactProposer.Name"
+        },
+        {
+          "id": "proposerNrc",
+          "label": "Contact Person - Proposer NRC No.:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.ContactProposer.NrcNo"
+        },
+        {
+          "id": "proposerAddress",
+          "label": "Contact Person - Proposer Address:",
+          "type": "textarea",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.ContactProposer.Address"
+        },
+        {
+          "id": "proposerPhone",
+          "label": "Contact Person - Proposer Phone:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.ContactProposer.Phone"
+        },
+        {
+          "id": "proposerDate",
+          "label": "Contact Person - Proposer Date:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.ContactProposer.Date"
+        },
+        {
+          "id": "seconderName",
+          "label": "Contact Person - Seconder Name:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.ContactSeconder.Name"
+        },
+        {
+          "id": "seconderNrc",
+          "label": "Contact Person - Seconder NRC No.:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.ContactSeconder.NrcNo"
+        },
+        {
+          "id": "seconderAddress",
+          "label": "Contact Person - Seconder Address:",
+          "type": "textarea",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.ContactSeconder.Address"
+        },
+        {
+          "id": "seconderPhone",
+          "label": "Contact Person - Seconder Phone:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.ContactSeconder.Phone"
+        },
+        {
+          "id": "seconderDate",
+          "label": "Contact Person - Seconder Date:",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "ProjectIdentification.ContactSeconder.Date"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "SECTION C: RECOMMENDATION BY THE WARD DEVELOPMENT COMMITTEE",
+      "fields": [
+        {
+          "id": "wdcRecommendationStatus",
+          "label": "Recommended/Not Recommended/Deferred:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Wdc.RecommendationStatus"
+        },
+        {
+          "id": "wdcReasons",
+          "label": "Reasons:",
+          "type": "textarea",
+          "required": false,
+          "bindingProperty": "Official.Wdc.Reasons"
+        },
+        {
+          "id": "wdcChairpersonName",
+          "label": "Name (Chairperson):",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Wdc.ChairpersonName"
+        },
+        {
+          "id": "wdcSignature",
+          "label": "Sign:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Wdc.Signature"
+        },
+        {
+          "id": "wdcDate",
+          "label": "Date:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Wdc.Date"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "SECTION D: DECISION BY THE CONSTITUENCY DEVELOPMENT FUND COMMITTEE",
+      "fields": [
+        {
+          "id": "cdfcApprovalStatus",
+          "label": "Approved/Not Approved:",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Cdfc.ApprovalStatus"
+        },
+        {
+          "id": "cdfcReasons",
+          "label": "Reasons:",
+          "type": "textarea",
+          "required": false,
+          "bindingProperty": "Official.Cdfc.Reasons"
+        },
+        {
+          "id": "cdfcChairpersonName",
+          "label": "Name (Chairperson):",
+          "type": "text",
+          "required": false,
+          "bindingProperty": "Official.Cdfc.ChairpersonName"
+        }
+      ]
+    }
+  ]
+}

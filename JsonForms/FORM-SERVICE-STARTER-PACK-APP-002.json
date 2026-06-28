@@ -1,0 +1,31 @@
+{
+  "FormId": "FORM-SERVICE-STARTER-PACK-APP-002",
+  "FormName": "Public School Desk Manufacturing Application",
+  "Sections": [
+    {
+      "SectionTitle": "Workshop Information",
+      "Fields": [
+        { "Id": "applicantName", "Label": "Lead Carpenter / Owner Name:", "Type": "text", "Required": true, "BindingProperty": "Applicant.Name", "Placeholder": "Verified from NRC" },
+        { "Id": "workshopName", "Label": "Workshop / Business Name:", "Type": "text", "Required": true, "BindingProperty": "Business.Name", "Placeholder": "Verified from PACRA" },
+        { "Id": "district", "Label": "Operating District:", "Type": "text", "Required": true, "BindingProperty": "Business.District" }
+      ]
+    },
+    {
+      "SectionTitle": "Production Capacity",
+      "Fields": [
+        { "Id": "currentDesks", "Label": "Current Production Capacity (Desks per Month):", "Type": "number", "Required": true, "BindingProperty": "Production.CurrentCapacity" },
+        { "Id": "rawMaterialSource", "Label": "Primary Source of Timber:", "Type": "text", "Required": true, "BindingProperty": "Production.MaterialSource" },
+        { "Id": "needsCredit", "Label": "Do you require a Raw Material Line of Credit?", "Type": "select", "Required": true, "BindingProperty": "Financial.NeedsCredit", "Options": [
+          { "Value": "Yes", "Text": "Yes" }, { "Value": "No", "Text": "No" }
+        ]}
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        { "Id": "declDate", "Label": "Date:", "Type": "date", "Required": true, "BindingProperty": "Declaration.Date" },
+        { "Id": "signature", "Label": "Signature:", "Type": "signature", "Required": true, "BindingProperty": "Declaration.Signature" }
+      ]
+    }
+  ]
+}

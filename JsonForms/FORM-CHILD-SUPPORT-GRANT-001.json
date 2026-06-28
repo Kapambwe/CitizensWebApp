@@ -1,0 +1,13 @@
+{
+  "FormId": "FORM-CHILD-SUPPORT-GRANT-001",
+  "FormName": "Child Support Grant Application",
+  "Sections": [
+    {
+      "SectionTitle": "Guardian Details",
+      "Fields": [
+        { "Id": "guardianName", "Label": "Guardian Name", "Type": "text", "Required": true, "BindingProperty": "Guardian.FullName" },
+        { "Id": "childName", "Label": "Child Name", "Type": "text", "Required": true, "BindingProperty": "Child.FullName" }
+      ]
+    }
+  ]
+}

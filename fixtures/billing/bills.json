@@ -1,0 +1,131 @@
+[
+  {
+    "BillId": "1",
+    "BillNumber": "SHOPRITE-2025-0001",
+    "Issuer": {
+      "IssuerId": "SHOPRITE-ZM",
+      "IssuerName": "Shoprite Zambia",
+      "IssuerType": "Supermarket"
+    },
+    "CustomerReference": "CUST-001",
+    "CustomerName": "Zambia Mining Corp",
+    "CustomerEmail": "accounts@zambiamining.co.zm",
+    "SourceType": "Supermarket",
+    "Currency": "ZMW",
+    "IssueDate": "2025-05-20T00:00:00",
+    "DueDate": "2025-05-30T00:00:00",
+    "Status": "Pending",
+    "TotalAmount": 1250.75,
+    "OutstandingAmount": 1250.75,
+    "CanPartialPay": true,
+    "AllowQrPayment": true,
+    "QrPayload": "qr://bill/1?issuer=SHOPRITE-ZM",
+    "LineItems": [
+      { "Description": "Groceries", "Quantity": 1, "UnitPrice": 980.50 },
+      { "Description": "Delivery fee", "Quantity": 1, "UnitPrice": 120.25 },
+      { "Description": "VAT", "Quantity": 1, "UnitPrice": 150.00 }
+    ]
+  },
+  {
+    "BillId": "2",
+    "BillNumber": "ZESCO-2025-0044",
+    "Issuer": {
+      "IssuerId": "ZESCO",
+      "IssuerName": "ZESCO",
+      "IssuerType": "Utility"
+    },
+    "CustomerReference": "ACC-778812",
+    "CustomerName": "Copperbelt Agro Processing",
+    "CustomerEmail": "finance@copperbeltagro.com",
+    "SourceType": "Utility",
+    "Currency": "ZMW",
+    "IssueDate": "2025-05-18T00:00:00",
+    "DueDate": "2025-06-02T00:00:00",
+    "Status": "Partially Paid",
+    "TotalAmount": 2150.00,
+    "OutstandingAmount": 750.00,
+    "CanPartialPay": true,
+    "AllowQrPayment": true,
+    "QrPayload": "qr://bill/2?issuer=ZESCO",
+    "LineItems": [
+      { "Description": "Electricity usage", "Quantity": 1, "UnitPrice": 1800.00 },
+      { "Description": "Service charge", "Quantity": 1, "UnitPrice": 350.00 }
+    ]
+  },
+  {
+    "BillId": "3",
+    "BillNumber": "LCC-2025-9012",
+    "Issuer": {
+      "IssuerId": "LCC",
+      "IssuerName": "Lusaka City Council",
+      "IssuerType": "Council"
+    },
+    "CustomerReference": "PLOT-123-IND",
+    "CustomerName": "Lusaka Manufacturing Ltd",
+    "CustomerEmail": "procurement@lusakamanufacturing.com",
+    "SourceType": "Council",
+    "Currency": "ZMW",
+    "IssueDate": "2025-05-12T00:00:00",
+    "DueDate": "2025-05-29T00:00:00",
+    "Status": "Pending",
+    "TotalAmount": 4200.00,
+    "OutstandingAmount": 4200.00,
+    "CanPartialPay": true,
+    "AllowQrPayment": true,
+    "QrPayload": "qr://bill/3?issuer=LCC",
+    "LineItems": [
+      { "Description": "Property rates", "Quantity": 1, "UnitPrice": 3500.00 },
+      { "Description": "Waste collection levy", "Quantity": 1, "UnitPrice": 700.00 }
+    ]
+  },
+  {
+    "BillId": "4",
+    "BillNumber": "ZRA-2025-1005",
+    "Issuer": {
+      "IssuerId": "ZRA",
+      "IssuerName": "Zambia Revenue Authority",
+      "IssuerType": "Government"
+    },
+    "CustomerReference": "TPIN-998877",
+    "CustomerName": "Southern Farms Cooperative",
+    "CustomerEmail": "admin@southernfarms.co.zm",
+    "SourceType": "Government",
+    "Currency": "ZMW",
+    "IssueDate": "2025-05-10T00:00:00",
+    "DueDate": "2025-06-10T00:00:00",
+    "Status": "Pending",
+    "TotalAmount": 9800.00,
+    "OutstandingAmount": 9800.00,
+    "CanPartialPay": false,
+    "AllowQrPayment": true,
+    "QrPayload": "qr://bill/4?issuer=ZRA",
+    "LineItems": [
+      { "Description": "Tax assessment", "Quantity": 1, "UnitPrice": 9800.00 }
+    ]
+  },
+  {
+    "BillId": "5",
+    "BillNumber": "MTN-2025-4122",
+    "Issuer": {
+      "IssuerId": "MTN-MONEY",
+      "IssuerName": "MTN Mobile Money",
+      "IssuerType": "Merchant"
+    },
+    "CustomerReference": "WALLET-101",
+    "CustomerName": "North-Western Minerals",
+    "CustomerEmail": "accounts@nwminerals.co.zm",
+    "SourceType": "Merchant",
+    "Currency": "ZMW",
+    "IssueDate": "2025-05-25T00:00:00",
+    "DueDate": "2025-05-25T23:59:59",
+    "Status": "Paid",
+    "TotalAmount": 250.00,
+    "OutstandingAmount": 0,
+    "CanPartialPay": true,
+    "AllowQrPayment": true,
+    "QrPayload": "qr://bill/5?issuer=MTN-MONEY",
+    "LineItems": [
+      { "Description": "Transfer fee", "Quantity": 1, "UnitPrice": 250.00 }
+    ]
+  }
+]

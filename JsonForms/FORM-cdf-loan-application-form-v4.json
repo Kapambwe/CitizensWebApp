@@ -1,0 +1,594 @@
+{
+  "FormId": "cdf-loan-application-form",
+  "FormName": "Constituency Development Fund Loan Application Form for Youth, Women and Community Empowerment",
+  "Sections": [
+    {
+      "SectionTitle": "Official Use Only (Header)",
+      "Fields": [
+        {
+          "Id": "projectIdentificationNumber",
+          "Label": "Project Identification Number (for official use):",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.ProjectIdentificationNumber"
+        },
+        {
+          "Id": "yeZoneWardCodeNumber",
+          "Label": "YE/Zone/Ward Code Number:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.YeZoneWardCodeNumber"
+        },
+        {
+          "Id": "weZoneWardCodeNumber",
+          "Label": "WE/Zone/Ward Code Number:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.WeZoneWardCodeNumber"
+        },
+        {
+          "Id": "ceZoneWardCodeNumber",
+          "Label": "CE/Zone/Ward Code Number:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.CeZoneWardCodeNumber"
+        }
+      ]
+    },
+    {
+      "SectionTitle": "SECTION A. GENERAL DETAILS (TO BE COMPLETED BY THE APPLICANT)",
+      "Fields": [
+        {
+          "Id": "businessName",
+          "Label": "Name of Business/Organisation/Company/Group/Cooperative/Club:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.BusinessName"
+        },
+        {
+          "Id": "legalForm",
+          "Label": "Legal form of applicant (Limited Company (SME)/Group /Cooperative/club):",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.LegalForm"
+        },
+        {
+          "Id": "registrationDate",
+          "Label": "Date of Company/Group/Cooperative/Club Registration:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.RegistrationDate"
+        },
+        {
+          "Id": "tpin",
+          "Label": "TPIN:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.Tpin"
+        },
+        {
+          "Id": "shareholdersMembersList",
+          "Label": "Shareholders of the Company/Members of a Group/Cooperative/Club (List details including Full Names, NRC/Passport No, % Shareholding, Position, Disability Status):",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "Applicant.ShareholdersMembersList"
+        },
+        {
+          "Id": "contactPersonName",
+          "Label": "Authorized Representative - Name of Contact Person:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.ContactPerson.Name"
+        },
+        {
+          "Id": "contactPersonPosition",
+          "Label": "Authorized Representative - Position in the Business:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.ContactPerson.Position"
+        },
+        {
+          "Id": "contactPersonCell",
+          "Label": "Authorized Representative - Contact Number (Cell):",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.ContactPerson.Cell"
+        },
+        {
+          "Id": "contactPersonTelephone",
+          "Label": "Authorized Representative - Contact Number (Telephone):",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Applicant.ContactPerson.Telephone"
+        },
+        {
+          "Id": "contactPersonEmail",
+          "Label": "Authorized Representative - Email:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Applicant.ContactPerson.Email"
+        },
+        {
+          "Id": "district",
+          "Label": "Project Location - Name of District:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.ProjectLocation.District"
+        },
+        {
+          "Id": "constituency",
+          "Label": "Project Location - Name of Constituency:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.ProjectLocation.Constituency"
+        },
+        {
+          "Id": "ward",
+          "Label": "Project Location - Name of Ward:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.ProjectLocation.Ward"
+        },
+        {
+          "Id": "zone",
+          "Label": "Project Location - Name of Zone:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.ProjectLocation.Zone"
+        },
+        {
+          "Id": "physicalAddress",
+          "Label": "Project Location - Physical address:",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "Applicant.ProjectLocation.PhysicalAddress"
+        }
+      ]
+    },
+    {
+      "SectionTitle": "SECTION B: DETAILS OF LOAN APPLICATION",
+      "Fields": [
+        {
+          "Id": "loanAmount",
+          "Label": "Loan application amount (in figures and words):",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "LoanDetails.Amount"
+        },
+        {
+          "Id": "businessDescription",
+          "Label": "Description of business (eg. Pottery, Piggery, Carpentry, Tailoring, Metal Fabrication etc):",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "LoanDetails.BusinessDescription"
+        },
+        {
+          "Id": "businessStatus",
+          "Label": "Indicate whether the Company/Cooperative/Club is an existing one or a start-up:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "LoanDetails.BusinessStatus"
+        },
+        {
+          "Id": "loanPurpose",
+          "Label": "Purpose of the loan (eg. To start or expand a Pottery business, buy sewing machine, to buy metal fabrication equipment etc.):",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "LoanDetails.LoanPurpose"
+        },
+        {
+          "Id": "repaymentPeriod",
+          "Label": "Repayment period (time period for paying back the loan):",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "LoanDetails.RepaymentPeriod"
+        },
+        {
+          "Id": "repaymentSource",
+          "Label": "Source of funds for repayment of Loan (funds realized from the business and any other source):",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "LoanDetails.RepaymentSource"
+        },
+        {
+          "Id": "collateral",
+          "Label": "Collateral if any (eg assets such as land, equipment etc):",
+          "Type": "textarea",
+          "Required": false,
+          "BindingProperty": "LoanDetails.Collateral"
+        },
+        {
+          "Id": "capitalExpenditureBreakdown",
+          "Label": "Financials - Breakdown of Capital Expenditure of Business Proposal (Table details including Cost Description, Quantity, Unit Cost, Total Cost):",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "Financials.CapitalExpenditureBreakdown"
+        },
+        {
+          "Id": "projectedProductionLevel",
+          "Label": "Financials - Projected level of production (Table details by product, months and years):",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "Financials.ProjectedProductionLevel"
+        },
+        {
+          "Id": "salesProjections",
+          "Label": "Financials - Sales Projections for the duration of the loan in years (Table details including Sales Quantity, Unit Price, Total Sales):",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "Financials.SalesProjections"
+        },
+        {
+          "Id": "operatingCostsProjections",
+          "Label": "Financials - Projections of total operating costs for the duration of the loan (Table details including Description of costs, Operating costs):",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "Financials.OperatingCostsProjections"
+        },
+        {
+          "Id": "currentMonthlyRevenue",
+          "Label": "Financial data of current business operations - Monthly revenue (if any):",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Financials.CurrentBusiness.MonthlyRevenue"
+        },
+        {
+          "Id": "currentOperatingCosts",
+          "Label": "Financial data of current business operations - Total operating costs:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Financials.CurrentBusiness.TotalOperatingCosts"
+        },
+        {
+          "Id": "currentNetProfit",
+          "Label": "Financial data of current business operations - Total Net Profit:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Financials.CurrentBusiness.TotalNetProfit"
+        },
+        {
+          "Id": "currentInvestmentAmount",
+          "Label": "Financial data of current business operations - Total Amount invested:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Financials.CurrentBusiness.InvestmentAmount"
+        },
+        {
+          "Id": "currentInvestmentBreakdown",
+          "Label": "Financial data of current business operations - Breakdown of current investment (eg. Land, Assets, equipment, Vehicles, tractors):",
+          "Type": "textarea",
+          "Required": false,
+          "BindingProperty": "Financials.CurrentBusiness.InvestmentBreakdown"
+        },
+        {
+          "Id": "isPreviousCdfBeneficiary",
+          "Label": "Is Applicant or any of its shareholders/ members already beneficiary of a Loan or Grant under CDF Empowerment Fund? (Yes/No):",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "History.IsPreviousCdfBeneficiary"
+        },
+        {
+          "Id": "previousCdfDetails",
+          "Label": "If Yes give details (Name of Business/Cooperative/Club, Status of Loan):",
+          "Type": "textarea",
+          "Required": false,
+          "BindingProperty": "History.PreviousCdfDetails"
+        },
+        {
+          "Id": "proposedManagementTeam",
+          "Label": "Proposed Management Team (Table details including Full Name, Management Position, Qualification and Experience):",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "BusinessImpact.ProposedManagementTeam"
+        },
+        {
+          "Id": "customerImpactDescription",
+          "Label": "Business benefits/ impact on: Customers:",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "BusinessImpact.Customers"
+        },
+        {
+          "Id": "supplierImpactDescription",
+          "Label": "Business benefits/ impact on: Suppliers:",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "BusinessImpact.Suppliers"
+        },
+        {
+          "Id": "employmentImpactTable",
+          "Label": "Employment Impact breakdown (Number of workers: Women, Men, Youth, Disabled Before and After CDF Funding):",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "BusinessImpact.EmploymentTable"
+        },
+        {
+          "Id": "capitalThresholdOption",
+          "Label": "Capital Threshold and Repayment Period Option Selection (Select ZMW range: 5,000-10,000 / 10,001-25,000 / 25,001-50,000 / 50,001-100,000 / 100,001-200,000):",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "LoanDetails.CapitalThresholdOption"
+        },
+        {
+          "Id": "operationsStartTimeline",
+          "Label": "If you are funded, when would operations start? (Within 1-3 months / Within 3-6 months / Within 6-9 months / More than 9 months):",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "LoanDetails.OperationsStartTimeline"
+        }
+      ]
+    },
+    {
+      "SectionTitle": "SECTION C: BANK DETAILS OF APPLICANT",
+      "Fields": [
+        {
+          "Id": "bankName",
+          "Label": "Bank Name:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "BankDetails.BankName"
+        },
+        {
+          "Id": "branch",
+          "Label": "Branch:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "BankDetails.Branch"
+        },
+        {
+          "Id": "sortBranchCode",
+          "Label": "Sort/Branch Code:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "BankDetails.SortBranchCode"
+        },
+        {
+          "Id": "swiftCode",
+          "Label": "Swift Code:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "BankDetails.SwiftCode"
+        },
+        {
+          "Id": "accountNumber",
+          "Label": "Account Number:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "BankDetails.AccountNumber"
+        },
+        {
+          "Id": "bankTpin",
+          "Label": "Tpin:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "BankDetails.Tpin"
+        },
+        {
+          "Id": "mobileMoneyWalletDetails",
+          "Label": "Mobile Money Wallet Name and Number:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "BankDetails.MobileMoneyWalletDetails"
+        }
+      ]
+    },
+    {
+      "SectionTitle": "SECTION D: APPLICANT DECLARATION",
+      "Fields": [
+        {
+          "Id": "secretaryFullNames",
+          "Label": "Company/Group/Cooperative/Club Secretary Full Names:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Declaration.Secretary.FullNames"
+        },
+        {
+          "Id": "secretarySignature",
+          "Label": "Company/Group/Cooperative/Club Secretary Signature:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Declaration.Secretary.Signature"
+        },
+        {
+          "Id": "secretaryDate",
+          "Label": "Company/Group/Cooperative/Club Secretary Date:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Declaration.Secretary.Date"
+        },
+        {
+          "Id": "headFullNames",
+          "Label": "Head of business/Director/Chairperson Full Names:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Declaration.Head.FullNames"
+        },
+        {
+          "Id": "headSignature",
+          "Label": "Head of business/Director/Chairperson Signature:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Declaration.Head.Signature"
+        },
+        {
+          "Id": "headDate",
+          "Label": "Head of business/Director/Chairperson Date:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Declaration.Head.Date"
+        }
+      ]
+    },
+    {
+      "SectionTitle": "SECTION E: APPROVAL PROCESS",
+      "Fields": [
+        {
+          "Id": "wdcRecommendationStatus",
+          "Label": "Ward Development Committee Recommendation (Recommended/Not Recommended/Deferred):",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.Wdc.RecommendationStatus"
+        },
+        {
+          "Id": "wdcReasons",
+          "Label": "Ward Development Committee Reasons:",
+          "Type": "textarea",
+          "Required": false,
+          "BindingProperty": "Official.Wdc.Reasons"
+        },
+        {
+          "Id": "wdcChairpersonName",
+          "Label": "Ward Development Committee Name (Chairperson):",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.Wdc.ChairpersonName"
+        },
+        {
+          "Id": "wdcSignature",
+          "Label": "Ward Development Committee Sign:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.Wdc.Signature"
+        },
+        {
+          "Id": "wdcDate",
+          "Label": "Ward Development Committee Date:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.Wdc.Date"
+        },
+        {
+          "Id": "cdfcDecisionStatus",
+          "Label": "Constituency Development Fund Committee Decision (Supported/Not supported):",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.Cdfc.DecisionStatus"
+        },
+        {
+          "Id": "cdfcReasons",
+          "Label": "Constituency Development Fund Committee Reasons:",
+          "Type": "textarea",
+          "Required": false,
+          "BindingProperty": "Official.Cdfc.Reasons"
+        },
+        {
+          "Id": "cdfcChairpersonName",
+          "Label": "Constituency Development Fund Committee Name (Chairperson):",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.Cdfc.ChairpersonName"
+        },
+        {
+          "Id": "cdfcSignature",
+          "Label": "Constituency Development Fund Committee Sign:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.Cdfc.Signature"
+        },
+        {
+          "Id": "cdfcDate",
+          "Label": "Constituency Development Fund Committee Date:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.Cdfc.Date"
+        },
+        {
+          "Id": "fiRecommendationStatus",
+          "Label": "Approved Financial Institution Recommendation (Recommended for approval/Not Recommended for approval):",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.FinancialInstitution.RecommendationStatus"
+        },
+        {
+          "Id": "fiReasons",
+          "Label": "Approved Financial Institution Reasons:",
+          "Type": "textarea",
+          "Required": false,
+          "BindingProperty": "Official.FinancialInstitution.Reasons"
+        },
+        {
+          "Id": "fiFullNames",
+          "Label": "Approved Financial Institution Full Names:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.FinancialInstitution.FullNames"
+        },
+        {
+          "Id": "fiSignature",
+          "Label": "Approved Financial Institution Sign:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.FinancialInstitution.Signature"
+        },
+        {
+          "Id": "fiDate",
+          "Label": "Approved Financial Institution Date:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.FinancialInstitution.Date"
+        }
+      ]
+    },
+    {
+      "SectionTitle": "SECTION F: CHECKLIST OF REQUIREMENTS TO BE ATTACHED TO LOAN APPLICATION",
+      "Fields": [
+        {
+          "Id": "checklistCertRegistration",
+          "Label": "Attached: Valid Certificate of Company/Group/Cooperative/Club Registration:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Checklist.CertRegistration"
+        },
+        {
+          "Id": "checklistGreenNrc",
+          "Label": "Attached: Green National Registration Cards for Company shareholders/Members:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Checklist.GreenNrc"
+        },
+        {
+          "Id": "checklistProofAccount",
+          "Label": "Attached: Proof of Active Bank Account/Mobile Wallet:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Checklist.ProofAccount"
+        },
+        {
+          "Id": "checklistConstitution",
+          "Label": "Attached: Constitution of the Company/Group/Cooperative/Club:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Checklist.Constitution"
+        },
+        {
+          "Id": "checklistSignedMinutes",
+          "Label": "Attached: Copy of Signed Minutes:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Checklist.SignedMinutes"
+        },
+        {
+          "Id": "checklistPropertyOwnership",
+          "Label": "Attached: Proof of property ownership/lease/consent agreement (Where Applicable):",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Checklist.PropertyOwnership"
+        },
+        {
+          "Id": "checklistRecommendationLetter",
+          "Label": "Attached: Recommendation letter from a Civic/Religious/Traditional Leader/Bank Manager:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Checklist.RecommendationLetter"
+        },
+        {
+          "Id": "checklistTpin",
+          "Label": "Attached: Taxpayer Identification Number (TPIN):",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Checklist.Tpin"
+        }
+      ]
+    }
+  ]
+}

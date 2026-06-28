@@ -1,0 +1,38 @@
+[
+  {
+    "CustomerPersonId": "CUST-001",
+    "Name": "Zambia Mining Corp",
+    "Email": "accounts@zambiamining.co.zm",
+    "CompanyName": "Zambia Mining Corp",
+    "CustomerNumber": "CUST-001",
+    "PhoneNumber": "+260 211 111111",
+    "Address": "Lusaka, Zambia"
+  },
+  {
+    "CustomerPersonId": "CUST-002",
+    "Name": "Copperbelt Agro Processing",
+    "Email": "finance@copperbeltagro.com",
+    "CompanyName": "Copperbelt Agro Processing",
+    "CustomerNumber": "CUST-002",
+    "PhoneNumber": "+260 212 222222",
+    "Address": "Ndola, Zambia"
+  },
+  {
+    "CustomerPersonId": "CUST-003",
+    "Name": "Lusaka Manufacturing Ltd",
+    "Email": "procurement@lusakamanufacturing.com",
+    "CompanyName": "Lusaka Manufacturing Ltd",
+    "CustomerNumber": "CUST-003",
+    "PhoneNumber": "+260 211 333333",
+    "Address": "Lusaka, Zambia"
+  },
+  {
+    "CustomerPersonId": "CUST-004",
+    "Name": "Southern Farms Cooperative",
+    "Email": "admin@southernfarms.co.zm",
+    "CompanyName": "Southern Farms Cooperative",
+    "CustomerNumber": "CUST-004",
+    "PhoneNumber": "+260 213 444444",
+    "Address": "Choma, Zambia"
+  }
+]

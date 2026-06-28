@@ -1,0 +1,172 @@
+{
+  "sectors": [
+    "Mining",
+    "Agriculture",
+    "Manufacturing",
+    "AgroProcessing",
+    "Energy",
+    "Tourism",
+    "Infrastructure",
+    "Technology"
+  ],
+  "provinces": [
+    "Copperbelt",
+    "North-Western",
+    "Central",
+    "Eastern",
+    "Luapula",
+    "Lusaka",
+    "Southern",
+    "Western",
+    "Muchinga"
+  ],
+  "availableLicenses": [
+    {
+      "id": 1,
+      "licenseNumber": "MIN-2023-001",
+      "type": "Mining License",
+      "status": "Active",
+      "issueDate": "2025-01-15T00:00:00",
+      "expiryDate": "2030-01-15T00:00:00",
+      "displayText": "MIN-2023-001 (Mining)"
+    },
+    {
+      "id": 2,
+      "licenseNumber": "AGR-2022-045",
+      "type": "Farm Block",
+      "status": "Active",
+      "issueDate": "2024-03-11T00:00:00",
+      "expiryDate": "2029-03-11T00:00:00",
+      "displayText": "AGR-2022-045 (Agriculture)"
+    },
+    {
+      "id": 3,
+      "licenseNumber": "TRD-2023-078",
+      "type": "Trade Permit",
+      "status": "Active",
+      "issueDate": "2026-02-01T00:00:00",
+      "expiryDate": "2027-02-01T00:00:00",
+      "displayText": "TRD-2023-078 (Trade)"
+    }
+  ],
+  "availableDocuments": [
+    {
+      "id": 1,
+      "name": "Copper Mine Expansion Plan.pdf",
+      "type": "Business Plan",
+      "size": 2457600,
+      "uploadDate": "2026-03-12T00:00:00",
+      "verificationStatus": "Verified",
+      "walletCredentialId": "cred-wallet-doc-001",
+      "credentialType": "ProjectBusinessPlanCredential",
+      "issuerDid": "did:web:issuer.gov.zm",
+      "proofMethod": "Ed25519Signature2020",
+      "verifiedAt": "2026-03-14T09:15:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Agricultural Project Proposal.docx",
+      "type": "Business Plan",
+      "size": 512000,
+      "uploadDate": "2026-04-20T00:00:00"
+    },
+    {
+      "id": 3,
+      "name": "Feasibility Study 2026.pdf",
+      "type": "Feasibility Study",
+      "size": 3584000,
+      "uploadDate": "2026-02-05T00:00:00",
+      "verificationStatus": "Verified",
+      "walletCredentialId": "cred-wallet-doc-003",
+      "credentialType": "FeasibilityStudyCredential",
+      "issuerDid": "did:web:miningboard.gov.zm",
+      "proofMethod": "Ed25519Signature2020",
+      "verifiedAt": "2026-02-07T08:40:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Environmental Impact Assessment.pdf",
+      "type": "EIA Report",
+      "size": 4096000,
+      "uploadDate": "2026-01-16T00:00:00",
+      "verificationStatus": "Verified",
+      "walletCredentialId": "cred-wallet-doc-004",
+      "credentialType": "EnvironmentalComplianceCredential",
+      "issuerDid": "did:web:zema.gov.zm",
+      "proofMethod": "Ed25519Signature2020",
+      "verifiedAt": "2026-01-18T11:00:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Mine Site Overview.jpg",
+      "type": "Image",
+      "size": 2048000,
+      "uploadDate": "2026-04-03T00:00:00"
+    },
+    {
+      "id": 6,
+      "name": "Project Presentation.mp4",
+      "type": "Video",
+      "size": 25600000,
+      "uploadDate": "2026-02-28T00:00:00"
+    }
+  ],
+  "portfolioLicenses": [
+    {
+      "id": 1,
+      "licenseNumber": "MIN-2023-001",
+      "type": "Mining License",
+      "status": "Active",
+      "issueDate": "2025-01-15T00:00:00",
+      "expiryDate": "2030-01-15T00:00:00",
+      "location": "Copperbelt Province",
+      "coordinates": "-13.1234, 28.5678",
+      "description": "Looking for capital to expand copper mine operations",
+      "documents": [
+        { "id": 1, "type": "License Certificate", "fileName": "mining_license.pdf" },
+        { "id": 2, "type": "Environmental Clearance", "fileName": "env_clearance.pdf", "verificationStatus": "Verified", "walletCredentialId": "cred-lic-002", "credentialType": "EnvironmentalClearanceCredential", "issuerDid": "did:web:zema.gov.zm", "verifiedAt": "2026-01-20T09:00:00Z" }
+      ]
+    },
+    {
+      "id": 2,
+      "licenseNumber": "AGR-2022-045",
+      "type": "Farm Block",
+      "status": "Active",
+      "issueDate": "2024-03-11T00:00:00",
+      "expiryDate": "2029-03-11T00:00:00",
+      "location": "Central Province",
+      "coordinates": "-14.8765, 27.3456",
+      "description": "Contract awarded for soybean export aggregation and investor capital is required for scale-up",
+      "documents": [
+        { "id": 3, "type": "Lease Agreement", "fileName": "farm_lease.pdf", "verificationStatus": "Verified", "walletCredentialId": "cred-lic-003", "credentialType": "FarmBlockLeaseCredential", "issuerDid": "did:web:lands.gov.zm", "verifiedAt": "2026-03-15T10:20:00Z" }
+      ]
+    },
+    {
+      "id": 3,
+      "licenseNumber": "TRD-2023-078",
+      "type": "Trade Permit",
+      "status": "Under Review",
+      "issueDate": "2026-02-01T00:00:00",
+      "expiryDate": "2027-02-01T00:00:00",
+      "location": "Lusaka CBD",
+      "coordinates": "-15.4126, 28.2867",
+      "documents": [
+        { "id": 4, "type": "Application Form", "fileName": "trade_app.pdf" }
+      ]
+    },
+    {
+      "id": 4,
+      "licenseNumber": "MIN-2020-112",
+      "type": "Mining License",
+      "status": "Expired",
+      "issueDate": "2020-06-10T00:00:00",
+      "expiryDate": "2025-06-10T00:00:00",
+      "location": "North-Western Province",
+      "coordinates": "-12.7654, 25.4321",
+      "description": "Previously used for small-scale emerald mining",
+      "documents": [
+        { "id": 5, "type": "Expired License", "fileName": "old_mining_license.pdf" }
+      ]
+    }
+  ]
+}

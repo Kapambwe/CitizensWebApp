@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://identity.gov.zm/schemas/v1/DigitalTokens.json",
+  "title": "Digital Asset Tokens",
+  "description": "JSON Schema for tokenized assets including livestock and warehouse receipts.",
+  "type": "object",
+  "properties": {
+    "tokenId": { "type": "string", "description": "Unique blockchain or registry identifier." },
+    "tokenType": { "type": "string", "enum": ["Livestock", "WarehouseReceipt", "Commodity", "Other"] },
+    "ownerDid": { "type": "string", "description": "DID of the owner." },
+    "assetDetails": {
+      "type": "object",
+      "oneOf": [
+        {
+          "title": "Livestock (e.g. Cows)",
+          "properties": {
+            "animalType": { "type": "string", "enum": ["Cattle", "Goat", "Sheep"] },
+            "tagNumber": { "type": "string" },
+            "breed": { "type": "string" },
+            "birthDate": { "type": "string", "format": "date" }
+          }
+        },
+        {
+          "title": "Warehouse Receipt",
+          "properties": {
+            "commodity": { "type": "string", "enum": ["Maize", "Wheat", "Soya"] },
+            "weightInTons": { "type": "number" },
+            "warehouseLocation": { "type": "string" },
+            "qualityGrade": { "type": "string" }
+          }
+        }
+      ]
+    },
+    "valuation": {
+      "type": "object",
+      "properties": {
+        "amount": { "type": "number" },
+        "currency": { "type": "string", "default": "ZMW" }
+      }
+    }
+  },
+  "required": ["tokenId", "tokenType", "ownerDid", "assetDetails"]
+}

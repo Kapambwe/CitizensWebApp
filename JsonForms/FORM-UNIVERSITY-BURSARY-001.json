@@ -1,0 +1,13 @@
+{
+  "FormId": "FORM-UNIVERSITY-BURSARY-001",
+  "FormName": "University Bursary Application",
+  "Sections": [
+    {
+      "SectionTitle": "Student Details",
+      "Fields": [
+        { "Id": "studentName", "Label": "Student Name", "Type": "text", "Required": true, "BindingProperty": "Student.FullName" },
+        { "Id": "universityName", "Label": "University Name", "Type": "text", "Required": true, "BindingProperty": "University.Name" }
+      ]
+    }
+  ]
+}

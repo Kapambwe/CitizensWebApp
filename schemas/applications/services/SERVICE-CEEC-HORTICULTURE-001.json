@@ -1,0 +1,33 @@
+{
+  "ServiceId": "SERVICE-CEEC-HORTICULTURE-001",
+  "ServiceName": "Horticulture Loan Product (CEEF 2026)",
+  "AgencyName": "CEEC",
+  "Category": "Empowerment",
+  "TenantId": "CEEC-ZM",
+  "FormId": "FORM-CEEC-HORTICULTURE-001",
+  "FormName": "CEEC Horticulture Loan Application",
+  "ApplicationFee": 0.0,
+  "Sections": [
+    {
+      "SectionTitle": "Applicant Details",
+      "Fields": [
+        { "Id": "applicant_name", "Label": "Full Name / Cooperative Name", "Type": "text", "Required": true, "BindingProperty": "ApplicantName", "Options": [] },
+        { "Id": "pacra_number", "Label": "PACRA Reg Number", "Type": "text", "Required": true, "BindingProperty": "RegistrationNumber", "Options": [] }
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        { "Id": "signature", "Label": "Digital Signature", "Type": "signature", "Required": true, "BindingProperty": "ApplicantSignature", "Options": [] }
+      ]
+    }
+  ],
+  "Requirements": [
+    { "Id": "REQ-NRC", "Label": "National ID (NRC)", "Description": "Must be a Zambian with a green NRC", "IsMandatory": true, "CredentialType": "NationalIDCredential", "ComplianceContext": "Validated" },
+    { "Id": "REQ-PACRA", "Label": "PACRA / Cooperative Registration", "Description": "Valid PACRA or Cooperative registration", "IsMandatory": true, "CredentialType": "CompanyRegistrationCredential", "ComplianceContext": "Validated" },
+    { "Id": "REQ-LAND", "Label": "Proof of Land", "Description": "Land title or lease agreement up to 10ha", "IsMandatory": true, "CredentialType": "TitleDeedCredential", "ComplianceContext": "Validated" },
+    { "Id": "REQ-CRB", "Label": "CRB Clearance", "Description": "Proof of no adverse Credit Reference Bureau reports", "IsMandatory": false, "AllowedFileTypes": ["pdf"], "ComplianceContext": "Validated" }
+  ],
+  "ComplianceDetails": "Standard compliance applied for CEEC Horticulture Loan",
+  "ComplianceRequirements": ["GDPR", "Local Data Residency", "AML/KYC"]
+}

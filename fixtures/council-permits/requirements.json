@@ -1,0 +1,126 @@
+[
+  {
+    "RequirementId": "CPR-GOV-GOODS-001",
+    "StarterPackRequirementId": "REQ-GOV-GOODS-001",
+    "ContractId": "CON-SUP-GOV-GOODS-001",
+    "PermitType": "BusinessOperatingPermit",
+    "PermitName": "Council Business Operating Permit",
+    "CouncilName": "Lusaka City Council",
+    "Jurisdiction": "Lusaka",
+    "AppliesToSector": "General Supply",
+    "AppliesToActivity": "Retail, warehousing, and institutional goods supply",
+    "FeeAmount": 850.0,
+    "Currency": "ZMW",
+    "SlaDays": 14,
+    "IsMandatory": true,
+    "LocalityReasonRural": "This permit suits rural traders who need council approval for storage and supply operations in Lusaka.",
+    "LocalityReasonTown": "This permit is a strong town fit for local retail and warehousing operations inside the council boundary.",
+    "LocalityReasonCity": "This permit is ideal for city-based supply businesses that need council operating approval.",
+    "RequiredDocuments": [
+      "Business registration certificate",
+      "Tax clearance",
+      "Premises lease or title",
+      "Fire safety inspection"
+    ],
+    "EligibilityRules": [
+      "Business must operate within council jurisdiction",
+      "Premises must pass fire and health checks"
+    ],
+    "DynamicForm": {
+      "FormId": "business-operating-permit",
+      "Title": "Council Business Operating Permit",
+      "Description": "Apply from your customer wallet. CouncilWebApp will review and issue the permit credential after approval.",
+      "Fee": 850.0,
+      "Currency": "ZMW",
+      "SlaDays": 14,
+      "Workflow": "CouncilReview",
+      "RequiredDocuments": [
+        "Business registration certificate",
+        "Tax clearance",
+        "Premises lease or title"
+      ],
+      "Sections": [
+        {
+          "SectionId": "business",
+          "Title": "Business Details",
+          "Description": "",
+          "Order": 1,
+          "Fields": [
+            { "Id": "businessName", "Label": "Business Name", "Type": "text", "Required": true, "Options": [], "Placeholder": "", "HelpText": "", "MinValue": null, "MaxValue": null },
+            { "Id": "registrationNumber", "Label": "Registration Number", "Type": "text", "Required": true, "Options": [], "Placeholder": "", "HelpText": "", "MinValue": null, "MaxValue": null },
+            { "Id": "tpin", "Label": "TPIN", "Type": "text", "Required": true, "Options": [], "Placeholder": "", "HelpText": "", "MinValue": null, "MaxValue": null },
+            { "Id": "businessActivity", "Label": "Business Activity", "Type": "select", "Required": true, "Options": ["Retail", "Wholesale", "Manufacturing", "Warehousing", "Public sector supply"], "Placeholder": "", "HelpText": "", "MinValue": null, "MaxValue": null }
+          ]
+        },
+        {
+          "SectionId": "premises",
+          "Title": "Premises",
+          "Description": "",
+          "Order": 2,
+          "Fields": [
+            { "Id": "premisesAddress", "Label": "Premises Address", "Type": "textarea", "Required": true, "Options": [], "Placeholder": "", "HelpText": "", "MinValue": null, "MaxValue": null },
+            { "Id": "ward", "Label": "Ward", "Type": "text", "Required": true, "Options": [], "Placeholder": "", "HelpText": "", "MinValue": null, "MaxValue": null },
+            { "Id": "floorArea", "Label": "Floor Area (sqm)", "Type": "number", "Required": true, "Options": [], "Placeholder": "", "HelpText": "", "MinValue": 1, "MaxValue": null },
+            { "Id": "leaseOrTitle", "Label": "Lease or Title Document", "Type": "file", "Required": true, "Options": [], "Placeholder": "", "HelpText": "", "MinValue": null, "MaxValue": null }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "RequirementId": "CPR-AGRO-FOOD-001",
+    "StarterPackRequirementId": "REQ-BEEF-DRC-001",
+    "ContractId": "CON-EXP-BEEF-DRC-001",
+    "PermitType": "FoodHandlingPermit",
+    "PermitName": "Food Handling and Local Premises Permit",
+    "CouncilName": "Kitwe City Council",
+    "Jurisdiction": "Copperbelt",
+    "AppliesToSector": "Livestock",
+    "AppliesToActivity": "Cold storage, meat handling, and local aggregation",
+    "FeeAmount": 1250.0,
+    "Currency": "ZMW",
+    "SlaDays": 10,
+    "IsMandatory": true,
+    "LocalityReasonRural": "This permit fits rural livestock producers who move into processing and local food handling.",
+    "LocalityReasonTown": "This permit is a strong town fit for aggregation, butchery, and local food supply businesses.",
+    "LocalityReasonCity": "This permit is ideal for city-based food handling and processing operations with council oversight.",
+    "RequiredDocuments": [
+      "Veterinary clearance",
+      "Premises inspection report",
+      "Waste disposal plan"
+    ],
+    "EligibilityRules": [
+      "Premises must pass health inspection",
+      "Waste handling plan must be approved"
+    ],
+    "DynamicForm": {
+      "FormId": "food-handling-permit",
+      "Title": "Food Handling and Local Premises Permit",
+      "Description": "Apply for council food-handling approval for meat, food, and agro-processing operations.",
+      "Fee": 1250.0,
+      "Currency": "ZMW",
+      "SlaDays": 10,
+      "Workflow": "CouncilReview",
+      "RequiredDocuments": [
+        "Veterinary clearance",
+        "Premises inspection report",
+        "Waste disposal plan"
+      ],
+      "Sections": [
+        {
+          "SectionId": "operation",
+          "Title": "Food Operation",
+          "Description": "",
+          "Order": 1,
+          "Fields": [
+            { "Id": "facilityType", "Label": "Facility Type", "Type": "select", "Required": true, "Options": ["Cold room", "Butchery", "Aggregation centre", "Agro-processing facility"], "Placeholder": "", "HelpText": "", "MinValue": null, "MaxValue": null },
+            { "Id": "dailyCapacity", "Label": "Daily Handling Capacity", "Type": "number", "Required": true, "Options": [], "Placeholder": "", "HelpText": "", "MinValue": 1, "MaxValue": null },
+            { "Id": "productCategory", "Label": "Product Category", "Type": "select", "Required": true, "Options": ["Beef", "Goat", "Poultry", "Dairy", "Cooking oil"], "Placeholder": "", "HelpText": "", "MinValue": null, "MaxValue": null },
+            { "Id": "wastePlan", "Label": "Waste Disposal Plan", "Type": "textarea", "Required": true, "Options": [], "Placeholder": "", "HelpText": "", "MinValue": null, "MaxValue": null },
+            { "Id": "vetClearance", "Label": "Veterinary Clearance", "Type": "file", "Required": true, "Options": [], "Placeholder": "", "HelpText": "", "MinValue": null, "MaxValue": null }
+          ]
+        }
+      ]
+    }
+  }
+]

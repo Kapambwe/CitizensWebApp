@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://identity.gov.zm/schemas/v1/NationalID.json",
+  "title": "National Identity Credential",
+  "description": "W3C-compliant JSON Schema for National Identity (NRC) in alignment with EUDI and ICAO standards.",
+  "type": "object",
+  "properties": {
+    "nrcNumber": {
+      "type": "string",
+      "pattern": "^\\d{6}/\\d{2}/\\d{1}$",
+      "description": "The unique National Registration Card number."
+    },
+    "fullName": {
+      "type": "string",
+      "description": "Full name of the individual."
+    },
+    "givenNames": {
+      "type": "string",
+      "description": "Given names (first and middle names)."
+    },
+    "familyName": {
+      "type": "string",
+      "description": "Surname or family name."
+    },
+    "dateOfBirth": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of birth in ISO 8601 format."
+    },
+    "placeOfBirth": {
+      "type": "string",
+      "description": "Place or district of birth."
+    },
+    "gender": {
+      "type": "string",
+      "enum": ["Male", "Female", "Other"],
+      "description": "Gender as registered."
+    },
+    "nationality": {
+      "type": "string",
+      "description": "Nationality of the holder."
+    },
+    "residentAddress": {
+      "type": "string",
+      "description": "Current residential address."
+    },
+    "issueDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "issuingAuthority": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "string",
+      "contentEncoding": "base64",
+      "description": "Base64 encoded profile photograph."
+    }
+  },
+  "required": ["nrcNumber", "fullName", "dateOfBirth", "gender"]
+}

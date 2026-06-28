@@ -1,0 +1,39 @@
+{
+  "profile": {
+    "fullName": "John Doe",
+    "dateOfBirth": "1985-05-15T00:00:00",
+    "gender": "Male",
+    "nationality": "United States",
+    "idType": "Passport",
+    "idNumber": "P12345678",
+    "idVerified": true,
+    "idDocument": "passport.jpg",
+    "idExpiryDate": "2025-12-31T00:00:00",
+    "email": "john.doe@example.com",
+    "emailVerified": true,
+    "secondaryEmail": "johndoe.backup@example.com",
+    "phoneNumber": "+1 (555) 123-4567",
+    "phoneVerified": true,
+    "address": "123 Main Street, Apt 4B, New York, NY 10001"
+  },
+  "linkedRecords": [
+    {
+      "recordType": "Driver's License",
+      "recordId": "DL-78945612",
+      "agency": "DMV",
+      "status": "Active"
+    },
+    {
+      "recordType": "Business License",
+      "recordId": "BL-2023-0456",
+      "agency": "Commerce Dept",
+      "status": "Active"
+    },
+    {
+      "recordType": "Tax ID",
+      "recordId": "TIN-45-7894561",
+      "agency": "IRS",
+      "status": "Active"
+    }
+  ]
+}

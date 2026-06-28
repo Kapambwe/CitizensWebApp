@@ -1,0 +1,6 @@
+[
+  { "CategoryId": 1, "AccountName": "ZANACO Main Account", "Balance": 1250000.50, "CategoryTypeId": 1, "Name": "ZANACO Main Account", "Description": "Primary operating account" },
+  { "CategoryId": 2, "AccountName": "Stanbic USD Account", "Balance": 750000.00, "CategoryTypeId": 1, "Name": "Stanbic USD Account", "Description": "USD settlement account" },
+  { "CategoryId": 3, "AccountName": "VISA Corporate Card", "Balance": -25000.00, "CategoryTypeId": 2, "Name": "VISA Corporate Card", "Description": "Corporate card for operational expenses" },
+  { "CategoryId": 4, "AccountName": "MTN Mobile Money", "Balance": 15000.75, "CategoryTypeId": 3, "Name": "MTN Mobile Money", "Description": "Mobile money settlement account" }
+]

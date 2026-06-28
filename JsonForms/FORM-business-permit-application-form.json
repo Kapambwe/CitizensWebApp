@@ -1,0 +1,117 @@
+{
+  "FormId": "business-permit-application-form",
+  "FormName": "Business Permit License",
+  "Sections": [
+    {
+      "SectionTitle": "Applicant and Business Details",
+      "Fields": [
+        {
+          "Id": "fullName",
+          "Label": "Full Name of Applicant:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.FullName"
+        },
+        {
+          "Id": "postalAddress",
+          "Label": "Postal Address:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.PostalAddress"
+        },
+        {
+          "Id": "businessName",
+          "Label": "Business / Professional Name:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.BusinessName"
+        },
+        {
+          "Id": "phoneNo",
+          "Label": "Phone No:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.PhoneNo"
+        }
+      ]
+    },
+    {
+      "SectionTitle": "Premises and Business Description",
+      "Fields": [
+        {
+          "Id": "standNo",
+          "Label": "Stand No:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Business.Premises.StandNo"
+        },
+        {
+          "Id": "streetNo",
+          "Label": "Street No:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Business.Premises.StreetNo"
+        },
+        {
+          "Id": "businessDescription",
+          "Label": "Description of Business or Services Conducted or Provided:",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "Business.Description"
+        },
+        {
+          "Id": "previousPermitNo",
+          "Label": "Stand number of previous or current permit (if any):",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Business.PreviousPermitNo"
+        }
+      ]
+    },
+    {
+      "SectionTitle": "Individual Applicant Details",
+      "Fields": [
+        {
+          "Id": "homeAddress",
+          "Label": "Home Address:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Applicant.Individual.HomeAddress"
+        },
+        {
+          "Id": "dob",
+          "Label": "Date of Birth:",
+          "Type": "date",
+          "Required": false,
+          "BindingProperty": "Applicant.Individual.DateOfBirth"
+        },
+        {
+          "Id": "nrc",
+          "Label": "National Registration Card No:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Applicant.Individual.NRC"
+        }
+      ]
+    },
+    {
+      "SectionTitle": "Statutory Declaration",
+      "Fields": [
+        {
+          "Id": "declarationDate",
+          "Label": "Dated the (Day):",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Declaration.Date"
+        },
+        {
+          "Id": "signature",
+          "Label": "Signature of Applicant:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Declaration.Signature"
+        }
+      ]
+    }
+  ]
+}

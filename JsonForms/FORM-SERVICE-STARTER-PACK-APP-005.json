@@ -1,0 +1,36 @@
+{
+  "FormId": "FORM-SERVICE-STARTER-PACK-APP-005",
+  "FormName": "Maize Aggregation & Processing Application",
+  "Sections": [
+    {
+      "SectionTitle": "Cooperative Details",
+      "Fields": [
+        { "Id": "applicantName", "Label": "Lead Applicant Name:", "Type": "text", "Required": true, "BindingProperty": "Applicant.Name", "Placeholder": "Verified from NRC" },
+        { "Id": "coopName", "Label": "Cooperative / Business Name:", "Type": "text", "Required": true, "BindingProperty": "Business.Name", "Placeholder": "Verified from PACRA" },
+        { "Id": "location", "Label": "Main Storage Location (District):", "Type": "text", "Required": true, "BindingProperty": "Business.Location" }
+      ]
+    },
+    {
+      "SectionTitle": "Aggregation Capacity",
+      "Fields": [
+        { "Id": "currentStorage", "Label": "Current Storage Capacity (Metric Tons):", "Type": "number", "Required": true, "BindingProperty": "Production.StorageCapacity" },
+        { "Id": "hasMilling", "Label": "Do you currently own milling equipment?", "Type": "select", "Required": true, "BindingProperty": "Production.HasMilling", "Options": [
+          { "Value": "Yes", "Text": "Yes" }, { "Value": "No", "Text": "No" }
+        ]},
+        { "Id": "exportTarget", "Label": "Target Export Market:", "Type": "select", "Required": true, "BindingProperty": "Business.ExportTarget", "Options": [
+          { "Value": "DRC", "Text": "DRC" },
+          { "Value": "Kenya", "Text": "Kenya" },
+          { "Value": "Tanzania", "Text": "Tanzania" },
+          { "Value": "Other", "Text": "Other / Domestic Only" }
+        ]}
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        { "Id": "declDate", "Label": "Date:", "Type": "date", "Required": true, "BindingProperty": "Declaration.Date" },
+        { "Id": "signature", "Label": "Signature:", "Type": "signature", "Required": true, "BindingProperty": "Declaration.Signature" }
+      ]
+    }
+  ]
+}

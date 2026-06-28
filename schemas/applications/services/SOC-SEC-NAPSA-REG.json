@@ -1,0 +1,113 @@
+{
+  "ServiceId": "SOC-SEC-NAPSA-REG",
+  "ServiceName": "NAPSA Member Registration",
+  "AgencyName": "National Pension Scheme Authority",
+  "Category": "Social Security",
+  "TenantId": "NAPSA-ZM",
+  "FormId": "FORM-NAPSA-REG-001",
+  "FormName": "NAPSA Member Registration Form",
+  "ApplicationFee": 0.0,
+  "ComplianceDetails": "Member registration requires verification of identity and employment status to ensure accurate pension contribution tracking. All data is handled in accordance with the National Pension Scheme Act.",
+  "ComplianceRequirements": [
+    "Identity Verification via National ID (NRC)",
+    "Employment Status Verification",
+    "Consent to Data Processing for Pension Purposes",
+    "Compliance with National Pension Scheme Act No. 40 of 1996"
+  ],
+  "Requirements": [
+    {
+      "Id": "REQ-NRC",
+      "Label": "National Registration Card (NRC)",
+      "Description": "Digital proof of your National Identity issued by the Department of National Registration.",
+      "IsMandatory": true,
+      "CredentialType": "NationalIDCredential",
+      "FieldMapping": "fullName:fullName,nrcNumber:nrcNumber,dateOfBirth:dateOfBirth",
+      "ComplianceContext": "Used to establish unique member identity in the pension system."
+    },
+    {
+      "Id": "REQ-TPIN",
+      "Label": "TPIN Certificate",
+      "Description": "Tax Payer Identification Number issued by Zambia Revenue Authority.",
+      "IsMandatory": true,
+      "CredentialType": "TaxCertificateCredential",
+      "FieldMapping": "tpin:employer_tpin",
+      "ComplianceContext": "Ensures alignment between tax and social security contributions."
+    },
+    {
+      "Id": "REQ-EMP-LETTER",
+      "Label": "Employment Letter / Contract",
+      "Description": "Please upload a signed copy of your employment letter or current contract.",
+      "IsMandatory": true,
+      "AllowedFileTypes": [ "pdf", "jpg", "png" ],
+      "ComplianceContext": "Verified against employer records to prevent fraudulent registrations."
+    },
+    {
+      "Id": "REQ-PREV-PENSION",
+      "Label": "Previous Pension Statement (Optional)",
+      "Description": "If you have been a member of another pension scheme, upload your latest statement.",
+      "IsMandatory": false,
+      "AllowedFileTypes": [ "pdf" ],
+      "ComplianceContext": "Used for portability of pension benefits if applicable."
+    }
+  ],
+  "Sections": [
+    {
+      "SectionTitle": "Personal Information (Verified)",
+      "Fields": [
+        { "Id": "fullName", "Label": "Full Name", "Type": "text", "Required": true, "BindingProperty": "fullName", "Placeholder": "Verified from NRC" },
+        { "Id": "nrcNumber", "Label": "NRC Number", "Type": "text", "Required": true, "BindingProperty": "nrcNumber", "Placeholder": "Verified from NRC" },
+        { "Id": "dateOfBirth", "Label": "Date of Birth", "Type": "date", "Required": true, "BindingProperty": "dateOfBirth" }
+      ]
+    },
+    {
+      "SectionTitle": "Contact Information",
+      "Fields": [
+        { "Id": "phone", "Label": "Mobile Number", "Type": "tel", "Required": true, "BindingProperty": "PhoneNumber", "Placeholder": "e.g., 097... / 096..." },
+        { "Id": "email", "Label": "Email Address", "Type": "email", "Required": true, "BindingProperty": "EmailAddress", "Placeholder": "yourname@example.com" },
+        { "Id": "address", "Label": "Residential Address", "Type": "textarea", "Required": true, "BindingProperty": "ResidentialAddress" }
+      ]
+    },
+    {
+      "SectionTitle": "Employment Details",
+      "Fields": [
+        {
+          "Id": "employment_type",
+          "Label": "Employment Category",
+          "Type": "select",
+          "Required": true,
+          "BindingProperty": "EmploymentType",
+          "Options": [
+            { "Value": "Formal", "Text": "Formal Sector Employment" },
+            { "Value": "Informal", "Text": "Informal / Domestic Worker" },
+            { "Value": "SelfEmployed", "Text": "Self Employed / Voluntary Member" }
+          ]
+        },
+        { "Id": "employer_name", "Label": "Employer Name", "Type": "text", "Required": true, "BindingProperty": "EmployerName" },
+        { "Id": "employer_tpin", "Label": "Employer TPIN", "Type": "text", "Required": true, "BindingProperty": "employer_tpin", "Placeholder": "Verified from TPIN Certificate" },
+        { "Id": "commencement_date", "Label": "Date of Commencement", "Type": "date", "Required": true, "BindingProperty": "CommencementDate" },
+        { "Id": "monthly_salary", "Label": "Basic Monthly Salary (ZMW)", "Type": "number", "Required": true, "BindingProperty": "MonthlySalary" }
+      ]
+    },
+    {
+      "SectionTitle": "Beneficiary & Next of Kin",
+      "Fields": [
+        { "Id": "nok_name", "Label": "Next of Kin Full Name", "Type": "text", "Required": true, "BindingProperty": "NextOfKinName" },
+        {
+          "Id": "nok_relationship",
+          "Label": "Relationship",
+          "Type": "select",
+          "Required": true,
+          "BindingProperty": "NextOfKinRelationship",
+          "Options": [
+            { "Value": "Spouse", "Text": "Spouse" },
+            { "Value": "Child", "Text": "Child" },
+            { "Value": "Parent", "Text": "Parent" },
+            { "Value": "Sibling", "Text": "Sibling" },
+            { "Value": "Other", "Text": "Other" }
+          ]
+        },
+        { "Id": "nok_phone", "Label": "Next of Kin Phone", "Type": "tel", "Required": true, "BindingProperty": "NextOfKinPhone" }
+      ]
+    }
+  ]
+}

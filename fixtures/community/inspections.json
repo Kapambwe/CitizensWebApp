@@ -1,0 +1,78 @@
+{
+  "inspections": [
+    {
+      "inspectionId": "INSP001",
+      "projectId": "CP001",
+      "citizenAccountId": 1,
+      "submittedByEmail": "john.mwale@example.com",
+      "inspectionType": "Citizen Observation",
+      "status": "Completed",
+      "citizenName": "Lydia Mumba",
+      "citizenContact": "0977001122",
+      "ward": "Kanyama",
+      "location": "Kanyama Main Road",
+      "conditionRating": 4,
+      "completionEstimate": 75,
+      "observations": "Drainage work is visible and road shaping is progressing well.",
+      "issuesObserved": "Dust control is still needed near the school junction.",
+      "requiresFollowUp": true,
+      "dateSubmitted": "2026-05-21T09:30:00Z",
+      "completedDate": "2026-05-24T14:00:00Z",
+      "inspectorName": "Ward Monitoring Desk",
+      "resolutionNotes": "Contractor advised to improve dust suppression and signage.",
+      "photoUrls": [
+        "inspection-cp001-1.jpg",
+        "inspection-cp001-2.jpg"
+      ]
+    },
+    {
+      "inspectionId": "INSP002",
+      "projectId": "CP003",
+      "citizenAccountId": 1,
+      "submittedByEmail": "john.mwale@example.com",
+      "inspectionType": "Request Follow-up",
+      "status": "Under Review",
+      "citizenName": "Moses Tembo",
+      "citizenContact": "0966112233",
+      "ward": "Meanwood",
+      "location": "Meanwood Extension",
+      "conditionRating": 3,
+      "completionEstimate": 50,
+      "observations": "Water trenches have been opened but some households are still waiting for connection points.",
+      "issuesObserved": "No clear schedule at the site entrance.",
+      "requiresFollowUp": true,
+      "dateSubmitted": "2026-05-29T11:45:00Z",
+      "photoUrls": [
+        "inspection-cp003-1.jpg"
+      ]
+    },
+    {
+      "inspectionId": "INSP003",
+      "projectId": "CP004",
+      "citizenAccountId": 2,
+      "submittedByEmail": "mary.banda@example.com",
+      "inspectionType": "Quality Concern",
+      "status": "Submitted",
+      "citizenName": "Grace Phiri",
+      "citizenContact": "0977889900",
+      "ward": "Matero",
+      "location": "Matero Market",
+      "conditionRating": 2,
+      "completionEstimate": 20,
+      "observations": "Some structural work is in place but vendors are asking for better roofing and access paths.",
+      "issuesObserved": "Materials stored on site are exposed to weather.",
+      "requiresFollowUp": true,
+      "dateSubmitted": "2026-05-30T08:15:00Z",
+      "photoUrls": [
+        "inspection-cp004-1.jpg",
+        "inspection-cp004-2.jpg"
+      ],
+      "alertTargets": [
+        "Council",
+        "Project Owner"
+      ],
+      "alertsDispatched": true,
+      "alertsDispatchedAt": "2026-05-30T08:20:00Z"
+    }
+  ]
+}

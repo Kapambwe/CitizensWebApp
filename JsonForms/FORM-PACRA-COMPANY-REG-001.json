@@ -1,0 +1,65 @@
+{
+  "formId": "FORM-PACRA-COMPANY-REG-001",
+  "formName": "PACRA Company Registration (Form 3)",
+  "sections": [
+    {
+      "sectionTitle": "Proposed Company Name",
+      "fields": [
+        { "id": "name_ref", "label": "Name Clearance Reference Number", "type": "text", "placeholder": "Enter approved name clearance ref", "required": true, "bindingProperty": "NameClearanceRef" },
+        { "id": "name1", "label": "Approved Company Name", "type": "text", "placeholder": "Enter approved name", "required": true, "bindingProperty": "ProposedName1" }
+      ]
+    },
+    {
+      "sectionTitle": "Company Type",
+      "fields": [
+        { 
+          "id": "comp_type", 
+          "label": "Nature of Company", 
+          "type": "select", 
+          "required": true, 
+          "bindingProperty": "CompanyType",
+          "options": [
+            { "value": "PrivateLimited", "text": "Private Limited by Shares" },
+            { "value": "PrivateLimitedGuarantee", "text": "Private Limited by Guarantee" },
+            { "value": "PublicLimited", "text": "Public Limited Company" }
+          ]
+        },
+        { "id": "business_sector", "label": "Primary Business Sector", "type": "text", "placeholder": "e.g. ICT, Agriculture, Mining", "required": true, "bindingProperty": "BusinessSector" }
+      ]
+    },
+    {
+      "sectionTitle": "Registered Office",
+      "fields": [
+        { "id": "office_address", "label": "Physical Address in Zambia", "type": "text", "placeholder": "Plot No, Street, Town", "required": true, "bindingProperty": "OfficePhysicalAddress" },
+        { "id": "postal_address", "label": "Postal Address", "type": "text", "placeholder": "P.O. Box", "required": false, "bindingProperty": "OfficePostalAddress" },
+        { "id": "email", "label": "Official Email Address", "type": "text", "placeholder": "info@company.co.zm", "required": true, "bindingProperty": "OfficialEmail" }
+      ]
+    },
+    {
+      "sectionTitle": "Directors (Minimum 2)",
+      "fields": [
+        { "id": "dir1_name", "label": "Director 1 Full Name", "type": "text", "required": true, "bindingProperty": "Director1.FullName" },
+        { "id": "dir1_nrc", "label": "Director 1 NRC / Passport", "type": "text", "required": true, "bindingProperty": "Director1.NrcNo" },
+        { "id": "dir1_res", "label": "Is Resident in Zambia?", "type": "select", "required": true, "bindingProperty": "Director1.IsResident", "options": [{ "value": "true", "text": "Yes" }, { "value": "false", "text": "No" }] },
+        { "id": "dir2_name", "label": "Director 2 Full Name", "type": "text", "required": true, "bindingProperty": "Director2.FullName" },
+        { "id": "dir2_nrc", "label": "Director 2 NRC / Passport", "type": "text", "required": true, "bindingProperty": "Director2.NrcNo" },
+        { "id": "dir2_res", "label": "Is Resident in Zambia?", "type": "select", "required": true, "bindingProperty": "Director2.IsResident", "options": [{ "value": "true", "text": "Yes" }, { "value": "false", "text": "No" }] }
+      ]
+    },
+    {
+      "sectionTitle": "Share Capital",
+      "fields": [
+        { "id": "nominal_capital", "label": "Nominal Share Capital (Min ZMW 20,000)", "type": "number", "placeholder": "20000", "required": true, "bindingProperty": "NominalCapital" },
+        { "id": "number_shares", "label": "Number of Shares", "type": "number", "placeholder": "20000", "required": true, "bindingProperty": "TotalShares" },
+        { "id": "value_per_share", "label": "Value per Share (ZMW)", "type": "number", "placeholder": "1.00", "required": true, "bindingProperty": "ValuePerShare" }
+      ]
+    },
+    {
+      "sectionTitle": "Declaration of Compliance",
+      "fields": [
+        { "id": "decl_name", "label": "Full Name of Declarant", "type": "text", "required": true, "bindingProperty": "DeclarantName" },
+        { "id": "signature", "label": "Digital Signature (Form 3)", "type": "signature", "required": true, "bindingProperty": "DeclarantSignature" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "Investor": {
+    "InvestorId": 1,
+    "InvestorName": "John Mwansa",
+    "Company": "Zambia Venture Capital",
+    "Email": "john.mwansa@zambiavc.co.zm",
+    "Phone": "+260 97 123 4567",
+    "InvestmentSectors": [
+      "Mining",
+      "Renewable Energy",
+      "Agriculture"
+    ],
+    "PreferredLocations": [
+      "Copperbelt",
+      "Lusaka",
+      "North-Western"
+    ]
+  },
+  "EngagementHistory": [
+    {
+      "EventType": "Project Viewed",
+      "EventDate": "2026-05-28T09:30:00",
+      "Description": "Viewed your project 'Copper Mining Expansion'",
+      "Notes": "Requested additional financial projections"
+    },
+    {
+      "EventType": "Meeting",
+      "EventDate": "2026-05-24T14:00:00",
+      "Description": "Virtual meeting via Zoom",
+      "Notes": "Discussed potential partnership opportunities"
+    },
+    {
+      "EventType": "Initial Contact",
+      "EventDate": "2026-05-17T10:15:00",
+      "Description": "Connected through referral",
+      "Notes": "Expressed interest in mining sector investments"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "notifications": [
+    {
+      "id": "11111111-1111-1111-1111-111111111111",
+      "type": "GovernmentAnnouncement",
+      "priority": "High",
+      "title": "New Land Available: Lusaka North",
+      "message": "Lusaka City Council has announced 200 new residential plots in Lusaka North. Applications are now open.",
+      "actionUrl": "/applications/SERVICE-COUNCIL-PLOT-APP-001",
+      "isRead": false,
+      "createdAt": "2026-05-30T08:00:00Z"
+    },
+    {
+      "id": "22222222-2222-2222-2222-222222222222",
+      "type": "GovernmentAnnouncement",
+      "priority": "Normal",
+      "title": "Commercial Land Offering: Kitwe",
+      "message": "Kitwe City Council is inviting applications for commercial small holdings in the Riverside area.",
+      "actionUrl": "/applications/SERVICE-COUNCIL-PLOT-APP-001",
+      "isRead": false,
+      "createdAt": "2026-05-29T10:00:00Z"
+    },
+    {
+      "id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+      "type": "DocumentIssued",
+      "priority": "High",
+      "title": "National ID Issued",
+      "message": "Your National Registration Card has been issued and added to your wallet.",
+      "actionUrl": "/identity/verifiable-credentials",
+      "isRead": false,
+      "createdAt": "2026-05-30T08:45:00Z"
+    },
+    {
+      "id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+      "type": "DocumentExpiring",
+      "priority": "Critical",
+      "title": "Driver License Expiring Soon",
+      "message": "Your driver license expires in 12 days. Renew it to avoid service interruption.",
+      "actionUrl": "/identity/verifiable-credentials",
+      "isRead": false,
+      "createdAt": "2026-05-30T05:00:00Z"
+    },
+    {
+      "id": "cccccccc-dddd-eeee-ffff-111122223333",
+      "type": "GovernmentAnnouncement",
+      "priority": "High",
+      "title": "New Empowerment Opportunity: Agriculture Export Pack",
+      "message": "The Ministry of Agriculture has launched a new Starter Pack for Goat Exports to the Gulf. Apply now to receive veterinary support and export clearance.",
+      "actionUrl": "/business/starter-packs",
+      "isRead": false,
+      "createdAt": "2026-05-30T09:00:00Z"
+    },
+    {
+      "id": "99999999-aaaa-bbbb-cccc-111111111111",
+      "type": "TenderOpportunity",
+      "priority": "High",
+      "tenderIssuerType": "Council",
+      "title": "Council Tender: Office Furniture Supply",
+      "message": "Lusaka City Council has opened a new tender for office furniture supply and installation. Check the tender requirements and apply from the notification.",
+      "actionUrl": "/tenders/1",
+      "isRead": false,
+      "createdAt": "2026-05-30T12:10:00Z"
+    },
+    {
+      "id": "99999999-aaaa-bbbb-cccc-222222222222",
+      "type": "TenderOpportunity",
+      "priority": "High",
+      "tenderIssuerType": "Ministry",
+      "title": "Ministry Tender: Cleaning Services",
+      "message": "The Ministry of Public Works is seeking cleaning service providers for public facilities and offices across districts.",
+      "actionUrl": "/tenders/2",
+      "isRead": false,
+      "createdAt": "2026-05-30T12:15:00Z"
+    },
+    {
+      "id": "99999999-aaaa-bbbb-cccc-333333333333",
+      "type": "TenderOpportunity",
+      "priority": "High",
+      "tenderIssuerType": "GovernmentAgency",
+      "title": "Agency Tender: ICT Equipment Supply",
+      "message": "The Ministry of Education has published a tender for ICT equipment supply and support services through the notification feed.",
+      "actionUrl": "/tenders/3",
+      "isRead": false,
+      "createdAt": "2026-05-30T12:20:00Z"
+    },
+    {
+      "id": "99999999-aaaa-bbbb-cccc-444444444444",
+      "type": "TenderOpportunity",
+      "priority": "Critical",
+      "tenderIssuerType": "Council",
+      "title": "CDF Tender: Youth and Women Enterprise Supply",
+      "message": "Lusaka City Council has published a CDF tender reserved for the local council area with youth and women priority.",
+      "actionUrl": "/tenders/4",
+      "isRead": false,
+      "createdAt": "2026-05-30T12:25:00Z"
+    },
+    {
+      "id": "99999999-aaaa-bbbb-cccc-555555555555",
+      "type": "TenderOpportunity",
+      "priority": "High",
+      "tenderIssuerType": "GovernmentAgency",
+      "title": "Agency Tender: Road Maintenance Works",
+      "message": "The Road Development Agency has published a road maintenance tender for qualified contractors and suppliers.",
+      "actionUrl": "/tenders/5",
+      "isRead": false,
+      "createdAt": "2026-05-30T12:30:00Z"
+    },
+    {
+      "id": "99999999-aaaa-bbbb-cccc-666666666666",
+      "type": "TenderOpportunity",
+      "priority": "High",
+      "tenderIssuerType": "StateOwnedEnterprise",
+      "title": "SOE Tender: Grid Equipment Supply",
+      "message": "ZESCO Limited has published a state-owned enterprise tender for grid equipment supply and support services.",
+      "actionUrl": "/tenders/6",
+      "isRead": false,
+      "createdAt": "2026-05-30T12:35:00Z"
+    },
+    {
+      "id": "99999999-aaaa-bbbb-cccc-777777777777",
+      "type": "TenderOpportunity",
+      "priority": "High",
+      "tenderIssuerType": "GovernmentAgency",
+      "title": "Agency Tender: Supply of Medicines and Medical Consumables",
+      "message": "ZAMMSA has published a tender for medicine and medical consumable supply for public health facilities.",
+      "actionUrl": "/tenders/7",
+      "isRead": false,
+      "createdAt": "2026-05-30T12:40:00Z"
+    },
+    {
+      "id": "99999999-aaaa-bbbb-cccc-888888888888",
+      "type": "TenderOpportunity",
+      "priority": "High",
+      "tenderIssuerType": "Council",
+      "title": "Council Tender: Supply of Desks for Public Schools",
+      "message": "Lusaka City Council has opened a tender for the supply and installation of desks in public schools.",
+      "actionUrl": "/tenders/8",
+      "isRead": false,
+      "createdAt": "2026-05-30T12:45:00Z"
+    },
+    {
+      "id": "99999999-aaaa-bbbb-cccc-999999999999",
+      "type": "TenderOpportunity",
+      "priority": "Critical",
+      "tenderIssuerType": "Ministry",
+      "title": "Ministry Tender: Build of Classrooms in Kanyama",
+      "message": "The Ministry of Education has published a tender to build classrooms in Kanyama for public school expansion.",
+      "actionUrl": "/tenders/9",
+      "isRead": false,
+      "createdAt": "2026-05-30T12:50:00Z"
+    },
+    {
+      "id": "99999999-aaaa-bbbb-cccc-aaaaaaaabbbb",
+      "type": "TenderInterviewInvite",
+      "priority": "High",
+      "title": "Physical Meeting Invite: Supply of Desks for Public Schools",
+      "message": "John Mwale, you are invited to a physical meeting on 03 Jun 2026 at 10:00 at Lusaka City Council Procurement Office. Bring your original company registration and tax clearance documents.",
+      "actionUrl": "/tenders/8?applicationNumber=TND-008-0004",
+      "isRead": false,
+      "createdAt": "2026-05-30T13:00:00Z"
+    },
+    {
+      "id": "dddddddd-1111-2222-3333-444444444444",
+      "type": "PublicConsultation",
+      "priority": "High",
+      "title": "Have Your Say: Kanyama Drainage Upgrade",
+      "message": "Lusaka City Council invites residents to comment on flood-control design and relocation support for Kanyama.",
+      "actionUrl": "/community/consultations?consultationId=0d36f43e-e724-42db-b811-6f9586fbe676",
+      "isRead": false,
+      "createdAt": "2026-05-30T11:30:00Z"
+    },
+    {
+      "id": "eeeeeeee-5555-6666-7777-888888888888",
+      "type": "PublicConsultation",
+      "priority": "Normal",
+      "title": "Consultation Open: Land Type Conversion in Chongwe",
+      "message": "Share your views on the proposed agricultural-to-residential conversion before the closing date.",
+      "actionUrl": "/community/consultations?consultationId=6190272c-2d40-4f4b-ab7f-a0fc04c3f8f5",
+      "isRead": false,
+      "createdAt": "2026-05-29T14:00:00Z"
+    }
+  ]
+}

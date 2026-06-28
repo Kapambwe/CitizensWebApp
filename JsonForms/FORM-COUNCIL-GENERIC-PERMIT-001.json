@@ -1,0 +1,46 @@
+{
+  "formId": "FORM-COUNCIL-GENERIC-PERMIT-001",
+  "formName": "Generic Council Permit Application Form",
+  "sections": [
+    {
+      "sectionTitle": "Permit Details",
+      "fields": [
+        { "id": "permit_type", "label": "Type of Permit", "type": "select", "placeholder": "Select permit type", "required": true, "bindingProperty": "PermitType", "options": [
+          { "value": "Building", "text": "Building Permit" },
+          { "value": "Event", "text": "Event Permit" },
+          { "value": "Roadworks", "text": "Roadworks Permit" },
+          { "value": "Other", "text": "Other" }
+        ]},
+        { "id": "permit_desc", "label": "Description of Activity/Purpose", "type": "textarea", "placeholder": "Briefly describe the activity requiring a permit", "required": true, "bindingProperty": "PermitDescription" },
+        { "id": "duration", "label": "Desired Duration (Days)", "type": "number", "required": false, "bindingProperty": "PermitDurationDays" }
+      ]
+    },
+    {
+      "sectionTitle": "Location Details",
+      "fields": [
+        { "id": "council", "label": "Local Council", "type": "select", "required": true, "bindingProperty": "CouncilName", "options": [
+          { "value": "Lusaka", "text": "Lusaka City Council" },
+          { "value": "Ndola", "text": "Ndola City Council" },
+          { "value": "Kitwe", "text": "Kitwe City Council" }
+        ]},
+        { "id": "plot_no", "label": "Plot Number", "type": "text", "required": false, "bindingProperty": "Location.PlotNo" },
+        { "id": "street", "label": "Street Name", "type": "text", "required": false, "bindingProperty": "Location.StreetName" },
+        { "id": "ward", "label": "Ward", "type": "text", "required": true, "bindingProperty": "Location.Ward" }
+      ]
+    },
+    {
+      "sectionTitle": "Applicant Details",
+      "fields": [
+        { "id": "app_name", "label": "Full Name", "type": "text", "required": true, "bindingProperty": "ApplicantName" },
+        { "id": "app_nrc", "label": "NRC Number", "type": "text", "required": true, "bindingProperty": "ApplicantNrc" },
+        { "id": "app_phone", "label": "Phone Number", "type": "text", "required": true, "bindingProperty": "ApplicantPhone" }
+      ]
+    },
+    {
+      "sectionTitle": "Declaration",
+      "fields": [
+        { "id": "signature", "label": "Signature", "type": "signature", "required": true, "bindingProperty": "ApplicantSignature" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "formId": "FORM-GENERAL-LICENSE-001",
+  "formName": "General License Application Form",
+  "sections": [
+    {
+      "sectionTitle": "Applicant Information",
+      "fields": [
+        { "id": "full_name", "label": "Full Name of Applicant", "type": "text", "placeholder": "Enter your full name", "required": true, "bindingProperty": "FullName" },
+        { "id": "nrc", "label": "National Registration Card No", "type": "text", "placeholder": "e.g., 123456/78/9", "required": true, "bindingProperty": "NrcNumber" },
+        { "id": "phone", "label": "Phone Number", "type": "text", "placeholder": "e.g., +260 97X XXX XXX", "required": true, "bindingProperty": "PhoneNumber" },
+        { "id": "email", "label": "Email Address", "type": "text", "placeholder": "Enter email address", "required": false, "bindingProperty": "EmailAddress" }
+      ]
+    },
+    {
+      "sectionTitle": "License Details",
+      "fields": [
+        { "id": "license_type", "label": "Type of License", "type": "select", "placeholder": "Select license type", "required": true, "bindingProperty": "LicenseType", "options": [
+          { "value": "Vendor", "text": "Street Vendor License" },
+          { "value": "Hawker", "text": "Hawker's License" },
+          { "value": "Entertainment", "text": "Public Entertainment License" },
+          { "value": "Other", "text": "Other" }
+        ]},
+        { "id": "description", "label": "Brief Description of Activity", "type": "textarea", "placeholder": "Describe the activity requiring this license", "required": true, "bindingProperty": "ActivityDescription" },
+        { "id": "location", "label": "Location of Activity (Ward/Street)", "type": "text", "placeholder": "e.g., Ward 7, Main Street", "required": true, "bindingProperty": "ActivityLocation" }
+      ]
+    },
+    {
+      "sectionTitle": "Declaration",
+      "fields": [
+        { "id": "decl_date", "label": "Declaration Date", "type": "date", "placeholder": "", "required": true, "bindingProperty": "DeclarationDate" },
+        { "id": "signature", "label": "Signature", "type": "signature", "required": true, "bindingProperty": "CitizenSignature" }
+      ]
+    }
+  ]
+}

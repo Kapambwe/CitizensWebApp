@@ -1,0 +1,39 @@
+{
+  "ServiceId": "SERVICE-STARTER-PACK-APP-004",
+  "ServiceName": "Digital Service Provider Kit",
+  "AgencyName": "Ministry of Technology",
+  "Category": "Tech & Services",
+  "TenantId": "LUSAKA-CITY-COUNCIL",
+  "FormId": "FORM-TECH-DIGITAL-001",
+  "FormName": "Digital Service Provider Application Form",
+  "ApplicationFee": 0.0,
+  "Sections": [
+    {
+      "SectionTitle": "Provider Information",
+      "Fields": [
+        { "Id": "app_name", "Label": "Applicant Name", "Type": "text", "Required": true, "BindingProperty": "ApplicantName" },
+        { "Id": "bus_name", "Label": "Business Name", "Type": "text", "Required": true, "BindingProperty": "BusinessName" }
+      ]
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "REQ-PACRA",
+      "Label": "Company Registration",
+      "Description": "PACRA Verifiable Credential",
+      "IsMandatory": true,
+      "CredentialType": "CompanyRegistrationCredential",
+      "ComplianceContext": "Validated"
+    },
+    {
+      "Id": "REQ-ZICTA",
+      "Label": "ZICTA License",
+      "Description": "ZICTA Technology Provider License",
+      "IsMandatory": true,
+      "CredentialType": "ZictaLicenseCredential",
+      "ComplianceContext": "Validated"
+    }
+  ],
+  "ComplianceDetails": "Standard compliance applied for Digital Service Provider Kit",
+  "ComplianceRequirements": ["GDPR", "Local Data Residency"]
+}

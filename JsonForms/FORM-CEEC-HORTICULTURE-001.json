@@ -1,0 +1,55 @@
+{
+  "formId": "FORM-CEEC-HORTICULTURE-001",
+  "formName": "CEEC Horticulture Loan Application",
+  "sections": [
+    {
+      "sectionTitle": "Applicant Details",
+      "fields": [
+        { "id": "applicant_name", "label": "Full Name / Cooperative Name", "type": "text", "required": true, "bindingProperty": "ApplicantName" },
+        { "id": "applicant_nrc", "label": "NRC Number (if individual)", "type": "text", "required": false, "bindingProperty": "ApplicantNrc" },
+        { "id": "pacra_number", "label": "PACRA / Cooperative Reg Number", "type": "text", "required": true, "bindingProperty": "RegistrationNumber" }
+      ]
+    },
+    {
+      "sectionTitle": "Loan Requirements",
+      "fields": [
+        { 
+          "id": "loan_category", 
+          "label": "Loan Category", 
+          "type": "select", 
+          "required": true, 
+          "bindingProperty": "LoanCategory",
+          "options": [
+            { "value": "SmallScaleProduction", "text": "Crop/Fruit Production (Up to K500,000)" },
+            { "value": "CooperativeAggregation", "text": "Aggregation & Processing (Up to K2,500,000)" }
+          ]
+        },
+        { "id": "amount_requested", "label": "Amount Requested (ZMW)", "type": "number", "required": true, "bindingProperty": "RequestedAmount" },
+        { "id": "district", "label": "Project District", "type": "select", "required": true, "bindingProperty": "District", "options": [
+            { "value": "Chilanga", "text": "Chilanga (Lusaka)" },
+            { "value": "Chongwe", "text": "Chongwe (Lusaka)" },
+            { "value": "Kafue", "text": "Kafue (Lusaka)" },
+            { "value": "Kalulushi", "text": "Kalulushi (Copperbelt)" },
+            { "value": "Luanshya", "text": "Luanshya (Copperbelt)" },
+            { "value": "Masaiti", "text": "Masaiti (Copperbelt)" }
+        ]}
+      ]
+    },
+    {
+      "sectionTitle": "Experience & Land",
+      "fields": [
+        { "id": "farming_experience", "label": "Describe your experience in vegetable farming or processing", "type": "textarea", "required": true, "bindingProperty": "ExperienceDescription" },
+        { "id": "land_size", "label": "Land Size Available (Hectares - up to 10ha)", "type": "number", "required": true, "bindingProperty": "LandSizeHectares" },
+        { "id": "is_salaried", "label": "Are you currently a salaried employee?", "type": "select", "required": true, "bindingProperty": "IsSalaried", "options": [{ "value": "true", "text": "Yes (Will commit to deductions)" }, { "value": "false", "text": "No" }] }
+      ]
+    },
+    {
+      "sectionTitle": "Declaration",
+      "fields": [
+        { "id": "crb_declaration", "label": "I confirm I have no adverse CRB reports", "type": "select", "required": true, "bindingProperty": "CrbClearance", "options": [{ "value": "true", "text": "Yes, I confirm" }] },
+        { "id": "coop_willingness", "label": "I am willing to join a cooperative (if applying as individual)", "type": "select", "required": true, "bindingProperty": "WillingToJoinCooperative", "options": [{ "value": "true", "text": "Yes" }, { "value": "na", "text": "N/A (Already a cooperative)" }] },
+        { "id": "signature", "label": "Digital Signature", "type": "signature", "required": true, "bindingProperty": "ApplicantSignature" }
+      ]
+    }
+  ]
+}

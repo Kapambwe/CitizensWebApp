@@ -1,0 +1,244 @@
+{
+  "requests": [
+    {
+      "id": "CR-FIN-001",
+      "requestingInstitution": "Zambia National Commercial Bank (Zanaco)",
+      "requestingOfficer": "Mwansa Chileshe, Credit Manager",
+      "purpose": "Mortgage Application Review",
+      "purposeDetails": "Assessment of financial eligibility for residential property financing.",
+      "status": "Active",
+      "requestDate": "2026-06-01T09:00:00",
+      "startDate": "2026-06-02T00:00:00",
+      "endDate": "2026-09-02T00:00:00",
+      "dataTypes": [
+        "Bank account balances",
+        "Salary slips (last 3 months)",
+        "Employment verification"
+      ]
+    },
+    {
+      "id": "CR-EDU-001",
+      "requestingInstitution": "University of Zambia (UNZA)",
+      "requestingOfficer": "Academic Registrar Office",
+      "purpose": "Post-Graduate Admission",
+      "purposeDetails": "Verification of prior academic qualifications and identity for enrollment.",
+      "status": "Pending",
+      "requestDate": "2026-06-10T14:30:00",
+      "startDate": null,
+      "endDate": null,
+      "dataTypes": [
+        "Secondary school results",
+        "NRC/Identity document",
+        "Degree certificates"
+      ]
+    },
+    {
+      "id": "CR-GOV-001",
+      "requestingInstitution": "Ministry of Health",
+      "requestingOfficer": "Dr. Joseph Mwale, Health Records Dept",
+      "purpose": "National Health Insurance Registration",
+      "purposeDetails": "Verification of citizen eligibility and dependents for health coverage.",
+      "status": "Active",
+      "requestDate": "2026-05-20T11:00:00",
+      "startDate": "2026-05-21T00:00:00",
+      "endDate": "2027-05-21T00:00:00",
+      "dataTypes": [
+        "Identity (NRC)",
+        "Family dependent records",
+        "Medical history summary"
+      ]
+    },
+    {
+      "id": "CR-GOV-002",
+      "requestingInstitution": "Road Transport and Safety Agency (RTSA)",
+      "requestingOfficer": "Licensing Department",
+      "purpose": "Driver License Renewal",
+      "purposeDetails": "Verification of physical fitness and prior traffic record status.",
+      "status": "Active",
+      "requestDate": "2026-06-05T10:15:00",
+      "startDate": "2026-06-05T00:00:00",
+      "endDate": "2026-07-05T00:00:00",
+      "dataTypes": [
+        "Identity (NRC)",
+        "Eye test results",
+        "Residential address"
+      ]
+    },
+    {
+      "id": "CR-FIN-002",
+      "requestingInstitution": "Stanbic Bank",
+      "requestingOfficer": "Compliance Dept",
+      "purpose": "KYC Periodic Review",
+      "purposeDetails": "Mandatory regulatory update of customer identity and address information.",
+      "status": "Expired",
+      "requestDate": "2026-04-10T08:00:00",
+      "startDate": "2026-04-12T00:00:00",
+      "endDate": "2026-05-12T00:00:00",
+      "dataTypes": [
+        "Identity (NRC)",
+        "Proof of residence",
+        "Utility bills"
+      ]
+    },
+    {
+      "id": "CR-EDU-002",
+      "requestingInstitution": "Copperbelt University (CBU)",
+      "requestingOfficer": "Scholarship Committee",
+      "purpose": "Bursary Eligibility Verification",
+      "purposeDetails": "Assessment of financial need for government-sponsored educational grants.",
+      "status": "Revoked",
+      "requestDate": "2026-05-01T13:00:00",
+      "startDate": "2026-05-02T00:00:00",
+      "endDate": "2026-08-02T00:00:00",
+      "revokedDate": "2026-05-15T16:00:00",
+      "dataTypes": [
+        "Income verification",
+        "Tax clearance status",
+        "Identity (NRC)"
+      ]
+    },
+    {
+      "id": "CR-GOV-003",
+      "requestingInstitution": "National Pension Scheme Authority (NAPSA)",
+      "requestingOfficer": "Member Services Unit",
+      "purpose": "Pension Contribution Audit",
+      "purposeDetails": "Verification of employment history and contribution accuracy.",
+      "status": "Pending",
+      "requestDate": "2026-06-11T10:00:00",
+      "startDate": null,
+      "endDate": null,
+      "dataTypes": [
+        "Employment contracts",
+        "Salary history",
+        "NRC/Identity document"
+      ]
+    },
+    {
+      "id": "CR-GOV-004",
+      "requestingInstitution": "PACRA",
+      "requestingOfficer": "Compliance Division",
+      "purpose": "Business Directorship Verification",
+      "purposeDetails": "Validation of active directorships for annual compliance check.",
+      "status": "Active",
+      "requestDate": "2026-06-08T15:45:00",
+      "startDate": "2026-06-09T00:00:00",
+      "endDate": "2027-06-09T00:00:00",
+      "dataTypes": [
+        "Company registration records",
+        "Identity (NRC)",
+        "Tax clearance certificate"
+      ]
+    },
+    {
+      "id": "CR-BNK-001",
+      "requestingInstitution": "Absa Bank Zambia PLC",
+      "requestingOfficer": "Personal Lending Department",
+      "purpose": "Unsecured Personal Loan Application",
+      "purposeDetails": "Verification of creditworthiness and stable income for loan approval.",
+      "status": "Pending",
+      "requestDate": "2026-06-12T09:30:00",
+      "startDate": null,
+      "endDate": null,
+      "dataTypes": [
+        "Credit Score (CRB)",
+        "Salary history (last 6 months)",
+        "Employer confirmation",
+        "Identity (NRC)"
+      ]
+    },
+    {
+      "id": "CR-INS-001",
+      "requestingInstitution": "Madison General Insurance",
+      "requestingOfficer": "Underwriting Team",
+      "purpose": "Motor Insurance Policy Issuance",
+      "purposeDetails": "Validation of vehicle ownership and driver eligibility for comprehensive cover.",
+      "status": "Active",
+      "requestDate": "2026-06-02T11:20:00",
+      "startDate": "2026-06-02T00:00:00",
+      "endDate": "2027-06-02T00:00:00",
+      "dataTypes": [
+        "Vehicle Registration (White book)",
+        "Driver's License details",
+        "Identity (NRC)"
+      ]
+    },
+    {
+      "id": "CR-TEL-001",
+      "requestingInstitution": "Airtel Zambia",
+      "requestingOfficer": "KYC Compliance Unit",
+      "purpose": "SIM Card Re-registration",
+      "purposeDetails": "Mandatory ZICTA update of subscriber identity records using digital identity.",
+      "status": "Active",
+      "requestDate": "2026-05-30T16:00:00",
+      "startDate": "2026-05-30T00:00:00",
+      "endDate": "2029-05-30T00:00:00",
+      "dataTypes": [
+        "Identity (NRC)",
+        "Biometric Face Proof",
+        "Current residential address"
+      ]
+    },
+    {
+      "id": "CR-UTL-001",
+      "requestingInstitution": "ZESCO Limited",
+      "requestingOfficer": "Customer Service - Lusaka West",
+      "purpose": "New Connection Application",
+      "purposeDetails": "Verification of property ownership and identity for electricity supply installation.",
+      "status": "Pending",
+      "requestDate": "2026-06-11T13:45:00",
+      "startDate": null,
+      "endDate": null,
+      "dataTypes": [
+        "Title Deed / Lease Agreement",
+        "Identity (NRC)",
+        "Site map / Sketch"
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "templateId": "consent-standard-kyc",
+      "templateName": "Standard Financial KYC",
+      "purpose": "Standard identity and address verification for financial services.",
+      "defaultDurationDays": 365,
+      "dataTypes": [
+        "Identity (NRC)",
+        "Proof of residence",
+        "Tax Identification Number (TPIN)"
+      ]
+    },
+    {
+      "templateId": "consent-academic-verify",
+      "templateName": "Academic Verification",
+      "purpose": "Consent for sharing educational records with institutions.",
+      "defaultDurationDays": 60,
+      "dataTypes": [
+        "Degree certificates",
+        "Academic transcripts",
+        "Professional certifications"
+      ]
+    },
+    {
+      "templateId": "consent-health-insurance",
+      "templateName": "Health Insurance Consent",
+      "purpose": "Sharing necessary data for insurance coverage and claim processing.",
+      "defaultDurationDays": 365,
+      "dataTypes": [
+        "Identity (NRC)",
+        "Medical diagnosis summary",
+        "Prescription history"
+      ]
+    },
+    {
+      "templateId": "consent-property-transaction",
+      "templateName": "Property Transaction Consent",
+      "purpose": "Verification of ownership and tax status for land/property transfers.",
+      "defaultDurationDays": 30,
+      "dataTypes": [
+        "Title Deed",
+        "Ground Rent Clearance",
+        "Identity (NRC)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "FormId": "FORM-SERVICE-LAND-LEASE-RENEW-001",
+  "FormName": "Ministry of Lands: Land Lease Renewal Application",
+  "Sections": [
+    {
+      "SectionTitle": "Lessee Information",
+      "Fields": [
+        { "Id": "applicantName", "Label": "Full Name of Lessee", "Type": "text", "Required": true, "BindingProperty": "Applicant.Name", "Placeholder": "Verified from NRC" },
+        { "Id": "nrcNumber", "Label": "NRC Number", "Type": "text", "Required": true, "BindingProperty": "Applicant.Nrc", "Placeholder": "Verified from NRC" },
+        { "Id": "contactPhone", "Label": "Contact Phone Number", "Type": "text", "Required": true, "BindingProperty": "Applicant.Phone" }
+      ]
+    },
+    {
+      "SectionTitle": "Lease Details",
+      "Fields": [
+        { "Id": "titleNumber", "Label": "Title/Lease Number", "Type": "text", "Required": true, "BindingProperty": "Lease.CurrentLeaseId", "Placeholder": "e.g., LUS/1234/56" },
+        { "Id": "plotNumber", "Label": "Plot/Stand Number", "Type": "text", "Required": true, "BindingProperty": "Land.PlotNumber" },
+        { "Id": "location", "Label": "Location/Address", "Type": "textarea", "Required": true, "BindingProperty": "Land.Location" },
+        { "Id": "expiryDate", "Label": "Current Lease Expiry Date", "Type": "date", "Required": true, "BindingProperty": "Lease.ExpiryDate" },
+        { "Id": "renewalPeriod", "Label": "Requested Renewal Period (Years)", "Type": "select", "Required": true, "BindingProperty": "Lease.RenewalPeriod", "Options": [
+          { "Value": "14", "Text": "14 Years" }, { "Value": "30", "Text": "30 Years" }, { "Value": "99", "Text": "99 Years" }
+        ]}
+      ]
+    },
+    {
+      "SectionTitle": "Property Assessment",
+      "Fields": [
+        { "Id": "improvementsMade", "Label": "Have there been improvements to the property?", "Type": "select", "Required": true, "BindingProperty": "Property.Improvements", "Options": [
+          { "Value": "true", "Text": "Yes" }, { "Value": "false", "Text": "No" }
+        ]},
+        { "Id": "rentArrears", "Label": "Are there any ground rent arrears?", "Type": "select", "Required": true, "BindingProperty": "Property.Arrears", "Options": [
+          { "Value": "true", "Text": "Yes" }, { "Value": "false", "Text": "No" }
+        ]}
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        { "Id": "declDate", "Label": "Date of Application", "Type": "date", "Required": true, "BindingProperty": "Declaration.Date" },
+        { "Id": "signature", "Label": "Digital Signature", "Type": "signature", "Required": true, "BindingProperty": "CitizenSignature" }
+      ]
+    }
+  ]
+}

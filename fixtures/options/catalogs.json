@@ -1,0 +1,104 @@
+{
+  "paymentMethods": [
+    { "code": "mobile_money", "label": "Mobile Money" },
+    { "code": "bank_card", "label": "Bank Card" },
+    { "code": "qr_wallet", "label": "QR Wallet" },
+    { "code": "bank_transfer", "label": "Bank Transfer" }
+  ],
+  "mobileProviders": [
+    { "code": "mtn", "label": "MTN Mobile Money" },
+    { "code": "airtel", "label": "Airtel Money" },
+    { "code": "zamtel", "label": "Zamtel Kwacha" }
+  ],
+  "locations": [
+    { "code": "lusaka", "label": "Lusaka" },
+    { "code": "kitwe", "label": "Kitwe" },
+    { "code": "ndola", "label": "Ndola" },
+    { "code": "kabwe", "label": "Kabwe" },
+    { "code": "livingstone", "label": "Livingstone" }
+  ],
+  "provinces": [
+    { "code": "Central Province", "label": "Central Province" },
+    { "code": "Copperbelt Province", "label": "Copperbelt Province" },
+    { "code": "Eastern Province", "label": "Eastern Province" },
+    { "code": "Luapula Province", "label": "Luapula Province" },
+    { "code": "Lusaka Province", "label": "Lusaka Province" },
+    { "code": "Muchinga Province", "label": "Muchinga Province" },
+    { "code": "Northern Province", "label": "Northern Province" },
+    { "code": "North-Western Province", "label": "North-Western Province" },
+    { "code": "Southern Province", "label": "Southern Province" },
+    { "code": "Western Province", "label": "Western Province" }
+  ],
+  "districtsByProvince": {
+    "Lusaka Province": [ "Lusaka", "Chilanga", "Kafue", "Chongwe", "Luangwa", "Rufunsa", "Chirundu" ],
+    "Copperbelt Province": [ "Ndola", "Kitwe", "Chingola", "Mufulira", "Luanshya", "Kalulushi", "Chililabombwe" ],
+    "Central Province": [ "Kabwe", "Kapiri Mposhi", "Serenje", "Mkushi", "Chibombo", "Mumbwa" ],
+    "Southern Province": [ "Livingstone", "Choma", "Kalomo", "Mazabuka", "Monze", "Namwala" ]
+  },
+  "wards": [
+    { "code": "Kanyama", "label": "Kanyama" },
+    { "code": "Chelston", "label": "Chelston" },
+    { "code": "Meanwood", "label": "Meanwood" },
+    { "code": "Matero", "label": "Matero" },
+    { "code": "Chawama", "label": "Chawama" },
+    { "code": "Kalingalinga", "label": "Kalingalinga" },
+    { "code": "Garden", "label": "Garden" },
+    { "code": "Ngombe", "label": "Ngombe" },
+    { "code": "Libala", "label": "Libala" },
+    { "code": "Chilenje", "label": "Chilenje" }
+  ],
+  "statuses": [
+    { "code": "pending", "label": "Pending" },
+    { "code": "under_review", "label": "Under Review" },
+    { "code": "approved", "label": "Approved" },
+    { "code": "rejected", "label": "Rejected" },
+    { "code": "expired", "label": "Expired" }
+  ],
+  "priorities": [
+    { "code": "Low", "label": "Low" },
+    { "code": "Medium", "label": "Medium" },
+    { "code": "High", "label": "High" },
+    { "code": "Critical", "label": "Critical" }
+  ],
+  "reportTypes": [
+    { "code": "Pothole", "label": "Pothole" },
+    { "code": "Broken Streetlight", "label": "Broken Streetlight" },
+    { "code": "Encroachment", "label": "Encroachment" },
+    { "code": "Drainage Issue", "label": "Drainage Issue" },
+    { "code": "Road Damage", "label": "Road Damage" },
+    { "code": "Missing Signage", "label": "Missing Signage" },
+    { "code": "Other", "label": "Other" }
+  ],
+  "violationTypes": [
+    { "code": "Illegal Construction", "label": "Illegal Construction" },
+    { "code": "Zoning Violation", "label": "Zoning Violation" },
+    { "code": "Encroachment", "label": "Encroachment" },
+    { "code": "Unauthorized Land Use", "label": "Unauthorized Land Use" },
+    { "code": "Building Without Permit", "label": "Building Without Permit" },
+    { "code": "Environmental Violation", "label": "Environmental Violation" },
+    { "code": "Boundary Dispute", "label": "Boundary Dispute" },
+    { "code": "Other", "label": "Other" }
+  ],
+  "issuers": [
+    { "code": "Department of National Registration", "label": "Department of National Registration" },
+    { "code": "Road Transport and Safety Agency", "label": "Road Transport and Safety Agency" },
+    { "code": "Ministry of Health", "label": "Ministry of Health" },
+    { "code": "Examinations Council of Zambia", "label": "Examinations Council of Zambia" }
+  ],
+  "documentTypes": [
+    { "code": "NRC", "label": "NRC" },
+    { "code": "License", "label": "License" },
+    { "code": "Certificate", "label": "Certificate" },
+    { "code": "UtilityBill", "label": "UtilityBill" },
+    { "code": "passport", "label": "Passport" },
+    { "code": "PdfDocument", "label": "PDF Document" },
+    { "code": "ImageDocument", "label": "Image Document" },
+    { "code": "WalletVerifiableCredential", "label": "Wallet Verifiable Credential" }
+  ],
+  "mediaAssetTypes": [
+    { "code": "5", "label": "Document" },
+    { "code": "1", "label": "Picture" },
+    { "code": "4", "label": "Audio" },
+    { "code": "2", "label": "Video" }
+  ]
+}

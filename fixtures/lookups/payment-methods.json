@@ -1,0 +1,6 @@
+[
+  { "PaymentMethodId": 1, "Name": "Bank Transfer", "Description": "Direct transfer from a bank account" },
+  { "PaymentMethodId": 2, "Name": "Credit Card", "Description": "Card payment via secure gateway" },
+  { "PaymentMethodId": 3, "Name": "Mobile Money", "Description": "Mobile wallet settlement" },
+  { "PaymentMethodId": 4, "Name": "Cash", "Description": "Cash over the counter" }
+]

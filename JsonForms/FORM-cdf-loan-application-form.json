@@ -1,0 +1,203 @@
+{
+  "FormId": "cdf-loan-application-form",
+  "FormName": "Constituency Development Fund Loan Application Form for Youth, Women and Community Empowerment",
+  "Sections": [
+    {
+      "SectionTitle": "Official Use Only (Header)",
+      "Fields": [
+        {
+          "Id": "projectIdentificationNumber",
+          "Label": "Project Identification Number (for official use):",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.ProjectIdentificationNumber"
+        },
+        {
+          "Id": "yeZoneWardCodeNumber",
+          "Label": "YE/Zone/Ward Code Number:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.YeZoneWardCodeNumber"
+        },
+        {
+          "Id": "weZoneWardCodeNumber",
+          "Label": "WE/Zone/Ward Code Number:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.WeZoneWardCodeNumber"
+        },
+        {
+          "Id": "ceZoneWardCodeNumber",
+          "Label": "CE/Zone/Ward Code Number:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Official.CeZoneWardCodeNumber"
+        }
+      ]
+    },
+    {
+      "SectionTitle": "SECTION A. GENERAL DETAILS (TO BE COMPLETED BY THE APPLICANT)",
+      "Fields": [
+        {
+          "Id": "businessName",
+          "Label": "Name of Business/Organisation/Company/Group/Cooperative/Club:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.BusinessName"
+        },
+        {
+          "Id": "legalForm",
+          "Label": "Legal form of applicant (Limited Company (SME)/Group /Cooperative/club):",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.LegalForm"
+        },
+        {
+          "Id": "registrationDate",
+          "Label": "Date of Company/Group/Cooperative/Club Registration:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.RegistrationDate"
+        },
+        {
+          "Id": "tpin",
+          "Label": "TPIN:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.Tpin"
+        },
+        {
+          "Id": "shareholdersMembersList",
+          "Label": "Shareholders of the Company/Members of a Group/Cooperative/Club (List details including Full Names, NRC/Passport No, % Shareholding, Position, Disability Status):",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "Applicant.ShareholdersMembersList"
+        },
+        {
+          "Id": "contactPersonName",
+          "Label": "Authorized Representative - Name of Contact Person:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.ContactPerson.Name"
+        },
+        {
+          "Id": "contactPersonPosition",
+          "Label": "Authorized Representative - Position in the Business:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.ContactPerson.Position"
+        },
+        {
+          "Id": "contactPersonCell",
+          "Label": "Authorized Representative - Contact Number (Cell):",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.ContactPerson.Cell"
+        },
+        {
+          "Id": "contactPersonTelephone",
+          "Label": "Authorized Representative - Contact Number (Telephone):",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Applicant.ContactPerson.Telephone"
+        },
+        {
+          "Id": "contactPersonEmail",
+          "Label": "Authorized Representative - Email:",
+          "Type": "text",
+          "Required": false,
+          "BindingProperty": "Applicant.ContactPerson.Email"
+        },
+        {
+          "Id": "district",
+          "Label": "Project Location - Name of District:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.ProjectLocation.District"
+        },
+        {
+          "Id": "constituency",
+          "Label": "Project Location - Name of Constituency:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.ProjectLocation.Constituency"
+        },
+        {
+          "Id": "ward",
+          "Label": "Project Location - Name of Ward:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.ProjectLocation.Ward"
+        },
+        {
+          "Id": "zone",
+          "Label": "Project Location - Name of Zone:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "Applicant.ProjectLocation.Zone"
+        },
+        {
+          "Id": "physicalAddress",
+          "Label": "Project Location - Physical address:",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "Applicant.ProjectLocation.PhysicalAddress"
+        }
+      ]
+    },
+    {
+      "SectionTitle": "SECTION B: DETAILS OF LOAN APPLICATION",
+      "Fields": [
+        {
+          "Id": "loanAmount",
+          "Label": "Loan application amount (in figures and words):",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "LoanDetails.Amount"
+        },
+        {
+          "Id": "businessDescription",
+          "Label": "Description of business (eg. Pottery, Piggery, Carpentry, Tailoring, Metal Fabrication etc):",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "LoanDetails.BusinessDescription"
+        },
+        {
+          "Id": "businessStatus",
+          "Label": "Indicate whether the Company/Cooperative/Club is an existing one or a start-up:",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "LoanDetails.BusinessStatus"
+        },
+        {
+          "Id": "loanPurpose",
+          "Label": "Purpose of the loan (eg. To start or expand a Pottery business, buy sewing machine, to buy metal fabrication equipment etc.):",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "LoanDetails.LoanPurpose"
+        },
+        {
+          "Id": "repaymentPeriod",
+          "Label": "Repayment period (time period for paying back the loan):",
+          "Type": "text",
+          "Required": true,
+          "BindingProperty": "LoanDetails.RepaymentPeriod"
+        },
+        {
+          "Id": "repaymentSource",
+          "Label": "Source of funds for repayment of Loan (funds realized from the business and any other source):",
+          "Type": "textarea",
+          "Required": true,
+          "BindingProperty": "LoanDetails.RepaymentSource"
+        },
+        {
+          "Id": "collateral",
+          "Label": "Collateral if any (eg assets such as land, equipment etc):",
+          "Type": "textarea",
+          "Required": false,
+          "BindingProperty": "LoanDetails.Collateral"
+        }
+      ]
+    }
+  ]
+}

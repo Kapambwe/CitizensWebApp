@@ -1,0 +1,300 @@
+[
+  {
+    "Id": 1,
+    "Title": "Supply of Office Furniture",
+    "Sector": "Procurement",
+    "Budget": 250000.00,
+    "ClosingDate": "2026-06-20T00:00:00Z",
+    "Status": "Open",
+    "IssuerName": "Lusaka City Council",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "LocalityReasonRural": "This tender is reachable from rural suppliers that can aggregate and deliver office furniture to the city.",
+    "LocalityReasonTown": "This tender is a strong town fit for local manufacturers and suppliers with workshop capacity.",
+    "LocalityReasonCity": "This tender is ideal for city-based manufacturers and procurement teams with furniture supply capacity.",
+    "Requirements": [
+      {
+        "Id": "REQ-REG",
+        "Label": "Company Registration Certificate",
+        "Description": "Certificate of incorporation or registration from the wallet",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate"]
+      },
+      {
+        "Id": "REQ-TAX",
+        "Label": "Tax Clearance",
+        "Description": "Valid tax clearance from the wallet",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate", "License"]
+      },
+      {
+        "Id": "REQ-BANK",
+        "Label": "Bank Account Confirmation",
+        "Description": "Bank confirmation or equivalent financial document",
+        "IsMandatory": false,
+        "AllowedDocumentTypes": ["Certificate", "Letter"]
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "Title": "Provision of Cleaning Services",
+    "Sector": "Facilities Management",
+    "Budget": 500000.00,
+    "ClosingDate": "2026-06-15T00:00:00Z",
+    "Status": "Open",
+    "IssuerName": "Ministry of Public Works",
+    "TenantId": "MIN-PUBLIC-WORKS-ZM",
+    "LocalityReasonRural": "This tender can work for rural cooperatives that can organize cleaning teams and service routes.",
+    "LocalityReasonTown": "This tender fits town-based service businesses that can mobilize crews across local districts.",
+    "LocalityReasonCity": "This tender is a good city fit for firms that can manage cleaning contracts and logistics.",
+    "Requirements": [
+      {
+        "Id": "REQ-REG",
+        "Label": "Business Registration",
+        "Description": "Registered company certificate from the wallet",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate"]
+      },
+      {
+        "Id": "REQ-TAX",
+        "Label": "Tax Clearance",
+        "Description": "Current tax clearance certificate",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate"]
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "Title": "Supply of ICT Equipment",
+    "Sector": "Technology",
+    "Budget": 1200000.00,
+    "ClosingDate": "2026-06-10T00:00:00Z",
+    "Status": "Open",
+    "IssuerName": "Ministry of Education",
+    "TenantId": "MIN-EDUCATION-ZM",
+    "LocalityReasonRural": "This tender is available to rural suppliers who can supply ICT items through regional distribution.",
+    "LocalityReasonTown": "This tender is a strong town fit for dealers and service providers with delivery and support capacity.",
+    "LocalityReasonCity": "This tender is a best fit for city-based ICT suppliers and integrators with fast fulfillment capacity.",
+    "Requirements": [
+      {
+        "Id": "REQ-REG",
+        "Label": "Registration Certificate",
+        "Description": "Company registration certificate",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate"]
+      },
+      {
+        "Id": "REQ-REF",
+        "Label": "Reference Letter",
+        "Description": "Reference letter demonstrating relevant experience",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Letter", "Certificate"]
+      }
+    ]
+  },
+  {
+    "Id": 4,
+    "Title": "CDF Youth and Women Enterprise Supply Tender",
+    "Sector": "Procurement",
+    "Budget": 350000.00,
+    "ClosingDate": "2026-06-25T00:00:00Z",
+    "Status": "Open",
+    "IssuerName": "Lusaka City Council",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "LocalAuthorityType": "CityCouncil",
+    "LocalityJurisdiction": "Lusaka",
+    "IsConstituencyDevelopmentFund": true,
+    "LocalityReasonRural": "This CDF tender is only visible to city-local suppliers and is not intended for rural jurisdictions.",
+    "LocalityReasonTown": "This CDF tender is only visible to city-local suppliers and is not intended for town jurisdictions.",
+    "LocalityReasonCity": "This CDF tender is a city-local opportunity reserved for the local council area.",
+    "YouthFitLabel": "Youth priority",
+    "WomenFitLabel": "Women priority",
+    "GeneralFitLabel": "Local council opportunity",
+    "YouthFitReason": "This CDF tender is recommended because it prioritizes youth-led enterprise in the local council area.",
+    "WomenFitReason": "This CDF tender is recommended because it prioritizes women-led enterprise in the local council area.",
+    "GeneralFitReason": "This CDF tender is available because you are in the local city council area.",
+    "Requirements": [
+      {
+        "Id": "REQ-REG",
+        "Label": "Business Registration Certificate",
+        "Description": "Certificate of incorporation or registration from the wallet",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate"]
+      },
+      {
+        "Id": "REQ-TAX",
+        "Label": "Tax Clearance",
+        "Description": "Valid tax clearance from the wallet",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate", "License"]
+      }
+    ]
+  },
+  {
+    "Id": 5,
+    "Title": "Routine Road Maintenance Works",
+    "Sector": "Infrastructure",
+    "Budget": 1800000.00,
+    "ClosingDate": "2026-06-30T00:00:00Z",
+    "Status": "Open",
+    "IssuerName": "Road Development Agency",
+    "TenantId": "RDA-ZM",
+    "LocalityReasonRural": "This tender suits rural contractors that can mobilize labour and materials along feeder roads.",
+    "LocalityReasonTown": "This tender is a town fit for contractors with road maintenance teams and small plant.",
+    "LocalityReasonCity": "This tender is a city fit for firms with infrastructure and maintenance capacity.",
+    "Requirements": [
+      {
+        "Id": "REQ-REG",
+        "Label": "Business Registration Certificate",
+        "Description": "Certificate of incorporation or registration from the wallet",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate"]
+      },
+      {
+        "Id": "REQ-EXPERIENCE",
+        "Label": "Previous Works Evidence",
+        "Description": "Evidence of similar road works or maintenance experience",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Letter", "Certificate"]
+      }
+    ]
+  },
+  {
+    "Id": 6,
+    "Title": "Supply of Grid Equipment",
+    "Sector": "Energy",
+    "Budget": 2200000.00,
+    "ClosingDate": "2026-07-05T00:00:00Z",
+    "Status": "Open",
+    "IssuerName": "ZESCO Limited",
+    "TenantId": "ZESCO-LIMITED-ZM",
+    "LocalityReasonRural": "This tender is suitable for rural suppliers that can deliver through regional distribution networks.",
+    "LocalityReasonTown": "This tender is a strong town fit for distributors and suppliers with workshop support capacity.",
+    "LocalityReasonCity": "This tender is a best fit for city-based energy suppliers and industrial contractors.",
+    "Requirements": [
+      {
+        "Id": "REQ-REG",
+        "Label": "Business Registration Certificate",
+        "Description": "Certificate of incorporation or registration from the wallet",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate"]
+      },
+      {
+        "Id": "REQ-TAX",
+        "Label": "Tax Clearance",
+        "Description": "Valid tax clearance from the wallet",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate"]
+      }
+    ]
+  },
+  {
+    "Id": 7,
+    "Title": "Supply of Medicines and Medical Consumables",
+    "Sector": "Health",
+    "Budget": 3200000.00,
+    "ClosingDate": "2026-07-12T00:00:00Z",
+    "Status": "Open",
+    "IssuerName": "ZAMMSA",
+    "TenantId": "ZAMMSA-ZM",
+    "LocalityReasonRural": "This tender is suitable for rural distributors with medicine distribution routes and storage capacity.",
+    "LocalityReasonTown": "This tender is a strong town fit for medical suppliers with retail and distribution capacity.",
+    "LocalityReasonCity": "This tender is a best fit for city-based pharmaceutical suppliers and logistics teams.",
+    "Requirements": [
+      {
+        "Id": "REQ-REG",
+        "Label": "Business Registration Certificate",
+        "Description": "Certificate of incorporation or registration from the wallet",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate"]
+      },
+      {
+        "Id": "REQ-TAX",
+        "Label": "Tax Clearance",
+        "Description": "Valid tax clearance from the wallet",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate"]
+      },
+      {
+        "Id": "REQ-LICENSE",
+        "Label": "Medical Supply Permit",
+        "Description": "Valid permit or registration to supply medical products",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["License", "Certificate"]
+      }
+    ]
+  },
+  {
+    "Id": 8,
+    "Title": "Supply of Desks for Public Schools",
+    "Sector": "Education",
+    "Budget": 1450000.00,
+    "ClosingDate": "2026-07-09T00:00:00Z",
+    "Status": "Open",
+    "IssuerName": "Lusaka City Council",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "LocalityReasonRural": "This tender can support rural woodworking cooperatives that can deliver school desks to the city.",
+    "LocalityReasonTown": "This tender is a good town fit for furniture makers with production and delivery capacity.",
+    "LocalityReasonCity": "This tender is a strong city fit for furniture makers and carpentry workshops in Lusaka.",
+    "Requirements": [
+      {
+        "Id": "REQ-REG",
+        "Label": "Business Registration Certificate",
+        "Description": "Certificate of incorporation or registration from the wallet",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate"]
+      },
+      {
+        "Id": "REQ-TAX",
+        "Label": "Tax Clearance",
+        "Description": "Valid tax clearance from the wallet",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate"]
+      },
+      {
+        "Id": "REQ-PREV",
+        "Label": "Previous Furniture Supply Evidence",
+        "Description": "Evidence of previous furniture or school supply work",
+        "IsMandatory": false,
+        "AllowedDocumentTypes": ["Letter", "Certificate"]
+      }
+    ]
+  },
+  {
+    "Id": 9,
+    "Title": "Build of Classrooms in Kanyama",
+    "Sector": "Infrastructure",
+    "Budget": 4800000.00,
+    "ClosingDate": "2026-07-18T00:00:00Z",
+    "Status": "Open",
+    "IssuerName": "Ministry of Education",
+    "TenantId": "MIN-EDUCATION-ZM",
+    "LocalityReasonRural": "This tender can work for rural construction teams that can mobilize labour and materials.",
+    "LocalityReasonTown": "This tender fits town-based contractors with construction crews and materials access.",
+    "LocalityReasonCity": "This tender is a city fit for contractors with construction teams and project delivery capacity.",
+    "Requirements": [
+      {
+        "Id": "REQ-REG",
+        "Label": "Business Registration Certificate",
+        "Description": "Certificate of incorporation or registration from the wallet",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate"]
+      },
+      {
+        "Id": "REQ-TAX",
+        "Label": "Tax Clearance",
+        "Description": "Valid tax clearance from the wallet",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Certificate"]
+      },
+      {
+        "Id": "REQ-EXP",
+        "Label": "Construction Experience Evidence",
+        "Description": "Evidence of previous classroom or building construction work",
+        "IsMandatory": true,
+        "AllowedDocumentTypes": ["Letter", "Certificate"]
+      }
+    ]
+  }
+]

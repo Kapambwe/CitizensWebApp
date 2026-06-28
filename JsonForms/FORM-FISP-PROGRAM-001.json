@@ -1,0 +1,13 @@
+{
+  "FormId": "FORM-FISP-PROGRAM-001",
+  "FormName": "FISP Application",
+  "Sections": [
+    {
+      "SectionTitle": "Farmer Details",
+      "Fields": [
+        { "Id": "farmerName", "Label": "Farmer Name", "Type": "text", "Required": true, "BindingProperty": "Farmer.FullName" },
+        { "Id": "landSize", "Label": "Land Size (Hectares)", "Type": "number", "Required": true, "BindingProperty": "Farmer.LandSize" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,618 @@
+{
+  "Tenants": [
+    {
+      "TenantId": "LUSAKA-CITY-COUNCIL",
+      "TenantName": "Lusaka City Council",
+      "TenantType": "Council",
+      "DefaultQueueId": "LCC-GENERAL-QUEUE",
+      "DefaultQueueName": "Lusaka City Council General Intake",
+      "SupportedCategories": [
+        "Business",
+        "Community",
+        "Infrastructure"
+      ]
+    },
+    {
+      "TenantId": "MINISTRY-OF-LANDS",
+      "TenantName": "Ministry of Lands and Natural Resources",
+      "TenantType": "Ministry",
+      "DefaultQueueId": "LANDS-REGISTRY-QUEUE",
+      "DefaultQueueName": "Lands Registry Intake",
+      "SupportedCategories": [
+        "Land",
+        "Environmental"
+      ]
+    },
+    {
+      "TenantId": "PACRA-ZM",
+      "TenantName": "PACRA",
+      "TenantType": "Agency",
+      "DefaultQueueId": "PACRA-REG-QUEUE",
+      "DefaultQueueName": "PACRA Registrations",
+      "SupportedCategories": [
+        "Business"
+      ]
+    },
+    {
+      "TenantId": "NAPSA-ZM",
+      "TenantName": "NAPSA",
+      "TenantType": "Agency",
+      "DefaultQueueId": "NAPSA-REG-QUEUE",
+      "DefaultQueueName": "NAPSA Member Services",
+      "SupportedCategories": [
+        "Social Security"
+      ]
+    },
+    {
+      "TenantId": "ZANACO-BANK",
+      "TenantName": "Zanaco Bank",
+      "TenantType": "Bank",
+      "DefaultQueueId": "ZANACO-KYC-QUEUE",
+      "DefaultQueueName": "Zanaco Digital Onboarding",
+      "SupportedCategories": [
+        "Banking"
+      ]
+    },
+    {
+      "TenantId": "FINCA-ZM",
+      "TenantName": "FINCA Zambia",
+      "TenantType": "Microfinance",
+      "DefaultQueueId": "FINCA-LOAN-QUEUE",
+      "DefaultQueueName": "FINCA Loan Applications",
+      "SupportedCategories": [
+        "Loans"
+      ]
+    },
+    {
+      "TenantId": "CEEC-ZM",
+      "TenantName": "CEEC",
+      "TenantType": "Commission",
+      "DefaultQueueId": "CEEC-LOAN-QUEUE",
+      "DefaultQueueName": "CEEF Loan Applications",
+      "SupportedCategories": [
+        "Empowerment",
+        "Agriculture",
+        "Business"
+      ]
+    }
+  ],
+  "Services": [
+    {
+      "ServiceId": "SOC-SEC-NAPSA-REG",
+      "ServiceName": "NAPSA Member Registration",
+      "AgencyName": "National Pension Scheme Authority",
+      "Category": "Social Security",
+      "TenantId": "NAPSA-ZM",
+      "FormId": "FORM-NAPSA-REG-001",
+      "FormName": "NAPSA Member Registration Form",
+      "ApplicationFee": 0.0,
+      "ComplianceDetails": "Member registration requires verification of identity and employment status to ensure accurate pension contribution tracking. All data is handled in accordance with the National Pension Scheme Act.",
+      "ComplianceRequirements": [
+        "Identity Verification via National ID (NRC)",
+        "Employment Status Verification",
+        "Consent to Data Processing for Pension Purposes",
+        "Compliance with National Pension Scheme Act No. 40 of 1996"
+      ],
+      "Requirements": [
+        {
+          "Id": "REQ-NRC",
+          "Label": "National Registration Card (NRC)",
+          "Description": "Digital proof of your National Identity issued by the Department of National Registration.",
+          "IsMandatory": true,
+          "CredentialType": "NationalIDCredential",
+          "FieldMapping": "fullName:fullName,nrcNumber:nrcNumber,dateOfBirth:dateOfBirth",
+          "ComplianceContext": "Used to establish unique member identity in the pension system."
+        },
+        {
+          "Id": "REQ-TPIN",
+          "Label": "TPIN Certificate",
+          "Description": "Tax Payer Identification Number issued by Zambia Revenue Authority.",
+          "IsMandatory": true,
+          "CredentialType": "TaxCertificateCredential",
+          "FieldMapping": "tpin:employer_tpin",
+          "ComplianceContext": "Ensures alignment between tax and social security contributions."
+        },
+        {
+          "Id": "REQ-EMP-LETTER",
+          "Label": "Employment Letter / Contract",
+          "Description": "Please upload a signed copy of your employment letter or current contract.",
+          "IsMandatory": true,
+          "AllowedFileTypes": [ "pdf", "jpg", "png" ],
+          "ComplianceContext": "Verified against employer records to prevent fraudulent registrations."
+        }
+      ]
+    },
+    {
+      "ServiceId": "FIN-BANK-ACC-OPEN",
+      "ServiceName": "Open Zanaco Smart Account",
+      "AgencyName": "Zanaco Bank",
+      "Category": "Banking",
+      "TenantId": "ZANACO-BANK",
+      "FormId": "FORM-ZANACO-OPEN-001",
+      "FormName": "Zanaco Smart Account Application",
+      "ApplicationFee": 0.0,
+      "ComplianceDetails": "Zanaco Bank requires full KYC and AML verification for all new account openings.",
+      "ComplianceRequirements": [
+        "Biometric Face Verification (Liveness Check)",
+        "Digital Identity Verification (NRC)",
+        "Proof of Residence Verification"
+      ],
+      "Requirements": [
+        { "Id": "REQ-NRC", "Label": "National ID (NRC)", "Description": "Verifiable National Identity", "IsMandatory": true, "CredentialType": "NationalIDCredential", "FieldMapping": "fullName:ApplicantName,nrcNumber:ApplicantNrc,dateOfBirth:DateOfBirth" },
+        { "Id": "REQ-EKYC", "Label": "Face Verification", "Description": "Biometric liveness check", "IsMandatory": true, "CredentialType": "FaceVerificationProof" },
+        { "Id": "REQ-RESIDENCE", "Label": "Proof of Residence", "Description": "Utility bill or Tenancy Agreement", "IsMandatory": true, "AllowedFileTypes": ["pdf"] }
+      ]
+    },
+    {
+      "ServiceId": "FIN-LOAN-APP-001",
+      "ServiceName": "Agri-Business Micro-Loan",
+      "AgencyName": "FINCA Zambia",
+      "Category": "Loans",
+      "TenantId": "FINCA-ZM",
+      "FormId": "FORM-FINCA-LOAN-001",
+      "FormName": "FINCA Agri-Loan Application",
+      "ApplicationFee": 0.0,
+      "ComplianceDetails": "FINCA Zambia loan compliance requires credit worthiness assessment.",
+      "ComplianceRequirements": [
+        "CRB Check",
+        "Identity Verification",
+        "Income Verification"
+      ],
+      "Requirements": [
+        { "Id": "REQ-NRC", "Label": "National ID (NRC)", "Description": "Verifiable National Identity", "IsMandatory": true, "CredentialType": "NationalIDCredential" },
+        { "Id": "REQ-CRB", "Label": "Credit Report", "Description": "Digital Credit Reference Bureau report", "IsMandatory": true, "CredentialType": "CreditScoreCredential" },
+        { "Id": "REQ-SALARY", "Label": "Payslips / Proof of Income", "Description": "Latest 3 months payslips", "IsMandatory": true, "AllowedFileTypes": ["pdf"] }
+      ]
+    },
+    {
+      "ServiceId": "SERVICE-CEEC-HORTICULTURE-001",
+      "ServiceName": "Horticulture Loan Product (CEEF 2026)",
+      "AgencyName": "CEEC",
+      "Category": "Empowerment",
+      "TenantId": "CEEC-ZM",
+      "FormId": "FORM-CEEC-HORTICULTURE-001",
+      "FormName": "CEEC Horticulture Loan Application",
+      "ApplicationFee": 0.0,
+      "Requirements": [
+        { "Id": "REQ-NRC", "Label": "National ID (NRC)", "Description": "Must be a Zambian with a green NRC", "IsMandatory": true, "CredentialType": "NationalIDCredential" },
+        { "Id": "REQ-PACRA", "Label": "PACRA / Cooperative Registration", "Description": "Valid PACRA or Cooperative registration", "IsMandatory": true, "CredentialType": "CompanyRegistrationCredential" },
+        { "Id": "REQ-LAND", "Label": "Proof of Land", "Description": "Land title or lease agreement up to 10ha", "IsMandatory": true, "CredentialType": "TitleDeedCredential" }
+      ]
+    },
+    {
+      "ServiceId": "SERVICE-STARTER-PACK-APP-001",
+      "ServiceName": "Apply for Business Starter Pack",
+      "AgencyName": "Ministry of Agriculture / Commerce",
+      "Category": "Empowerment",
+      "TenantId": "MINISTRY-OF-COMMERCE",
+      "FormId": "FORM-STARTER-PACK-APP",
+      "FormName": "Business Starter Pack Application",
+      "ApplicationFee": 0.0,
+      "Requirements": [
+        { "Id": "REQ-PACRA", "Label": "Company Registration", "Description": "Verifiable PACRA Registration", "IsMandatory": true, "CredentialType": "CompanyRegistrationCredential", "FieldMapping": "registrationNumber:RegistrationNumber,companyName:BusinessName" },
+        { "Id": "REQ-NRC", "Label": "Director/Applicant NRC", "Description": "Identity verification", "IsMandatory": true, "CredentialType": "NationalIDCredential" },
+        { "Id": "REQ-TAX", "Label": "Tax Clearance", "Description": "Valid tax clearance certificate", "IsMandatory": true, "CredentialType": "TaxCertificateCredential" }
+      ]
+    },
+    {
+      "ServiceId": "SERVICE-STARTER-PACK-APP-002",
+      "ServiceName": "Public School Desk Manufacturing",
+      "AgencyName": "Ministry of Education",
+      "Category": "Manufacturing",
+      "TenantId": "MINISTRY-OF-EDUCATION",
+      "FormId": "FORM-SERVICE-STARTER-PACK-APP-002",
+      "FormName": "Public School Desk Manufacturing",
+      "ApplicationFee": 0.0,
+      "Requirements": [
+        { "Id": "REQ-PACRA", "Label": "Company Registration", "Description": "Verifiable Company Registration Credential", "IsMandatory": true, "CredentialType": "CompanyRegistrationCredential" },
+        { "Id": "REQ-TAX", "Label": "Tax Clearance", "Description": "Valid Tax Clearance Certificate", "IsMandatory": true, "CredentialType": "TaxCertificateCredential" }
+      ]
+    },
+    {
+      "ServiceId": "SERVICE-STARTER-PACK-APP-003",
+      "ServiceName": "Copperbelts Mining Supplier Pack",
+      "AgencyName": "Ministry of Mines",
+      "Category": "Mining Support",
+      "TenantId": "MINISTRY-OF-MINES",
+      "FormId": "FORM-SERVICE-STARTER-PACK-APP-003",
+      "FormName": "Copperbelts Mining Supplier Pack",
+      "ApplicationFee": 0.0,
+      "Requirements": [
+        { "Id": "REQ-PACRA", "Label": "Company Registration", "Description": "Verifiable Company Registration Credential", "IsMandatory": true, "CredentialType": "CompanyRegistrationCredential" },
+        { "Id": "REQ-MINES-SAFETY", "Label": "Mine Safety Certificate", "Description": "Basic Mine Safety Certificate", "IsMandatory": true, "CredentialType": "MineSafetyCredential" }
+      ]
+    },
+    {
+      "ServiceId": "SERVICE-STARTER-PACK-APP-004",
+      "ServiceName": "Digital Service Provider Kit",
+      "AgencyName": "Ministry of Technology",
+      "Category": "Tech & Services",
+      "TenantId": "MINISTRY-OF-TECHNOLOGY",
+      "FormId": "FORM-SERVICE-STARTER-PACK-APP-004",
+      "FormName": "Digital Service Provider Application Form",
+      "ApplicationFee": 0.0,
+      "Requirements": [
+        { "Id": "REQ-PACRA", "Label": "Company Registration", "Description": "PACRA Verifiable Credential", "IsMandatory": true, "CredentialType": "CompanyRegistrationCredential" },
+        { "Id": "REQ-ZICTA", "Label": "ZICTA License", "Description": "ZICTA Technology Provider License", "IsMandatory": true, "CredentialType": "ZictaLicenseCredential" }
+      ]
+    },
+    {
+      "ServiceId": "SERVICE-STARTER-PACK-APP-005",
+      "ServiceName": "Maize Aggregation & Processing",
+      "AgencyName": "Ministry of Agriculture",
+      "Category": "Agriculture Exports",
+      "TenantId": "MINISTRY-OF-AGRICULTURE",
+      "FormId": "FORM-SERVICE-STARTER-PACK-APP-005",
+      "FormName": "Maize Aggregation & Processing",
+      "ApplicationFee": 0.0,
+      "Requirements": [
+        { "Id": "REQ-PACRA", "Label": "Company Registration", "Description": "Verifiable Company Registration Credential", "IsMandatory": true, "CredentialType": "CompanyRegistrationCredential" }
+      ]
+    },
+    {
+      "ServiceId": "SERVICE-LAND-CONV-CUSTOMARY-001",
+      "ServiceName": "Conversion of Customary Land to State Land",
+      "AgencyName": "Ministry of Lands",
+      "Category": "Land",
+      "TenantId": "MINISTRY-OF-LANDS",
+      "FormId": "FORM-LAND-CONV-ANNEX-A",
+      "FormName": "Annexure A: Individual Land Conversion",
+      "ApplicationFee": 1200.0,
+      "Requirements": [
+        { "Id": "REQ-CHIEF-CONSENT", "Label": "Chief's Consent Letter", "Description": "Formal written consent from traditional leader", "IsMandatory": true, "AllowedFileTypes": ["pdf"] },
+        { "Id": "REQ-COUNCIL-RECO", "Label": "Council Recommendation", "Description": "Recommendation from District Council with full minutes", "IsMandatory": true, "AllowedFileTypes": ["pdf"] },
+        { "Id": "REQ-NRC", "Label": "National ID (NRC)", "Description": "Applicant's identity", "IsMandatory": true, "CredentialType": "NationalIDCredential", "FieldMapping": "fullName:ApplicantName,nrcNumber:ApplicantNrc" }
+      ]
+    },
+    {
+      "ServiceId": "SERVICE-COUNCIL-PLOT-APP-001",
+      "ServiceName": "Application for New Council Plot",
+      "AgencyName": "Local Authority / Ministry of Lands",
+      "Category": "Land",
+      "TenantId": "MINISTRY-OF-LANDS",
+      "FormId": "FORM-COUNCIL-PLOT-001",
+      "FormName": "Council Plot Application Form",
+      "ApplicationFee": 500.0,
+      "Requirements": [
+        { "Id": "REQ-NRC", "Label": "National ID (NRC)", "Description": "Identity verification", "IsMandatory": true, "CredentialType": "NationalIDCredential", "FieldMapping": "fullName:ApplicantName,nrcNumber:ApplicantNrc" },
+        { "Id": "REQ-BANK-STMT", "Label": "Bank Statement", "Description": "Proof of funds (last 6 months)", "IsMandatory": true, "CredentialType": "BankStatementCredential" }
+      ]
+    },
+    {
+      "ServiceId": "SERVICE-LAND-TITLE-001",
+      "ServiceName": "Application for Title Deed",
+      "AgencyName": "Ministry of Lands",
+      "Category": "Land",
+      "TenantId": "MINISTRY-OF-LANDS",
+      "FormId": "FORM-SERVICE-LAND-TITLE-001",
+      "FormName": "Title Deed Application Form",
+      "ApplicationFee": 2500.0,
+      "ComplianceDetails": "Titling of land is the final step in securing leasehold tenure in Zambia.",
+      "ComplianceRequirements": [
+        "Lands Act Compliance",
+        "Survey Act Compliance",
+        "Tax Clearance Verification"
+      ],
+      "Requirements": [
+        { "Id": "REQ-NRC", "Label": "National ID (NRC)", "Description": "Identity verification", "IsMandatory": true, "CredentialType": "NationalIDCredential", "FieldMapping": "fullName:Applicant.Name,nrcNumber:Applicant.Nrc" },
+        { "Id": "REQ-OFFER-LETTER", "Label": "Letter of Offer", "Description": "Official council offer letter", "IsMandatory": true, "AllowedFileTypes": ["pdf"] },
+        { "Id": "REQ-PACRA", "Label": "Company Registration", "Description": "For corporate applicants", "IsMandatory": false, "CredentialType": "CompanyRegistrationCredential" }
+      ]
+    },
+    {
+      "ServiceId": "SERVICE-LAND-LEASE-RENEW-001",
+      "ServiceName": "Lease Renewal",
+      "AgencyName": "Ministry of Lands",
+      "Category": "Land",
+      "TenantId": "MINISTRY-OF-LANDS",
+      "FormId": "FORM-SERVICE-LAND-LEASE-RENEW-001",
+      "FormName": "Lease Renewal Application",
+      "ApplicationFee": 1500.0,
+      "ComplianceDetails": "Leasehold tenure in Zambia is typically 99 years. Renewals ensure continued legal occupation.",
+      "ComplianceRequirements": [
+        "Ground Rent Clearance",
+        "Property Inspection Compliance",
+        "Updated Survey Requirements"
+      ],
+      "Requirements": [
+        { "Id": "REQ-TITLE", "Label": "Current Title Deed", "Description": "Verifiable Title Deed", "IsMandatory": true, "CredentialType": "TitleDeedCredential", "FieldMapping": "titleNumber:Lease.CurrentLeaseId" },
+        { "Id": "REQ-GROUND-RENT", "Label": "Ground Rent Receipt", "Description": "Proof of latest payment", "IsMandatory": true, "AllowedFileTypes": ["pdf"] },
+        { "Id": "REQ-NRC", "Label": "Applicant NRC", "IsMandatory": true, "CredentialType": "NationalIDCredential", "FieldMapping": "fullName:Applicant.Name,nrcNumber:Applicant.Nrc" }
+      ]
+    },
+    {
+      "ServiceId": "SERVICE-PACRA-RETURN-001",
+      "ServiceName": "Annual Return (Form 71)",
+      "AgencyName": "PACRA",
+      "Category": "Business",
+      "TenantId": "PACRA-ZM",
+      "FormId": "FORM-PACRA-ANNUAL-RETURN-001",
+      "FormName": "PACRA Annual Return Form",
+      "ApplicationFee": 500.0,
+      "Requirements": [
+        { "Id": "REQ-PACRA-VC", "Label": "Company Registration VC", "Description": "Authoritative Company Credential", "IsMandatory": true, "CredentialType": "CompanyRegistrationCredential", "FieldMapping": "registrationNumber:RegistrationNumber,companyName:CompanyName" },
+        { "Id": "REQ-NRC", "Label": "Director NRC", "Description": "Identity of Person Filing", "IsMandatory": true, "CredentialType": "NationalIDCredential" }
+      ]
+    },
+    {
+      "ServiceId": "SERVICE-PACRA-REG-001",
+      "ServiceName": "Company Registration (Form 3)",
+      "AgencyName": "PACRA",
+      "Category": "Business",
+      "TenantId": "PACRA-ZM",
+      "FormId": "FORM-PACRA-COMPANY-REG-001",
+      "FormName": "PACRA Company Registration Form",
+      "ApplicationFee": 1300.0,
+      "Requirements": [
+        { "Id": "REQ-NRC-DIR1", "Label": "Director 1 NRC", "Description": "Director 1 National Identity", "IsMandatory": true, "CredentialType": "NationalIDCredential", "FieldMapping": "fullName:Director1FullName,nrcNumber:Director1NrcNo" },
+        { "Id": "REQ-NRC-DIR2", "Label": "Director 2 NRC", "Description": "Director 2 National Identity", "IsMandatory": true, "CredentialType": "NationalIDCredential", "FieldMapping": "fullName:Director2FullName,nrcNumber:Director2NrcNo" },
+        { "Id": "REQ-NAME-CERT", "Label": "Name Clearance Certificate", "Description": "Approved name reservation", "IsMandatory": true, "AllowedFileTypes": ["pdf"] }
+      ]
+    },
+    {
+    "ServiceId": "PERMIT-BUSINESS-001",
+    "ServiceName": "Business Permit (Trading License)",
+    "AgencyName": "Lusaka City Council",
+    "Category": "Business",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "FormId": "FORM-business-permit-application-form",
+    "FormName": "Business Permit Application Form",
+    "ApplicationFee": 500.0,
+    "ComplianceDetails": "All businesses operating within the Lusaka City Council jurisdiction must obtain a valid business permit.",
+    "ComplianceRequirements": [
+      "Zoning and Land Use Compliance",
+      "Public Health Inspection",
+      "Fire Safety Certification"
+    ],
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "National ID (NRC)", "IsMandatory": true, "CredentialType": "NationalIDCredential", "FieldMapping": "fullName:Applicant.FullName,nrcNumber:Applicant.Individual.NRC" },
+      { "Id": "REQ-PACRA", "Label": "PACRA Registration", "IsMandatory": true, "CredentialType": "CompanyRegistrationCredential", "FieldMapping": "registrationNumber:Applicant.BusinessName" },
+      { "Id": "REQ-TPIN", "Label": "TPIN Certificate", "IsMandatory": true, "CredentialType": "TpinCredential" },
+      { "Id": "REQ-LAND", "Label": "Proof of Premises", "IsMandatory": true, "AllowedFileTypes": [ "pdf" ] }
+    ]
+  },
+  {
+    "ServiceId": "LICENSE-MANUFACTURING-001",
+    "ServiceName": "Manufacturing License",
+    "AgencyName": "Ministry of Industry & Agri-Business",
+    "Category": "Manufacturing",
+    "TenantId": "MIN-INDUSTRY-ZM",
+    "FormId": "FORM-manufacturing-license-application-form",
+    "FormName": "Manufacturing License Application Form",
+    "ApplicationFee": 1500.0,
+    "ComplianceDetails": "Manufacturing licenses ensure adherence to industrial safety and environmental standards.",
+    "ComplianceRequirements": [
+      "Industrial Safety Inspection",
+      "Environmental Impact Assessment",
+      "Labor Law Compliance"
+    ],
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "National ID (NRC)", "IsMandatory": true, "CredentialType": "NationalIDCredential", "FieldMapping": "fullName:Applicant.FullName" },
+      { "Id": "REQ-TPIN", "Label": "TPIN Certificate", "IsMandatory": true, "CredentialType": "TpinCredential" },
+      { "Id": "REQ-PACRA", "Label": "PACRA Certificate", "IsMandatory": true, "CredentialType": "PacraCredential" }
+    ]
+  },
+  {
+    "ServiceId": "LICENSE-RETAIL-001",
+    "ServiceName": "Retail Trading License",
+    "AgencyName": "Lusaka City Council",
+    "Category": "Trading",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "FormId": "FORM-retail-trading-license-application-form",
+    "FormName": "Retail Trading License Application Form",
+    "ApplicationFee": 750.0,
+    "ComplianceDetails": "Retail trading licenses ensure that businesses operate in suitable premises.",
+    "ComplianceRequirements": [
+      "Public Health Inspection",
+      "Trading Standards Compliance"
+    ],
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "National ID (NRC)", "IsMandatory": true, "CredentialType": "NationalIDCredential", "FieldMapping": "fullName:Applicant.FullName" },
+      { "Id": "REQ-TPIN", "Label": "TPIN Certificate", "IsMandatory": true, "CredentialType": "TpinCredential" }
+    ]
+  },
+  {
+    "ServiceId": "LICENSE-WHOLESALE-001",
+    "ServiceName": "Wholesale Trading License",
+    "AgencyName": "Local Government - Wholesale Licensing",
+    "Category": "Trading",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "FormId": "FORM-WHOLESALE-001",
+    "FormName": "Wholesale Trading License Application Form",
+    "ApplicationFee": 1200.0,
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "National ID (NRC)", "IsMandatory": true, "CredentialType": "NationalIDCredential", "FieldMapping": "fullName:FullName,nrcNumber:NrcNumber" },
+      { "Id": "REQ-TPIN", "Label": "TPIN Certificate", "IsMandatory": true, "CredentialType": "TpinCredential" }
+    ]
+  },
+  {
+    "ServiceId": "basic-income-support",
+    "ServiceName": "Basic Income Support (Social Cash Transfer)",
+    "AgencyName": "Department of Social Welfare",
+    "Category": "Social Security",
+    "TenantId": "MINISTRY-OF-COMMUNITY-DEVELOPMENT",
+    "FormId": "FORM-BASIC-INCOME-SUPPORT-001",
+    "FormName": "Basic Income Support Application",
+    "ApplicationFee": 0.0,
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "National ID (NRC)", "IsMandatory": true, "CredentialType": "NationalIDCredential" }
+    ]
+  },
+  {
+    "ServiceId": "elderly-pension-scheme",
+    "ServiceName": "Elderly Pension Scheme",
+    "AgencyName": "Department of Social Welfare",
+    "Category": "Social Security",
+    "TenantId": "MINISTRY-OF-COMMUNITY-DEVELOPMENT",
+    "FormId": "FORM-ELDERLY-PENSION-001",
+    "FormName": "Elderly Pension Application",
+    "ApplicationFee": 0.0,
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "National ID (NRC)", "IsMandatory": true, "CredentialType": "NationalIDCredential" }
+    ]
+  },
+  {
+    "ServiceId": "child-support-grant",
+    "ServiceName": "Child Support Grant",
+    "AgencyName": "Department of Social Welfare",
+    "Category": "Social Security",
+    "TenantId": "MINISTRY-OF-COMMUNITY-DEVELOPMENT",
+    "FormId": "FORM-CHILD-SUPPORT-GRANT-001",
+    "FormName": "Child Support Grant Application",
+    "ApplicationFee": 0.0,
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "Guardian National ID (NRC)", "IsMandatory": true, "CredentialType": "NationalIDCredential" }
+    ]
+  },
+  {
+    "ServiceId": "university-bursary",
+    "ServiceName": "University Higher Education Loan",
+    "AgencyName": "Higher Education Loans and Scholarship Board",
+    "Category": "Education",
+    "TenantId": "MINISTRY-OF-EDUCATION",
+    "FormId": "FORM-UNIVERSITY-BURSARY-001",
+    "FormName": "University Bursary Application",
+    "ApplicationFee": 0.0,
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "National ID (NRC)", "IsMandatory": true, "CredentialType": "NationalIDCredential" },
+      { "Id": "REQ-ADMISSION", "Label": "University Admission Letter", "IsMandatory": true, "AllowedFileTypes": ["pdf"] }
+    ]
+  },
+  {
+    "ServiceId": "fisp-program",
+    "ServiceName": "Farmer Input Support Programme (FISP)",
+    "AgencyName": "Ministry of Agriculture",
+    "Category": "Agriculture",
+    "TenantId": "MINISTRY-OF-AGRICULTURE",
+    "FormId": "FORM-FISP-PROGRAM-001",
+    "FormName": "FISP Application",
+    "ApplicationFee": 0.0,
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "National ID (NRC)", "IsMandatory": true, "CredentialType": "NationalIDCredential" },
+      { "Id": "REQ-COOP-CERT", "Label": "Cooperative Certificate", "IsMandatory": true, "AllowedFileTypes": ["pdf"] }
+    ]
+  },
+  {
+    "ServiceId": "CDF-BURSARY-001",
+    "ServiceName": "CDF Secondary School Bursary",
+    "AgencyName": "Lusaka City Council",
+    "Category": "Education",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "FormId": "FORM-CDF-BURSARY-001",
+    "FormName": "Secondary Boarding School Bursary Application",
+    "ApplicationFee": 0.0,
+    "ComplianceDetails": "CDF bursaries are allocated based on vulnerability and merit.",
+    "ComplianceRequirements": [
+      "Vulnerability Verification",
+      "WDC Recommendation"
+    ],
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "Student NRC", "IsMandatory": true, "CredentialType": "NationalIDCredential", "FieldMapping": "fullName:FirstName" },
+      { "Id": "REQ-SCHOOL-LETTER", "Label": "Acceptance Letter", "IsMandatory": true, "AllowedFileTypes": [ "pdf" ] }
+    ]
+  },
+  {
+    "ServiceId": "CDF-SKILLS-001",
+    "ServiceName": "CDF Skills Bursary",
+    "AgencyName": "Local Government - CDF Committee",
+    "Category": "Education",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "FormId": "FORM-CDF-SKILLS-001",
+    "FormName": "Skills Development Bursary Application",
+    "ApplicationFee": 0.0,
+    "Requirements": [
+      { "Id": "REQ-NRC-COPY", "Label": "National Registration Card", "IsMandatory": true, "CredentialType": "NationalIDCredential", "FieldMapping": "nrcNumber:NrcNo,surname:Surname" }
+    ]
+  },
+    {
+      "ServiceId": "PROJECT-COMMUNITY-001",
+      "ServiceName": "Community Projects Application",
+      "AgencyName": "Local Government - Community Development",
+      "Category": "Community",
+      "TenantId": "LUSAKA-CITY-COUNCIL",
+      "FormId": "FORM-COMMUNITY-001",
+      "FormName": "Community Project Application",
+      "ApplicationFee": 0.0,
+      "Requirements": [
+        { "Id": "REQ-DETAILS", "Label": "Project Proposal", "IsMandatory": true, "AllowedFileTypes": ["pdf"] }
+      ]
+    },
+    {
+    "ServiceId": "PERMIT-COUNCIL-GENERIC",
+    "ServiceName": "Generic Council Permit",
+    "AgencyName": "Local Authority - Permits",
+    "Category": "Council Permits",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "FormId": "FORM-COUNCIL-GENERIC-PERMIT-001",
+    "FormName": "Generic Council Permit Application Form",
+    "ApplicationFee": 250.0,
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "National ID (NRC)", "IsMandatory": true, "CredentialType": "NationalIDCredential", "FieldMapping": "fullName:ApplicantName,nrcNumber:ApplicantNrc" }
+    ]
+  },
+  {
+    "ServiceId": "LICENSE-GENERAL-001",
+    "ServiceName": "General License Application",
+    "AgencyName": "Local Authority - Licensing",
+    "Category": "General Licensing",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "FormId": "FORM-GENERAL-LICENSE-001",
+    "FormName": "General License Application Form",
+    "ApplicationFee": 300.0,
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "National ID (NRC)", "IsMandatory": true, "CredentialType": "NationalIDCredential" }
+    ]
+  },
+  {
+    "ServiceId": "LCC-CDF-LOAN-001",
+    "ServiceName": "CDF Youth & Women Empowerment Loan",
+    "AgencyName": "Lusaka City Council",
+    "Category": "CDF",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "FormId": "FORM-cdf-loan-application-form",
+    "FormName": "CDF Loan Application",
+    "ApplicationFee": 0.0,
+    "ComplianceDetails": "Loans are provided to registered youth and women groups for business empowerment.",
+    "ComplianceRequirements": [
+      "Must be a registered group/cooperative",
+      "Proof of residency in the constituency",
+      "Business proposal required"
+    ],
+    "Requirements": [
+      { "Id": "REQ-PACRA", "Label": "PACRA Registration", "IsMandatory": true, "CredentialType": "CompanyRegistrationCredential" },
+      { "Id": "REQ-TPIN", "Label": "TPIN Certificate", "IsMandatory": true, "CredentialType": "TpinCredential" },
+      { "Id": "REQ-NRC", "Label": "Authorized Rep NRC", "IsMandatory": true, "CredentialType": "NationalIDCredential" }
+    ]
+  },
+  {
+    "ServiceId": "LCC-CDF-GRANT-001",
+    "ServiceName": "CDF Community Empowerment Grant",
+    "AgencyName": "Lusaka City Council",
+    "Category": "CDF",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "FormId": "FORM-cdf-grant-application-form",
+    "FormName": "CDF Grant Application",
+    "ApplicationFee": 0.0,
+    "ComplianceDetails": "Grants are available for community projects with high impact.",
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "Applicant NRC", "IsMandatory": true, "CredentialType": "NationalIDCredential" },
+      { "Id": "REQ-COOP-CERT", "Label": "Cooperative Certificate", "IsMandatory": true, "AllowedFileTypes": ["pdf"] }
+    ]
+  },
+  {
+    "ServiceId": "LCC-COMMUNITY-PROJ-001",
+    "ServiceName": "CDF Community Project Proposal",
+    "AgencyName": "Lusaka City Council",
+    "Category": "Community",
+    "TenantId": "LUSAKA-CITY-COUNCIL",
+    "FormId": "FORM-COMMUNITY-001",
+    "FormName": "Community Project Proposal",
+    "ApplicationFee": 0.0,
+    "ComplianceDetails": "Community projects are identified and proposed by local residents for ward-level development.",
+    "Requirements": [
+      { "Id": "REQ-MINUTES", "Label": "Community Meeting Minutes", "IsMandatory": true, "AllowedFileTypes": ["pdf"] },
+      { "Id": "REQ-NRC", "Label": "Proposer NRC", "IsMandatory": true, "CredentialType": "NationalIDCredential" }
+    ]
+  }
+  ]
+}

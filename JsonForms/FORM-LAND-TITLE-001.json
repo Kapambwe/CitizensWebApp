@@ -1,0 +1,12 @@
+{
+  "FormId": "FORM-LAND-TITLE-001",
+  "FormName": "Title Deed Application Form",
+  "Sections": [
+    {
+      "SectionTitle": "Placeholder Section",
+      "Fields": [
+        { "Id": "placeholder_field", "Label": "This is a placeholder field for Title Deed Application.", "Type": "text", "Required": false }
+      ]
+    }
+  ]
+}

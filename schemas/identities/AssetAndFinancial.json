@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://identity.gov.zm/schemas/v1/AssetAndFinancial.json",
+  "title": "Asset and Financial Credential",
+  "description": "JSON Schema for property deeds, bank statements, and government permits.",
+  "definitions": {
+    "TitleDeed": {
+      "type": "object",
+      "properties": {
+        "propertyId": { "type": "string" },
+        "ownerName": { "type": "string" },
+        "propertyAddress": { "type": "string" },
+        "landSize": { "type": "string" },
+        "valuation": { "type": "number" },
+        "registrationDate": { "type": "string", "format": "date" }
+      },
+      "required": ["propertyId", "ownerName", "registrationDate"]
+    },
+    "BankStatement": {
+      "type": "object",
+      "properties": {
+        "accountNumber": { "type": "string" },
+        "bankName": { "type": "string" },
+        "holderName": { "type": "string" },
+        "balance": { "type": "number" },
+        "currency": { "type": "string", "default": "ZMW" },
+        "statementDate": { "type": "string", "format": "date" }
+      },
+      "required": ["accountNumber", "bankName", "balance", "statementDate"]
+    },
+    "GovernmentPermit": {
+      "type": "object",
+      "properties": {
+        "permitId": { "type": "string" },
+        "permitType": { "type": "string" },
+        "holderName": { "type": "string" },
+        "issueDate": { "type": "string", "format": "date" },
+        "expiryDate": { "type": "string", "format": "date" },
+        "conditions": { "type": "string" }
+      },
+      "required": ["permitId", "permitType", "issueDate"]
+    }
+  }
+}

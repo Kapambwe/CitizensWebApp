@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://identity.gov.zm/schemas/v1/ContractExecution.json",
+  "title": "Contract Execution Credential",
+  "description": "JSON Schema for digitally signed government or commercial contracts.",
+  "type": "object",
+  "properties": {
+    "contractId": { "type": "string" },
+    "contractTitle": { "type": "string" },
+    "contractType": { "type": "string" },
+    "counterpartyName": { "type": "string" },
+    "executionDate": { "type": "string", "format": "date-time" },
+    "validUntil": { "type": "string", "format": "date-time" },
+    "participantRole": { "type": "string" },
+    "clausesHash": { "type": "string", "description": "Cryptographic hash of the agreed contract clauses" }
+  },
+  "required": ["contractId", "contractTitle", "counterpartyName", "executionDate", "clausesHash"]
+}

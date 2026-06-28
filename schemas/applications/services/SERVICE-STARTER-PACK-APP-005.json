@@ -1,0 +1,31 @@
+{
+  "ServiceId": "SERVICE-STARTER-PACK-APP-005",
+  "ServiceName": "Maize Aggregation & Processing",
+  "AgencyName": "Ministry of Agriculture",
+  "Category": "Agriculture Exports",
+  "TenantId": "LUSAKA-CITY-COUNCIL",
+  "FormId": "FORM-STARTER-PACK-APP",
+  "FormName": "Maize Aggregation Starter Pack",
+  "ApplicationFee": 0.0,
+  "Sections": [
+    {
+      "SectionTitle": "Cooperative Details",
+      "Fields": [
+        { "Id": "coop_name", "Label": "Cooperative Name", "Type": "text", "Required": true, "BindingProperty": "BusinessName", "Options": [] },
+        { "Id": "pacra_no", "Label": "PACRA Registration", "Type": "text", "Required": true, "BindingProperty": "RegistrationNumber", "Options": [] }
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        { "Id": "signature", "Label": "Digital Signature", "Type": "signature", "Required": true, "BindingProperty": "CitizenSignature", "Options": [] }
+      ]
+    }
+  ],
+  "Requirements": [
+    { "Id": "REQ-PACRA", "Label": "Company Registration", "Description": "Verifiable PACRA Registration", "IsMandatory": true, "CredentialType": "CompanyRegistrationCredential", "ComplianceContext": "Validated" },
+    { "Id": "REQ-FOOD-SAFETY", "Label": "Food Safety Certificate", "Description": "Certified by Food and Drugs Control Laboratory", "IsMandatory": true, "CredentialType": "FoodSafetyCredential", "ComplianceContext": "Validated" }
+  ],
+  "ComplianceDetails": "Standard compliance applied for Maize Aggregation Starter Pack",
+  "ComplianceRequirements": ["GDPR", "Local Data Residency"]
+}

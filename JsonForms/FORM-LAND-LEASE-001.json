@@ -1,0 +1,12 @@
+{
+  "FormId": "FORM-LAND-LEASE-001",
+  "FormName": "Lease Renewal Application",
+  "Sections": [
+    {
+      "SectionTitle": "Placeholder Section",
+      "Fields": [
+        { "Id": "placeholder_field", "Label": "This is a placeholder field for Lease Renewal Application.", "Type": "text", "Required": false }
+      ]
+    }
+  ]
+}

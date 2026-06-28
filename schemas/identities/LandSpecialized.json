@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://identity.gov.zm/schemas/v1/LandSpecialized.json",
+  "title": "Specialized Land Credentials",
+  "description": "JSON Schema for Chief's Consent, Council Recommendations, and Survey Diagrams.",
+  "definitions": {
+    "ChiefConsent": {
+      "type": "object",
+      "properties": {
+        "consentReference": { "type": "string" },
+        "chiefName": { "type": "string" },
+        "chiefdom": { "type": "string" },
+        "applicantName": { "type": "string" },
+        "landLocation": { "type": "string" },
+        "approximateSizeHa": { "type": "number" },
+        "issueDate": { "type": "string", "format": "date" }
+      },
+      "required": ["consentReference", "chiefName", "applicantName", "issueDate"]
+    },
+    "CouncilRecommendation": {
+      "type": "object",
+      "properties": {
+        "recommendationId": { "type": "string" },
+        "councilName": { "type": "string" },
+        "meetingMinutesRef": { "type": "string" },
+        "meetingDate": { "type": "string", "format": "date" },
+        "applicantName": { "type": "string" },
+        "propertyReference": { "type": "string" },
+        "status": { "type": "string", "enum": ["Recommended", "Deferred", "Rejected"] }
+      },
+      "required": ["recommendationId", "councilName", "meetingMinutesRef", "applicantName"]
+    },
+    "SurveyDiagram": {
+      "type": "object",
+      "properties": {
+        "diagramNumber": { "type": "string" },
+        "surveyorName": { "type": "string" },
+        "surveyorLicenseNo": { "type": "string" },
+        "propertyBoundaries": { "type": "string", "description": "GeoJSON or WKT boundary representation" },
+        "approvalDate": { "type": "string", "format": "date" },
+        "surveyorGeneralApprovalRef": { "type": "string" }
+      },
+      "required": ["diagramNumber", "surveyorName", "approvalDate"]
+    }
+  }
+}

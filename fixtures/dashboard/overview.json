@@ -1,0 +1,97 @@
+{
+  "expiringLicenses": [
+    {
+      "id": 1,
+      "licenseNumber": "ML-2023-001",
+      "type": "Mining",
+      "expiryDate": "2026-06-03T00:00:00"
+    },
+    {
+      "id": 2,
+      "licenseNumber": "EL-2023-002",
+      "type": "Environmental",
+      "expiryDate": "2026-06-13T00:00:00"
+    },
+    {
+      "id": 3,
+      "licenseNumber": "BL-2023-003",
+      "type": "Business",
+      "expiryDate": "2026-05-27T00:00:00"
+    }
+  ],
+  "unpaidBills": [
+    {
+      "id": 1,
+      "invoiceNumber": "INV-2023-001",
+      "description": "ZEMA Compliance Fee",
+      "dueDate": "2026-05-24T00:00:00",
+      "amount": 12500.0
+    },
+    {
+      "id": 2,
+      "invoiceNumber": "INV-2023-002",
+      "description": "Water Usage Charges",
+      "dueDate": "2026-06-05T00:00:00",
+      "amount": 7500.0
+    },
+    {
+      "id": 3,
+      "invoiceNumber": "INV-2023-003",
+      "description": "Property Rates",
+      "dueDate": "2026-07-01T00:00:00",
+      "amount": 18500.0
+    }
+  ],
+  "activeTenders": [
+    {
+      "id": 1,
+      "title": "Copperbelt Road Maintenance",
+      "sector": "Construction",
+      "budget": 25000000.0,
+      "closingDate": "2026-06-11T00:00:00",
+      "status": "Open"
+    },
+    {
+      "id": 2,
+      "title": "Lusaka Water Supply Upgrade",
+      "sector": "Utilities",
+      "budget": 18000000.0,
+      "closingDate": "2026-06-04T00:00:00",
+      "status": "Closing Soon"
+    },
+    {
+      "id": 3,
+      "title": "Solar Power Installation",
+      "sector": "Energy",
+      "budget": 35000000.0,
+      "closingDate": "2026-06-25T00:00:00",
+      "status": "Open"
+    }
+  ],
+  "municipalIssues": [
+    {
+      "id": 1,
+      "title": "Pothole Repair - Cairo Road",
+      "status": "In Progress",
+      "reportDate": "2026-05-19T00:00:00",
+      "lastUpdate": "2026-05-28T00:00:00",
+      "lastUpdateNote": "Work crew assigned, repair scheduled for next week"
+    },
+    {
+      "id": 2,
+      "title": "Street Lighting - Northmead",
+      "status": "Resolved",
+      "reportDate": "2026-04-29T00:00:00",
+      "lastUpdate": "2026-05-24T00:00:00",
+      "lastUpdateNote": "All lights repaired and functioning"
+    },
+    {
+      "id": 3,
+      "title": "Drainage Blockage - Kabwata",
+      "status": "Reported",
+      "reportDate": "2026-05-27T00:00:00",
+      "lastUpdate": "2026-05-28T00:00:00",
+      "lastUpdateNote": "Awaiting inspection team"
+    }
+  ]
+}

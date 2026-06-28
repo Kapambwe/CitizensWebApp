@@ -1,0 +1,74 @@
+{
+  "ServiceId": "FIN-LOAN-APP-001",
+  "ServiceName": "Agri-Business Micro-Loan",
+  "AgencyName": "FINCA Zambia",
+  "Category": "Loans",
+  "TenantId": "FINCA-ZM",
+  "FormId": "FORM-FINCA-LOAN-001",
+  "FormName": "FINCA Agri-Loan Application",
+  "ApplicationFee": 0.0,
+  "ComplianceDetails": "FINCA Zambia provides financial services to entrepreneurs. This loan requires a healthy credit score and proof of stable income or agricultural production capacity.",
+  "ComplianceRequirements": [
+    "Credit Reference Bureau (CRB) Check",
+    "Identity Verification via NRC",
+    "Proof of Income / Production Capacity",
+    "Adherence to Consumer Protection Guidelines"
+  ],
+  "Requirements": [
+    {
+      "Id": "REQ-NRC",
+      "Label": "National Registration Card (NRC)",
+      "Description": "Digital proof of identity.",
+      "IsMandatory": true,
+      "CredentialType": "NationalIDCredential",
+      "ComplianceContext": "Used for identity verification and credit history lookup."
+    },
+    {
+      "Id": "REQ-CRB",
+      "Label": "Credit Report / Score",
+      "Description": "Digital Credit Reference Bureau report shared from your wallet.",
+      "IsMandatory": true,
+      "CredentialType": "CreditScoreCredential",
+      "ComplianceContext": "Assesses creditworthiness and repayment risk."
+    },
+    {
+      "Id": "REQ-SALARY",
+      "Label": "Proof of Income",
+      "Description": "Upload latest 3 months payslips or farm production records.",
+      "IsMandatory": true,
+      "AllowedFileTypes": [ "pdf", "jpg" ],
+      "ComplianceContext": "Verification of ability to repay the loan."
+    }
+  ],
+  "Sections": [
+    {
+      "SectionTitle": "Loan Specification",
+      "Fields": [
+        { "Id": "loan_amount", "Label": "Requested Amount (ZMW)", "Type": "number", "Required": true, "BindingProperty": "RequestedAmount", "Placeholder": "Enter amount (e.g., 5000)" },
+        { "Id": "loan_purpose", "Label": "Detailed Purpose of Loan", "Type": "textarea", "Required": true, "BindingProperty": "LoanPurpose", "Placeholder": "How will this loan help your business?" },
+        {
+          "Id": "tenure",
+          "Label": "Repayment Tenure",
+          "Type": "select",
+          "Required": true,
+          "BindingProperty": "LoanTenure",
+          "Options": [
+            { "Value": "3", "Text": "3 Months" },
+            { "Value": "6", "Text": "6 Months" },
+            { "Value": "12", "Text": "12 Months" },
+            { "Value": "18", "Text": "18 Months" },
+            { "Value": "24", "Text": "24 Months" }
+          ]
+        }
+      ]
+    },
+    {
+      "SectionTitle": "Business / Farm Details",
+      "Fields": [
+        { "Id": "biz_type", "Label": "Type of Business/Crop", "Type": "text", "Required": true, "BindingProperty": "BusinessType" },
+        { "Id": "biz_location", "Label": "Physical Location", "Type": "text", "Required": true, "BindingProperty": "BusinessLocation" },
+        { "Id": "years_active", "Label": "Years in Operation", "Type": "number", "Required": true, "BindingProperty": "YearsActive" }
+      ]
+    }
+  ]
+}

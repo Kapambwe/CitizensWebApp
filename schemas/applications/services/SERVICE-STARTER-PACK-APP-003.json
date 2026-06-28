@@ -1,0 +1,31 @@
+{
+  "ServiceId": "SERVICE-STARTER-PACK-APP-003",
+  "ServiceName": "Copperbelts Mining Supplier Pack",
+  "AgencyName": "Ministry of Mines",
+  "Category": "Mining Support",
+  "TenantId": "LUSAKA-CITY-COUNCIL",
+  "FormId": "FORM-STARTER-PACK-APP",
+  "FormName": "Mining Supplier Starter Pack",
+  "ApplicationFee": 0.0,
+  "Sections": [
+    {
+      "SectionTitle": "Supplier Details",
+      "Fields": [
+        { "Id": "supplier_name", "Label": "Supplier Name", "Type": "text", "Required": true, "BindingProperty": "BusinessName", "Options": [] },
+        { "Id": "pacra_no", "Label": "PACRA Registration", "Type": "text", "Required": true, "BindingProperty": "RegistrationNumber", "Options": [] }
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        { "Id": "signature", "Label": "Digital Signature", "Type": "signature", "Required": true, "BindingProperty": "CitizenSignature", "Options": [] }
+      ]
+    }
+  ],
+  "Requirements": [
+    { "Id": "REQ-PACRA", "Label": "Company Registration", "Description": "Verifiable PACRA Registration", "IsMandatory": true, "CredentialType": "CompanyRegistrationCredential", "ComplianceContext": "Validated" },
+    { "Id": "REQ-MINE-SAFETY", "Label": "Mine Safety Certificate", "Description": "Basic Mine Safety Certificate", "IsMandatory": true, "CredentialType": "MineSafetyCredential", "ComplianceContext": "Validated" }
+  ],
+  "ComplianceDetails": "Standard compliance applied for Copperbelts Mining Supplier Starter Pack",
+  "ComplianceRequirements": ["GDPR", "Local Data Residency"]
+}

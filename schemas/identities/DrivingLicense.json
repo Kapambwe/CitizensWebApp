@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://identity.gov.zm/schemas/v1/DrivingLicense.json",
+  "title": "Digital Driving License",
+  "description": "ISO/IEC 18013-5 compliant Mobile Driving License (mDL) JSON Schema.",
+  "type": "object",
+  "properties": {
+    "licenseNumber": { "type": "string" },
+    "fullName": { "type": "string" },
+    "dateOfBirth": { "type": "string", "format": "date" },
+    "issueDate": { "type": "string", "format": "date" },
+    "expiryDate": { "type": "string", "format": "date" },
+    "categories": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Vehicle categories (e.g., A, B, C, CE, etc.)"
+    },
+    "restrictions": { "type": "string" },
+    "issuingAuthority": { "type": "string" }
+  },
+  "required": ["licenseNumber", "fullName", "expiryDate", "categories"]
+}

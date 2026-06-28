@@ -1,0 +1,243 @@
+{
+  "projects": [
+    {
+      "id": "M1",
+      "title": "Kansanshi Copper Expansion",
+      "description": "Expansion of copper mining operations with new processing facilities",
+      "status": "Active",
+      "sector": "Mining",
+      "province": "North-Western",
+      "requiredInvestment": 250000000,
+      "roiEstimate": 18.5,
+      "createdDate": "2026-05-14T00:00:00",
+      "projectStage": "Seeking",
+      "attachedCredentials": [
+        {
+          "displayName": "Large Scale Mining License",
+          "credentialType": "MiningLicenseCredential",
+          "issuerName": "Ministry of Mines",
+          "keyClaims": { "LicenseNumber": "LML-2023-082", "Status": "Valid", "Expiry": "2035-12-31" }
+        },
+        {
+          "displayName": "ZEMA Environmental Clearance",
+          "credentialType": "ZemaClearanceCredential",
+          "issuerName": "Zambia Environmental Management Agency",
+          "keyClaims": { "PermitId": "ZEMA-ENV-991", "ImpactLevel": "Compliant" }
+        }
+      ]
+    },
+    {
+      "id": "M2",
+      "title": "Emerald Mine Modernization",
+      "description": "Modernization of small-scale emerald mining operations",
+      "status": "Active",
+      "sector": "Mining",
+      "province": "Copperbelt",
+      "requiredInvestment": 5000000,
+      "roiEstimate": 28.0,
+      "createdDate": "2026-05-29T00:00:00"
+    },
+    {
+      "id": "A1",
+      "title": "Zambia Wheat Farm Initiative",
+      "description": "Commercial wheat farming in Mkushi farming block",
+      "status": "Active",
+      "sector": "Agriculture",
+      "province": "Central",
+      "requiredInvestment": 12000000,
+      "roiEstimate": 22.0,
+      "createdDate": "2026-05-29T00:00:00",
+      "projectStage": "Negotiation",
+      "attachedCredentials": [
+        {
+          "displayName": "Agriculture Title Deed",
+          "credentialType": "TitleDeedCredential",
+          "issuerName": "Ministry of Lands",
+          "keyClaims": { "TitleNumber": "MKU-FARM-012", "Owner": "Zambia Wheat Ltd" }
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "title": "Solar-Powered Irrigation Scheme",
+      "description": "Renewable energy irrigation for smallholder farmers",
+      "status": "Pending",
+      "sector": "Agriculture",
+      "province": "Southern",
+      "requiredInvestment": 3500000,
+      "roiEstimate": 15.0,
+      "createdDate": "2026-05-29T00:00:00"
+    },
+    {
+      "id": "MF1",
+      "title": "Lusaka Steel Mill",
+      "description": "Production of steel products for construction industry",
+      "status": "Active",
+      "sector": "Manufacturing",
+      "province": "Lusaka",
+      "requiredInvestment": 75000000,
+      "roiEstimate": 20.5,
+      "createdDate": "2026-05-29T00:00:00"
+    },
+    {
+      "id": "MF2",
+      "title": "Copper Cable Manufacturing",
+      "description": "Production of copper electrical cables for regional markets",
+      "status": "Pending",
+      "sector": "Manufacturing",
+      "province": "Copperbelt",
+      "requiredInvestment": 45000000,
+      "roiEstimate": 25.0,
+      "createdDate": "2026-05-29T00:00:00"
+    },
+    {
+      "id": "AP1",
+      "title": "Soya Bean Processing Plant",
+      "description": "Processing soya beans into oil, meal and other products",
+      "status": "Active",
+      "sector": "AgroProcessing",
+      "province": "Eastern",
+      "requiredInvestment": 15000000,
+      "roiEstimate": 30.0,
+      "createdDate": "2026-05-29T00:00:00"
+    },
+    {
+      "id": "AP2",
+      "title": "Fruit Processing & Packaging",
+      "description": "Processing mangoes and other fruits for export markets",
+      "status": "Pending",
+      "sector": "AgroProcessing",
+      "province": "Southern",
+      "requiredInvestment": 8000000,
+      "roiEstimate": 18.0,
+      "createdDate": "2026-05-29T00:00:00"
+    },
+    {
+      "id": "SB1",
+      "title": "Zambia-China Soybean Export Program",
+      "description": "Export-scale soybean aggregation and processing pipeline after China signaled interest in up to 3 million tonnes of Zambian soybeans.",
+      "status": "Active",
+      "sector": "Agriculture",
+      "province": "Central",
+      "requiredInvestment": 28000000,
+      "roiEstimate": 27.5,
+      "createdDate": "2026-05-31T00:00:00"
+    },
+    {
+      "id": "SB2",
+      "title": "Soybean Contract Fulfilment Consortium",
+      "description": "Multi-party soybean fulfilment contract where delivery obligations are shared across citizen-led producer cooperatives and logistics partners.",
+      "status": "Pending",
+      "sector": "Agriculture",
+      "province": "Eastern",
+      "requiredInvestment": 19000000,
+      "roiEstimate": 23.0,
+      "createdDate": "2026-05-31T00:00:00"
+    }
+  ],
+  "projectDetailsById": {
+    "M1": {
+      "project": {
+        "id": "M1",
+        "title": "Kansanshi Copper Expansion",
+        "description": "Expansion of copper mining operations with new processing facilities",
+        "status": "Active",
+        "sector": "Mining",
+        "province": "North-Western",
+        "requiredInvestment": 250000000,
+        "roiEstimate": 18.5,
+        "createdDate": "2026-05-14T00:00:00"
+      },
+      "investorViews": [
+        { "investorId": "INV-001", "investorName": "Zambian Mining Partners", "company": "ZMP Holdings", "viewDate": "2026-05-28T10:00:00", "status": "Interested" },
+        { "investorId": "INV-002", "investorName": "Copperbelt Capital", "company": "Copperbelt Capital", "viewDate": "2026-05-27T15:30:00", "status": "Viewed" }
+      ],
+      "comments": [
+        { "author": "Project Team", "text": "Initial feasibility report is available for review.", "postedDate": "2026-05-28T08:00:00" },
+        { "author": "Investor Relations", "text": "We are arranging a site visit next week.", "postedDate": "2026-05-27T13:15:00" }
+      ],
+      "analytics": { "totalViews": 24, "interestedCount": 8, "avgViewDuration": 3.7 },
+      "consentRequests": [
+        {
+          "id": "CR-INV-001",
+          "requestingInstitution": "Zambian Mining Partners",
+          "requestingOfficer": "L. Phiri",
+          "purpose": "Due Diligence",
+          "purposeDetails": "Review investment opportunity data.",
+          "status": "Active",
+          "requestDate": "2026-05-27T00:00:00",
+          "startDate": "2026-05-27T00:00:00",
+          "endDate": "2026-08-25T00:00:00",
+          "dataTypes": ["Project description", "Financial forecast"]
+        }
+      ]
+    },
+    "SB1": {
+      "project": {
+        "id": "SB1",
+        "title": "Zambia-China Soybean Export Program",
+        "description": "Export-scale soybean aggregation and processing pipeline after China signaled interest in up to 3 million tonnes of Zambian soybeans.",
+        "status": "Active",
+        "sector": "Agriculture",
+        "province": "Central",
+        "requiredInvestment": 28000000,
+        "roiEstimate": 27.5,
+        "createdDate": "2026-05-31T00:00:00",
+        "selectedDocuments": [
+          { "id": 101, "name": "Export Offtake Intent - China Buyer Group.pdf", "type": "PDF", "size": 428901, "verificationStatus": "Verified", "walletCredentialId": "cred-sb1-001", "credentialType": "ExportOfftakeCredential", "issuerDid": "did:web:trade.gov.zm", "proofMethod": "Ed25519Signature2020", "verifiedAt": "2026-05-31T09:20:00Z" },
+          { "id": 102, "name": "Contract Award Letter - Soybean Program.pdf", "type": "PDF", "size": 255677, "verificationStatus": "Verified", "walletCredentialId": "cred-sb1-002", "credentialType": "ContractExecutionCredential", "issuerDid": "did:web:agriculture.gov.zm", "proofMethod": "Ed25519Signature2020", "verifiedAt": "2026-05-31T09:22:00Z" },
+          { "id": 103, "name": "Warehouse and Logistics SLA.pdf", "type": "PDF", "size": 198210, "verificationStatus": "Pending" }
+        ]
+      },
+      "investorViews": [
+        { "investorId": "INV-003", "investorName": "AgriGrowth Africa Fund", "company": "AgriGrowth Africa", "viewDate": "2026-05-31T08:20:00", "status": "Interested" },
+        { "investorId": "INV-004", "investorName": "Sino-Africa Commodity Capital", "company": "SACC Partners", "viewDate": "2026-05-31T09:45:00", "status": "Interested" }
+      ],
+      "comments": [
+        { "author": "Program Lead", "text": "Primary supply contract has been awarded directly to the applicant entity; onboarding export finance partners.", "postedDate": "2026-05-31T10:00:00" },
+        { "author": "Compliance Officer", "text": "All export compliance documentation uploaded to digital wallet and verified.", "postedDate": "2026-05-31T11:05:00" }
+      ],
+      "analytics": { "totalViews": 17, "interestedCount": 6, "avgViewDuration": 4.4 },
+      "consentRequests": [
+        {
+          "id": "CR-INV-SB1-001",
+          "requestingInstitution": "AgriGrowth Africa Fund",
+          "requestingOfficer": "D. Mwewa",
+          "purpose": "Investment Due Diligence",
+          "purposeDetails": "Review offtake contract and projected cashflow profile.",
+          "status": "Active",
+          "requestDate": "2026-05-31T00:00:00",
+          "startDate": "2026-05-31T00:00:00",
+          "endDate": "2026-08-29T00:00:00",
+          "dataTypes": ["Offtake contract", "Production plan", "Compliance certificate"]
+        }
+      ]
+    },
+    "SB2": {
+      "project": {
+        "id": "SB2",
+        "title": "Soybean Contract Fulfilment Consortium",
+        "description": "Multi-party soybean fulfilment contract where delivery obligations are shared across citizen-led producer cooperatives and logistics partners.",
+        "status": "Pending",
+        "sector": "Agriculture",
+        "province": "Eastern",
+        "requiredInvestment": 19000000,
+        "roiEstimate": 23.0,
+        "createdDate": "2026-05-31T00:00:00",
+        "selectedDocuments": [
+          { "id": 201, "name": "Consortium Contract Framework.pdf", "type": "PDF", "size": 371009, "verificationStatus": "Verified", "walletCredentialId": "cred-sb2-001", "credentialType": "ConsortiumContractCredential", "issuerDid": "did:web:justice.gov.zm", "proofMethod": "Ed25519Signature2020", "verifiedAt": "2026-05-31T12:20:00Z" },
+          { "id": 202, "name": "Co-signatory Participation Schedule.xlsx", "type": "XLSX", "size": 141882, "verificationStatus": "Pending" }
+        ]
+      },
+      "investorViews": [
+        { "investorId": "INV-005", "investorName": "Regional Food Security Fund", "company": "RFS Capital", "viewDate": "2026-05-31T12:00:00", "status": "Viewed" }
+      ],
+      "comments": [
+        { "author": "Contract Desk", "text": "Contract is shared among 3 fulfilment partners; 2 co-signatures confirmed, 1 pending.", "postedDate": "2026-05-31T12:30:00" },
+        { "author": "Legal Advisor", "text": "Escrow and risk-sharing annexure under review before investor publish.", "postedDate": "2026-05-31T13:00:00" }
+      ],
+      "analytics": { "totalViews": 9, "interestedCount": 2, "avgViewDuration": 3.2 },
+      "consentRequests": []
+    }
+  }
+}

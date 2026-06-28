@@ -1,0 +1,52 @@
+{
+  "FormId": "FORM-ZANACO-OPEN-001",
+  "FormName": "Zanaco Smart Account Application",
+  "Sections": [
+    {
+      "SectionTitle": "Account Preferences",
+      "Fields": [
+        {
+          "Id": "acc_type",
+          "Label": "Account Type",
+          "Type": "select",
+          "Required": true,
+          "BindingProperty": "AccountType",
+          "Options": [
+            { "Value": "SmartSavings", "Text": "Smart Savings Account (High Interest)" },
+            { "Value": "SmartCurrent", "Text": "Smart Current Account (with Visa Debit)" },
+            { "Value": "XpressAccount", "Text": "Zanaco Xpress Account (Basic)" }
+          ]
+        },
+        { "Id": "branch", "Label": "Preferred Branch", "Type": "text", "Required": true, "BindingProperty": "PreferredBranch", "Placeholder": "e.g., Cairo Road, Lusaka" }
+      ]
+    },
+    {
+      "SectionTitle": "Financial Details",
+      "Fields": [
+        {
+          "Id": "income_source",
+          "Label": "Main Source of Income",
+          "Type": "select",
+          "Required": true,
+          "BindingProperty": "SourceOfIncome",
+          "Options": [
+            { "Value": "Salary", "Text": "Monthly Salary" },
+            { "Value": "Business", "Text": "Business Profits" },
+            { "Value": "Investment", "Text": "Investments" },
+            { "Value": "Remittances", "Text": "Remittances / Family Support" },
+            { "Value": "Other", "Text": "Other" }
+          ]
+        },
+        { "Id": "monthly_income", "Label": "Estimated Monthly Income (ZMW)", "Type": "number", "Required": true, "BindingProperty": "MonthlyIncome", "Placeholder": "Enter amount" }
+      ]
+    },
+    {
+      "SectionTitle": "Next of Kin / Beneficiary",
+      "Fields": [
+        { "Id": "nok_name", "Label": "Full Name", "Type": "text", "Required": true, "BindingProperty": "NextOfKinName" },
+        { "Id": "nok_phone", "Label": "Phone Number", "Type": "tel", "Required": true, "BindingProperty": "NextOfKinPhone" },
+        { "Id": "nok_relation", "Label": "Relationship", "Type": "text", "Required": true, "BindingProperty": "NextOfKinRelationship" }
+      ]
+    }
+  ]
+}

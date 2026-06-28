@@ -1,0 +1,29 @@
+{
+  "FormId": "FORM-BUSINESS-PERMIT-001",
+  "FormName": "Business Permit Application Form",
+  "Sections": [
+    {
+      "SectionTitle": "Business Information",
+      "Fields": [
+        { "Id": "bus_name", "Label": "Business Name", "Type": "text", "Required": true, "BindingProperty": "BusinessName", "Placeholder": "Verified from PACRA" },
+        { "Id": "pacra_no", "Label": "PACRA Reg Number", "Type": "text", "Required": true, "BindingProperty": "pacra_no", "Placeholder": "Verified from PACRA" },
+        { "Id": "bus_desc", "Label": "Description of Business Activities", "Type": "textarea", "Required": true, "BindingProperty": "BusinessDescription" }
+      ]
+    },
+    {
+      "SectionTitle": "Location & Premises",
+      "Fields": [
+        { "Id": "stand_no", "Label": "Stand Number", "Type": "text", "Required": true, "BindingProperty": "PremisesStandNo" },
+        { "Id": "street_no", "Label": "Street / Road Name", "Type": "text", "Required": true, "BindingProperty": "PremisesStreetNo" },
+        { "Id": "area", "Label": "Area / Ward", "Type": "text", "Required": true, "BindingProperty": "Area" }
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        { "Id": "decl_date", "Label": "Declaration Date", "Type": "date", "Required": true, "BindingProperty": "DeclarationDate" },
+        { "Id": "signature", "Label": "Applicant Signature", "Type": "signature", "Required": true, "BindingProperty": "CitizenSignature" }
+      ]
+    }
+  ]
+}

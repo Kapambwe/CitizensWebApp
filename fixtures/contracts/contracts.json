@@ -1,0 +1,112 @@
+{
+  "Contracts": [
+    {
+      "Id": "contract-1",
+      "Title": "Digital Citizen Services Agreement",
+      "AgencyName": "eCitizen Zambia",
+      "Type": "Digital Service",
+      "ValueZmw": 0.00,
+      "ValidityMonths": 60,
+      "Description": "This agreement outlines the terms of use for eCitizen Zambia's digital services.",
+      "Clauses": [
+        { "Order": 1, "Title": "Definitions", "Text": "Key terms used in this agreement." },
+        { "Order": 2, "Title": "User Responsibilities", "Text": "Obligations of the citizen user." },
+        { "Order": 3, "Title": "Service Provision", "Text": "Details of services provided by eCitizen Zambia." },
+        { "Order": 4, "Title": "Data Privacy", "Text": "How personal data is collected, stored, and used." },
+        { "Order": 5, "Title": "Dispute Resolution", "Text": "Procedure for resolving disputes." }
+      ]
+    },
+    {
+      "Id": "contract-2",
+      "Title": "Public Service Access Contract",
+      "AgencyName": "Ministry of Public Services",
+      "Type": "Public Service",
+      "ValueZmw": 0.00,
+      "ValidityMonths": 12,
+      "Description": "Terms and conditions for accessing various public services through the eCitizen platform.",
+      "Clauses": [
+        { "Order": 1, "Title": "Scope of Services", "Text": "Description of accessible public services." },
+        { "Order": 2, "Title": "Eligibility", "Text": "Criteria for service eligibility." },
+        { "Order": 3, "Title": "Application Process", "Text": "Steps for applying for services." },
+        { "Order": 4, "Title": "Confidentiality", "Text": "Protection of applicant information." }
+      ]
+    },
+    {
+      "Id": "contract-3",
+      "Title": "E-Government Platform Agreement",
+      "AgencyName": "Ministry of Digital Transformation",
+      "Type": "Platform Access",
+      "ValueZmw": 0.00,
+      "ValidityMonths": 36,
+      "Description": "Agreement governing the use of the national e-Government platform.",
+      "Clauses": [
+        { "Order": 1, "Title": "Platform Access", "Text": "Conditions for gaining access to the platform." },
+        { "Order": 2, "Title": "Security Protocols", "Text": "Measures to ensure data security." },
+        { "Order": 3, "Title": "Acceptable Use Policy", "Text": "Guidelines for appropriate platform usage." }
+      ]
+    },
+    {
+      "Id": "CON-LCC-DESKS-26",
+      "Title": "Supply of Desks for Public Schools - Contract",
+      "AgencyName": "Lusaka City Council",
+      "Type": "Procurement",
+      "ValueZmw": 450000.00,
+      "ValidityMonths": 6,
+      "Description": "This contract outlines the terms for the manufacturing and delivery of 1,000 wooden desks to primary schools within the Lusaka City Council jurisdiction.",
+      "Status": "Pending",
+      "Clauses": [
+        { "Order": 1, "Title": "Scope of Work", "Text": "The Contractor shall manufacture and deliver 1,000 double-seater wooden desks as per the technical specifications provided in the tender document." },
+        { "Order": 2, "Title": "Quality Standards", "Text": "All desks must be inspected and certified by the Council's Quality Assurance team before final acceptance. Desks not meeting the standard must be replaced at the contractor's expense." },
+        { "Order": 3, "Title": "Delivery Schedule", "Text": "Delivery shall be made to the designated Council warehouse in Rhodes Park within 90 days from the date of contract execution." },
+        { "Order": 4, "Title": "Payment Terms", "Text": "A mobilization advance of 30% shall be paid upon signing. The balance of 70% shall be paid within 30 days of successful delivery and certification of all desks." }
+      ],
+      "Parties": [
+        {
+          "Role": "Agency",
+          "Identifier": "Lusaka City Council",
+          "HasSigned": true,
+          "SignedAt": "2026-05-25T10:00:00Z",
+          "SignatureDid": "did:gov:zm:lcc-procurement-office"
+        },
+        {
+          "Role": "Contractor",
+          "Identifier": "John Mwale",
+          "HasSigned": false
+        }
+      ],
+      "RequiredCredentials": [
+        "Business Registration Certificate",
+        "Tax Clearance Certificate"
+      ]
+    },
+    {
+      "Id": "CON-EDU-26",
+      "Title": "Provincial School Desk Supply Agreement",
+      "AgencyName": "Ministry of Education",
+      "Type": "Supply Contract",
+      "ValueZmw": 850000.00,
+      "ValidityMonths": 12,
+      "Description": "Provincial level agreement for the supply of high-durability school desks to various schools across the Lusaka Province.",
+      "Status": "Pending",
+      "Clauses": [
+        { "Order": 1, "Title": "Object of the Contract", "Text": "Supply and delivery of 2,500 school desks to provincial distribution centers." },
+        { "Order": 2, "Title": "Delivery and Logistics", "Text": "The contractor is responsible for transport to provincial hubs. Hub managers will sign delivery notes." },
+        { "Order": 3, "Title": "Warranty", "Text": "All furniture must carry a 24-month manufacturer warranty against structural defects." }
+      ],
+      "Parties": [
+        {
+          "Role": "Government Agency",
+          "Identifier": "Ministry of Education - Provincial Office",
+          "HasSigned": true,
+          "SignedAt": "2026-05-15T09:00:00Z",
+          "SignatureDid": "did:gov:zm:moe-provincial-lusaka"
+        },
+        {
+          "Role": "Supplier",
+          "Identifier": "John Mwale",
+          "HasSigned": false
+        }
+      ]
+    }
+  ]
+}

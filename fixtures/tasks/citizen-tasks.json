@@ -1,0 +1,32 @@
+{
+  "tasks": [
+    {
+      "TaskId": "TASK-001",
+      "Title": "Update Business Profile",
+      "Description": "Complete your business profile details to unlock new opportunities.",
+      "Category": 0,
+      "EconomicStage": 0,
+      "Outcome": "Profile updated",
+      "Status": 0,
+      "Priority": 1,
+      "ActionLabel": "Update",
+      "ActionRoute": "/profile",
+      "Icon": "edit",
+      "IsMandatory": true
+    },
+    {
+      "TaskId": "TASK-002",
+      "Title": "Check New Tenders",
+      "Description": "Review newly published tenders for your business sector.",
+      "Category": 6,
+      "EconomicStage": 3,
+      "Outcome": "Tenders reviewed",
+      "Status": 1,
+      "Priority": 2,
+      "ActionLabel": "View Tenders",
+      "ActionRoute": "/tenders",
+      "Icon": "gavel",
+      "IsMandatory": false
+    }
+  ]
+}

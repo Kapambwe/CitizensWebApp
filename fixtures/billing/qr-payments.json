@@ -1,0 +1,7 @@
+[
+  { "RawQrPayload": "qr://bill/1?issuer=SHOPRITE-ZM", "BillId": "1", "IssuerName": "Shoprite Zambia" },
+  { "RawQrPayload": "qr://bill/2?issuer=ZESCO", "BillId": "2", "IssuerName": "ZESCO" },
+  { "RawQrPayload": "qr://bill/3?issuer=LCC", "BillId": "3", "IssuerName": "Lusaka City Council" },
+  { "RawQrPayload": "qr://bill/4?issuer=ZRA", "BillId": "4", "IssuerName": "Zambia Revenue Authority" },
+  { "RawQrPayload": "qr://bill/5?issuer=MTN-MONEY", "BillId": "5", "IssuerName": "MTN Mobile Money" }
+]

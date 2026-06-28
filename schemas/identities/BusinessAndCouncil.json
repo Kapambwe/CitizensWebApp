@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://identity.gov.zm/schemas/v1/BusinessAndCouncil.json",
+  "title": "Business and Council Credentials",
+  "description": "JSON Schema for PACRA company registrations and local council permits.",
+  "definitions": {
+    "CompanyRegistration": {
+      "type": "object",
+      "properties": {
+        "registrationNumber": { "type": "string", "description": "PACRA Registration Number" },
+        "companyName": { "type": "string" },
+        "companyType": { "type": "string", "enum": ["Private Limited", "Public Limited", "Partnership", "Sole Proprietorship"] },
+        "registrationDate": { "type": "string", "format": "date" },
+        "status": { "type": "string", "enum": ["Active", "Dormant", "Dissolved"] },
+        "shareholders": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "sharePercentage": { "type": "number" }
+            }
+          }
+        }
+      },
+      "required": ["registrationNumber", "companyName", "registrationDate"]
+    },
+    "CouncilPermit": {
+      "type": "object",
+      "properties": {
+        "permitNumber": { "type": "string" },
+        "permitType": { "type": "string", "enum": ["Trading License", "Fire Safety", "Health Inspectorate", "Liquor License"] },
+        "businessName": { "type": "string" },
+        "issueDate": { "type": "string", "format": "date" },
+        "expiryDate": { "type": "string", "format": "date" },
+        "location": { "type": "string" },
+        "councilName": { "type": "string", "description": "e.g. Lusaka City Council" }
+      },
+      "required": ["permitNumber", "permitType", "issueDate", "expiryDate", "councilName"]
+    }
+  }
+}

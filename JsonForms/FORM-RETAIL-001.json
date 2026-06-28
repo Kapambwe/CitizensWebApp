@@ -1,0 +1,29 @@
+{
+  "FormId": "FORM-RETAIL-001",
+  "FormName": "Retail Trading License Application Form",
+  "Sections": [
+    {
+      "SectionTitle": "Applicant & Business Information",
+      "Fields": [
+        { "Id": "full_name", "Label": "Full Name of Applicant", "Type": "text", "Required": true, "BindingProperty": "FullName", "Placeholder": "Verified from NRC" },
+        { "Id": "bus_name", "Label": "Business Name", "Type": "text", "Required": true, "BindingProperty": "BusinessName" },
+        { "Id": "goods_desc", "Label": "Description of Goods to be Sold", "Type": "textarea", "Required": true, "BindingProperty": "DescriptionOfGoods" }
+      ]
+    },
+    {
+      "SectionTitle": "Premises Information",
+      "Fields": [
+        { "Id": "stand_no", "Label": "Stand No", "Type": "text", "Required": true, "BindingProperty": "StandNo" },
+        { "Id": "street_no", "Label": "Street Name", "Type": "text", "Required": true, "BindingProperty": "StreetNo" },
+        { "Id": "area", "Label": "Area / Ward", "Type": "text", "Required": true, "BindingProperty": "Area" }
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        { "Id": "decl_date", "Label": "Declaration Date", "Type": "date", "Required": true, "BindingProperty": "DeclarationDate" },
+        { "Id": "signature", "Label": "Applicant Signature", "Type": "signature", "Required": true, "BindingProperty": "CitizenSignature" }
+      ]
+    }
+  ]
+}

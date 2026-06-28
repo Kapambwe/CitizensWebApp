@@ -1,0 +1,36 @@
+{
+  "FormId": "FORM-SERVICE-STARTER-PACK-APP-004",
+  "FormName": "Digital Service Provider Kit Application",
+  "Sections": [
+    {
+      "SectionTitle": "Provider Information",
+      "Fields": [
+        { "Id": "applicantName", "Label": "Founder / Applicant Name:", "Type": "text", "Required": true, "BindingProperty": "Applicant.Name", "Placeholder": "Verified from NRC" },
+        { "Id": "startupName", "Label": "Startup / Business Name:", "Type": "text", "Required": true, "BindingProperty": "Business.Name", "Placeholder": "Verified from PACRA" },
+        { "Id": "email", "Label": "Contact Email:", "Type": "email", "Required": true, "BindingProperty": "Applicant.Email" }
+      ]
+    },
+    {
+      "SectionTitle": "Service Capability",
+      "Fields": [
+        { "Id": "serviceType", "Label": "Core Digital Service:", "Type": "select", "Required": true, "BindingProperty": "Business.ServiceType", "Options": [
+          { "Value": "Software", "Text": "Software Development & Maintenance" },
+          { "Value": "Data", "Text": "Data Entry & Processing" },
+          { "Value": "ITSupport", "Text": "IT Infrastructure Support" },
+          { "Value": "Cyber", "Text": "Cybersecurity Services" }
+        ]},
+        { "Id": "targetCouncil", "Label": "Target Municipal Council for Digitization:", "Type": "text", "Required": true, "BindingProperty": "Business.TargetCouncil" },
+        { "Id": "needsCloud", "Label": "Do you require Cloud Hosting Credits?", "Type": "select", "Required": true, "BindingProperty": "Support.NeedsCloud", "Options": [
+          { "Value": "Yes", "Text": "Yes" }, { "Value": "No", "Text": "No" }
+        ]}
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        { "Id": "declDate", "Label": "Date:", "Type": "date", "Required": true, "BindingProperty": "Declaration.Date" },
+        { "Id": "signature", "Label": "Signature:", "Type": "signature", "Required": true, "BindingProperty": "Declaration.Signature" }
+      ]
+    }
+  ]
+}

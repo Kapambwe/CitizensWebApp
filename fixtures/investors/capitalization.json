@@ -1,0 +1,51 @@
+{
+  "eligibilities": [
+    {
+      "projectId": "M1",
+      "isEligible": true,
+      "hasValidLicense": true,
+      "hasSignedContractCredential": true,
+      "hasConsentReady": true,
+      "blockers": []
+    },
+    {
+      "projectId": "A2",
+      "isEligible": false,
+      "hasValidLicense": true,
+      "hasSignedContractCredential": false,
+      "hasConsentReady": true,
+      "blockers": [
+        "Contract execution credential is missing in wallet."
+      ]
+    },
+    {
+      "projectId": "SB1",
+      "isEligible": true,
+      "hasValidLicense": true,
+      "hasSignedContractCredential": true,
+      "hasConsentReady": true,
+      "blockers": []
+    },
+    {
+      "projectId": "SB2",
+      "isEligible": false,
+      "hasValidLicense": true,
+      "hasSignedContractCredential": false,
+      "hasConsentReady": true,
+      "blockers": [
+        "Shared consortium contract is pending final co-signatory credential from partner 3 of 3."
+      ]
+    }
+  ],
+  "publicationStatuses": [
+    {
+      "success": true,
+      "projectId": "M1",
+      "status": "Published",
+      "capitalMarketListingId": "CML-20260530-M1",
+      "consentFlowId": "CONS-20260530-M1",
+      "message": "Published to Capital Markets and Consent channels.",
+      "publishedAt": "2026-05-30T11:15:00Z"
+    }
+  ]
+}

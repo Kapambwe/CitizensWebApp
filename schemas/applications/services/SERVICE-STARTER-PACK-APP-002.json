@@ -1,0 +1,37 @@
+{
+  "ServiceId": "SERVICE-STARTER-PACK-APP-002",
+  "ServiceName": "Public School Desk Manufacturing",
+  "AgencyName": "Ministry of Education",
+  "Category": "Manufacturing",
+  "TenantId": "LUSAKA-CITY-COUNCIL",
+  "FormId": "FORM-STARTER-PACK-APP",
+  "FormName": "Public School Desk Manufacturing Pack",
+  "ApplicationFee": 0.0,
+  "Sections": [
+    {
+      "SectionTitle": "Workshop Details",
+      "Fields": [
+        { "Id": "workshop_name", "Label": "Workshop Name", "Type": "text", "Required": true, "BindingProperty": "BusinessName", "Options": [] },
+        { "Id": "pacra_no", "Label": "PACRA Registration", "Type": "text", "Required": true, "BindingProperty": "RegistrationNumber", "Options": [] }
+      ]
+    },
+    {
+      "SectionTitle": "Capacity",
+      "Fields": [
+        { "Id": "production_cap", "Label": "Production Capacity (Desks per month)", "Type": "number", "Required": true, "BindingProperty": "Capacity", "Options": [] }
+      ]
+    },
+    {
+      "SectionTitle": "Declaration",
+      "Fields": [
+        { "Id": "signature", "Label": "Digital Signature", "Type": "signature", "Required": true, "BindingProperty": "CitizenSignature", "Options": [] }
+      ]
+    }
+  ],
+  "Requirements": [
+    { "Id": "REQ-PACRA", "Label": "Company Registration", "Description": "Verifiable PACRA Registration", "IsMandatory": true, "CredentialType": "CompanyRegistrationCredential", "ComplianceContext": "Validated" },
+    { "Id": "REQ-TAX", "Label": "Tax Clearance", "Description": "Valid tax clearance certificate", "IsMandatory": true, "CredentialType": "TaxCertificateCredential", "ComplianceContext": "Validated" }
+  ],
+  "ComplianceDetails": "Standard compliance applied for School Desk Manufacturing Starter Pack",
+  "ComplianceRequirements": ["GDPR", "Local Data Residency"]
+}

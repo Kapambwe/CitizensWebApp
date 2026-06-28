@@ -1,0 +1,75 @@
+{
+  "consultations": [
+    {
+      "id": "0d36f43e-e724-42db-b811-6f9586fbe676",
+      "title": "Kanyama Drainage Upgrade Project Consultation",
+      "summary": "Lusaka City Council is collecting public input on flood-control design, relocation support, and construction phasing for Kanyama drainage upgrades.",
+      "issuerName": "Lusaka City Council",
+      "scope": "LocalityProject",
+      "locality": "Kanyama, Lusaka",
+      "opensAt": "2026-05-15T08:00:00Z",
+      "closesAt": "2026-06-20T17:00:00Z",
+      "isActive": true,
+      "feedbackPrompt": "What is your overall view on this project?",
+      "feedbackOptions": [
+        "Strongly Support",
+        "Support",
+        "Neutral",
+        "Oppose",
+        "Strongly Oppose"
+      ],
+      "topics": [
+        "Drainage design",
+        "Relocation planning",
+        "Construction schedule"
+      ]
+    },
+    {
+      "id": "6190272c-2d40-4f4b-ab7f-a0fc04c3f8f5",
+      "title": "Public Notice: Agricultural to Residential Land Use Conversion",
+      "summary": "The Council and Ministry seek comments on converting a designated agricultural tract to mixed residential use with utilities and roads.",
+      "issuerName": "Ministry of Lands and Natural Resources",
+      "scope": "LandTypeConversion",
+      "locality": "Chongwe District",
+      "opensAt": "2026-05-10T08:00:00Z",
+      "closesAt": "2026-06-05T17:00:00Z",
+      "isActive": true,
+      "feedbackPrompt": "How do you feel about the proposed land-use conversion?",
+      "feedbackOptions": [
+        "Approve conversion",
+        "Approve with conditions",
+        "Need more studies",
+        "Reject conversion"
+      ],
+      "topics": [
+        "Zoning impact",
+        "Environmental assessment",
+        "Compensation policy"
+      ]
+    },
+    {
+      "id": "f7f188f4-9a51-4f5f-a5d8-56c6d2fdbe94",
+      "title": "National Citizen Input: eGovernment Service Charter 2027",
+      "summary": "Cabinet Office is gathering citizen feedback on service standards, turnaround times, and grievance handling across ministries and councils.",
+      "issuerName": "Cabinet Office",
+      "scope": "NationalPolicy",
+      "locality": "National",
+      "opensAt": "2026-05-01T08:00:00Z",
+      "closesAt": "2026-07-01T17:00:00Z",
+      "isActive": true,
+      "feedbackPrompt": "Which direction should the 2027 charter prioritize?",
+      "feedbackOptions": [
+        "Faster service turnaround",
+        "Lower cost of access",
+        "Better digital inclusion",
+        "Stronger accountability",
+        "No opinion"
+      ],
+      "topics": [
+        "Service turnaround times",
+        "Digital inclusion",
+        "Complaints resolution"
+      ]
+    }
+  ]
+}

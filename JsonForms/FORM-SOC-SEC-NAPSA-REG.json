@@ -1,0 +1,31 @@
+{
+  "FormId": "SOC-SEC-NAPSA-REG",
+  "FormName": "NAPSA Member Registration",
+  "Sections": [
+    {
+      "SectionTitle": "Applicant Personal Information",
+      "Fields": [
+        { "Id": "fullName", "Label": "Full Name:", "Type": "text", "Required": true, "BindingProperty": "Applicant.FullName" },
+        { "Id": "dob", "Label": "Date of Birth:", "Type": "date", "Required": true, "BindingProperty": "Applicant.DateOfBirth" },
+        { "Id": "nrc", "Label": "NRC Number:", "Type": "text", "Required": true, "BindingProperty": "Applicant.Nrc" },
+        { "Id": "gender", "Label": "Gender:", "Type": "text", "Required": true, "BindingProperty": "Applicant.Gender" }
+      ]
+    },
+    {
+      "SectionTitle": "Employment Details",
+      "Fields": [
+        { "Id": "employerName", "Label": "Employer Name:", "Type": "text", "Required": true, "BindingProperty": "Employment.EmployerName" },
+        { "Id": "employerAddress", "Label": "Employer Address:", "Type": "textarea", "Required": true, "BindingProperty": "Employment.EmployerAddress" },
+        { "Id": "jobTitle", "Label": "Job Title:", "Type": "text", "Required": true, "BindingProperty": "Employment.JobTitle" },
+        { "Id": "startDate", "Label": "Date of Employment:", "Type": "date", "Required": true, "BindingProperty": "Employment.StartDate" }
+      ]
+    },
+    {
+      "SectionTitle": "Required Documents",
+      "Fields": [
+        { "Id": "docNrc", "Label": "Attached: Copy of NRC:", "Type": "text", "Required": true, "BindingProperty": "Documents.Nrc" },
+        { "Id": "docEmploymentLetter", "Label": "Attached: Employment Letter/Contract:", "Type": "text", "Required": true, "BindingProperty": "Documents.EmploymentLetter" }
+      ]
+    }
+  ]
+}

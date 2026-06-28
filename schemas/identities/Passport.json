@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://identity.gov.zm/schemas/v1/Passport.json",
+  "title": "Electronic Passport Credential",
+  "description": "W3C-compliant JSON Schema for e-Passport aligned with ICAO 9303 standards.",
+  "type": "object",
+  "properties": {
+    "passportNumber": {
+      "type": "string",
+      "description": "The passport book number."
+    },
+    "mrz": {
+      "type": "string",
+      "description": "Machine Readable Zone data."
+    },
+    "fullName": { "type": "string" },
+    "dateOfBirth": { "type": "string", "format": "date" },
+    "expiryDate": { "type": "string", "format": "date" },
+    "issuingCountry": { "type": "string", "pattern": "^[A-Z]{3}$" },
+    "biometricData": {
+      "type": "object",
+      "properties": {
+        "face": { "type": "string", "contentEncoding": "base64" },
+        "fingerprint": { "type": "string", "contentEncoding": "base64" }
+      }
+    }
+  },
+  "required": ["passportNumber", "fullName", "expiryDate", "issuingCountry"]
+}

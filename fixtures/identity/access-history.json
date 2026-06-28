@@ -1,0 +1,49 @@
+{
+  "accessLogs": [
+    {
+      "id": 1,
+      "accessedAt": "2026-05-28T10:15:00",
+      "verifierName": "Zambia National Bank",
+      "verifierType": "Bank",
+      "accessMethod": "QR Code",
+      "purpose": "Account Opening",
+      "consentGiven": true
+    },
+    {
+      "id": 2,
+      "accessedAt": "2026-05-26T09:20:00",
+      "verifierName": "Ministry of Health",
+      "verifierType": "Government",
+      "accessMethod": "API",
+      "purpose": "Medical Records",
+      "consentGiven": true
+    },
+    {
+      "id": 3,
+      "accessedAt": "2026-05-24T14:05:00",
+      "verifierName": "ABC Company Ltd",
+      "verifierType": "Employer",
+      "accessMethod": "Web Portal",
+      "purpose": "Employment Verification",
+      "consentGiven": true
+    },
+    {
+      "id": 4,
+      "accessedAt": "2026-05-19T13:30:00",
+      "verifierName": "Lusaka City Council",
+      "verifierType": "Government",
+      "accessMethod": "QR Code",
+      "purpose": "Business License",
+      "consentGiven": true
+    },
+    {
+      "id": 5,
+      "accessedAt": "2026-05-14T08:45:00",
+      "verifierName": "Madison Insurance",
+      "verifierType": "Insurance",
+      "accessMethod": "Web Portal",
+      "purpose": "Policy Application",
+      "consentGiven": false
+    }
+  ]
+}

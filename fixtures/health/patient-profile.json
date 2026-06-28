@@ -1,0 +1,189 @@
+{
+  "PatientId": "PAT-ZM-2024-001234",
+  "NationalId": "123456/10/1",
+  "FirstName": "Joseph",
+  "MiddleName": "Banda",
+  "LastName": "Mwansa",
+  "DateOfBirth": "1985-03-15T00:00:00",
+  "Gender": "Male",
+  "BloodType": "O+",
+  "Phone": "+260 97 1234567",
+  "Email": "joseph.mwansa@email.com",
+  "Address": "Plot 123, Independence Avenue",
+  "Province": "Lusaka",
+  "District": "Lusaka",
+  "EmergencyContacts": [
+    {
+      "Name": "Mary Mwansa",
+      "Relationship": "Spouse",
+      "Phone": "+260 96 7654321",
+      "AlternatePhone": "+260 21 1234567",
+      "Status": 1
+    },
+    {
+      "Name": "John Mwansa",
+      "Relationship": "Brother",
+      "Phone": "+260 97 7654322",
+      "Status": 1
+    }
+  ],
+  "ChronicConditions": [
+    "Type 2 Diabetes Mellitus",
+    "Hypertension (Stage 1)"
+  ],
+  "Allergies": [
+    "Penicillin (Anaphylaxis)",
+    "Shellfish (Hives)"
+  ],
+  "PastSurgeries": [
+    "Appendectomy (2015)",
+    "Hernia repair (2018)"
+  ],
+  "Immunizations": [
+    "COVID-19 (Booster)",
+    "Hepatitis B",
+    "Tetanus",
+    "Yellow Fever"
+  ],
+  "CurrentMedications": [
+    "Metformin 500mg BD",
+    "Amlodipine 5mg OD",
+    "Aspirin 75mg OD"
+  ],
+  "Insurance": {
+    "HasInsurance": true,
+    "IsNHIMA": true,
+    "MembershipId": "NHIMA-2024-5678",
+    "ExpiryDate": "2026-05-29T00:00:00"
+  },
+  "VitalSignsHistory": [
+    {
+      "RecordedDate": "2026-05-22T00:00:00",
+      "Temperature": 36.5,
+      "SystolicBP": 135,
+      "DiastolicBP": 85,
+      "HeartRate": 78,
+      "RespiratoryRate": 16,
+      "OxygenSaturation": 98,
+      "Weight": 82.5,
+      "Height": 175,
+      "BMI": 26.9,
+      "Location": "University Teaching Hospital"
+    }
+  ],
+  "RecentVisits": [
+    {
+      "VisitId": "V-001",
+      "VisitDate": "2026-05-22T00:00:00",
+      "FacilityName": "University Teaching Hospital",
+      "DoctorName": "Dr. Chanda Zulu",
+      "Reason": "Routine diabetes check-up",
+      "Diagnosis": "Type 2 Diabetes - Well controlled",
+      "Treatment": "Continue current medications, lifestyle modifications",
+      "PrescribedMedications": [
+        "Metformin 500mg",
+        "Amlodipine 5mg"
+      ]
+    },
+    {
+      "VisitId": "V-002",
+      "VisitDate": "2026-04-29T00:00:00",
+      "FacilityName": "Levy Mwanawasa Hospital",
+      "DoctorName": "Dr. Grace Tembo",
+      "Reason": "Hypertension follow-up",
+      "Diagnosis": "Essential Hypertension",
+      "Treatment": "Blood pressure management",
+      "PrescribedMedications": [
+        "Amlodipine 5mg"
+      ]
+    }
+  ],
+  "RecentLabResults": [
+    {
+      "TestId": "LAB-001",
+      "TestName": "Fasting Blood Glucose",
+      "TestDate": "2026-05-22T00:00:00",
+      "Result": "6.8",
+      "Unit": "mmol/L",
+      "ReferenceRange": "3.9-6.1 mmol/L",
+      "IsAbnormal": true,
+      "FacilityName": "University Teaching Hospital"
+    },
+    {
+      "TestId": "LAB-002",
+      "TestName": "HbA1c",
+      "TestDate": "2026-05-22T00:00:00",
+      "Result": "7.2",
+      "Unit": "%",
+      "ReferenceRange": "< 6.5%",
+      "IsAbnormal": true,
+      "FacilityName": "University Teaching Hospital"
+    },
+    {
+      "TestId": "LAB-003",
+      "TestName": "Total Cholesterol",
+      "TestDate": "2026-05-22T00:00:00",
+      "Result": "4.8",
+      "Unit": "mmol/L",
+      "ReferenceRange": "< 5.2 mmol/L",
+      "IsAbnormal": false,
+      "FacilityName": "University Teaching Hospital"
+    }
+  ],
+  "Documents": [
+    {
+      "DocumentId": "DOC-001",
+      "DocumentType": "Lab Report",
+      "Title": "Diabetes Panel - Jan 2024",
+      "UploadDate": "2026-05-22T00:00:00",
+      "FacilityName": "University Teaching Hospital"
+    },
+    {
+      "DocumentId": "DOC-002",
+      "DocumentType": "Discharge Summary",
+      "Title": "Hernia Repair Surgery Summary",
+      "UploadDate": "2021-11-18T00:00:00",
+      "FacilityName": "Levy Mwanawasa Hospital"
+    }
+  ],
+  "ActivePrescriptions": [
+    {
+      "PrescriptionId": "PR-001",
+      "PrescriptionNumber": "RX-2024-001",
+      "PatientId": "PAT-ZM-2024-001234",
+      "PatientName": "Joseph Banda Mwansa",
+      "PatientContact": "+260 97 1234567",
+      "DrugName": "Metformin",
+      "Dosage": "500mg",
+      "Frequency": "Twice daily",
+      "NumberOfDays": 30,
+      "Quantity": 60,
+      "DoctorName": "Dr. Chanda Zulu",
+      "ClinicFacility": "University Teaching Hospital",
+      "Status": 2,
+      "IssueDate": "2026-05-22T00:00:00",
+      "ExpiryDate": "2026-06-22T00:00:00",
+      "RefillsAllowed": 2,
+      "RefillsRemaining": 2
+    },
+    {
+      "PrescriptionId": "PR-002",
+      "PrescriptionNumber": "RX-2024-002",
+      "PatientId": "PAT-ZM-2024-001234",
+      "PatientName": "Joseph Banda Mwansa",
+      "PatientContact": "+260 97 1234567",
+      "DrugName": "Amlodipine",
+      "Dosage": "5mg",
+      "Frequency": "Once daily",
+      "NumberOfDays": 30,
+      "Quantity": 30,
+      "DoctorName": "Dr. Grace Tembo",
+      "ClinicFacility": "Levy Mwanawasa Hospital",
+      "Status": 2,
+      "IssueDate": "2026-04-29T00:00:00",
+      "ExpiryDate": "2026-05-29T00:00:00",
+      "RefillsAllowed": 1,
+      "RefillsRemaining": 1
+    }
+  ]
+}

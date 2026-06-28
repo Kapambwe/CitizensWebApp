@@ -1,0 +1,49 @@
+{
+  "Appointments": [
+    {
+      "Id": "APT-001",
+      "Title": "Annual Health Checkup",
+      "Description": "General physical examination and blood tests.",
+      "Type": 0,
+      "Status": 0,
+      "Location": "UTH Main Wing, Room 4",
+      "ProviderName": "University Teaching Hospital",
+      "ProfessionalName": "Dr. Banda",
+      "RequiresInPerson": true
+    },
+    {
+      "Id": "APT-002",
+      "Title": "Tender Interview: Desk Supply",
+      "Description": "Final evaluation interview for TND-008-0004.",
+      "Type": 1,
+      "Status": 0,
+      "Location": "Microsoft Teams",
+      "ProviderName": "Lusaka City Council Procurement",
+      "ProfessionalName": "Evaluation Committee",
+      "RelatedEntityId": "TND-008-0004",
+      "RequiresInPerson": false,
+      "VirtualMeetingLink": "https://teams.microsoft.com/l/meetup-join/..."
+    },
+    {
+      "Id": "APT-003",
+      "Title": "Premises Health Inspection",
+      "Description": "Required inspection for Retail Trading License renewal.",
+      "Type": 2,
+      "Status": 1,
+      "Location": "123 Main St, Lusaka (Business Premises)",
+      "ProviderName": "LCC Health Dept",
+      "ProfessionalName": "Inspector Phiri",
+      "RequiresInPerson": true
+    },
+    {
+      "Id": "APT-004",
+      "Title": "Passport Collection",
+      "Description": "Collect renewed biometric passport.",
+      "Type": 3,
+      "Status": 0,
+      "Location": "Passport Office, Window 3",
+      "ProviderName": "Department of Immigration",
+      "RequiresInPerson": true
+    }
+  ]
+}

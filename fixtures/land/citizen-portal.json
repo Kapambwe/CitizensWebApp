@@ -1,0 +1,29 @@
+{
+  "totalProperties": 45789,
+  "verificationsToday": 234,
+  "complianceChecks": 89,
+  "violationReports": 45,
+  "recentActivities": [
+    {
+      "icon": "search",
+      "title": "Property Search",
+      "description": "Searched for Plot #4567 in Lusaka",
+      "time": "2 hours ago",
+      "color": "#667eea"
+    },
+    {
+      "icon": "verified_user",
+      "title": "Ownership Verified",
+      "description": "Title Deed #LU/2024/001 verified successfully",
+      "time": "Yesterday",
+      "color": "#1cc88a"
+    },
+    {
+      "icon": "fact_check",
+      "title": "Compliance Check",
+      "description": "Checked zoning compliance for commercial property",
+      "time": "2 days ago",
+      "color": "#00f2fe"
+    }
+  ]
+}
