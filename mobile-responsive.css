@@ -339,6 +339,45 @@ table {
   width: 280px;
 }
 
+@media (max-width: 768px) {
+  .rz-sidebar {
+    width: min(85vw, 320px);
+    max-width: 320px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1100;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .rz-layout .rz-header .rz-row {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .rz-layout .rz-header .rz-column {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .rz-layout .rz-header .rz-stack {
+    width: 100%;
+  }
+
+  .rz-layout .rz-header .rz-sidebar-toggle {
+    flex-shrink: 0;
+  }
+
+  .rz-layout .rz-body {
+    width: 100%;
+  }
+
+  .rz-panel-menu {
+    max-height: calc(100vh - 5rem);
+  }
+}
+
 .rz-panel-menu-item {
   min-height: var(--touch-min);
   padding: 12px 16px !important;
