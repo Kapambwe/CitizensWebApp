@@ -11,11 +11,31 @@
     <meta name="apple-mobile-web-app-title" content="eCitizen" />
     <title>eCitizen</title>
     <base href="/CitizensWebApp/" />
+    <link href="_framework/dotnet.yz76wvvk7m.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-AqYugKTwMQPY6IYRnWZunqnvTBmMoTU504dqmd6VqD8=" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="_content/Radzen.Blazor/css/material-base.css" rel="stylesheet">
     <link href="app.css" rel="stylesheet" />
     <link href="mobile-responsive.css" rel="stylesheet" />
+    <script type="importmap">{
+  "imports": {
+    "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.958z1vx7fr.js",
+    "./_framework/dotnet.native.js": "./_framework/dotnet.native.wq5toy4mf1.js",
+    "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.a6jcqbs390.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.yz76wvvk7m.js"
+  },
+  "scopes": {},
+  "integrity": {
+    "./_framework/blazor.webassembly.958z1vx7fr.js": "sha256-A59Tr9HqEhHMu8kU7kruLI9ayw5MRS6Lvc6z7jCbghk=",
+    "./_framework/blazor.webassembly.js": "sha256-A59Tr9HqEhHMu8kU7kruLI9ayw5MRS6Lvc6z7jCbghk=",
+    "./_framework/dotnet.js": "sha256-AqYugKTwMQPY6IYRnWZunqnvTBmMoTU504dqmd6VqD8=",
+    "./_framework/dotnet.native.js": "sha256-WGKuaVZHNCQJJ5NcB4x6tMiZNhZr3E2SuuVqqOsDFnI=",
+    "./_framework/dotnet.native.wq5toy4mf1.js": "sha256-WGKuaVZHNCQJJ5NcB4x6tMiZNhZr3E2SuuVqqOsDFnI=",
+    "./_framework/dotnet.runtime.a6jcqbs390.js": "sha256-7i3usfTrnzC/9qWO4si5Bw4w7D9fUSnSBdhQ47blX2M=",
+    "./_framework/dotnet.runtime.js": "sha256-7i3usfTrnzC/9qWO4si5Bw4w7D9fUSnSBdhQ47blX2M=",
+    "./_framework/dotnet.yz76wvvk7m.js": "sha256-AqYugKTwMQPY6IYRnWZunqnvTBmMoTU504dqmd6VqD8="
+  }
+}</script>
 </head>
 
 <body>
@@ -32,8 +52,7 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-    <script src="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js"></script>
-    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_framework/blazor.webassembly.958z1vx7fr.js"></script>
     <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
     <script>
         window.ecitizen = window.ecitizen || {};
