@@ -1,0 +1,54 @@
+{
+  "formId": "FORM-ZAM-PASSPORT-STANDARD",
+  "formName": "Standard Passport Application Form",
+  "sections": [
+    {
+      "sectionTitle": "Passport Details",
+      "fields": [
+        {
+          "id": "applicantNrc",
+          "label": "NRC Number",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.Nrc"
+        },
+        {
+          "id": "applicantName",
+          "label": "Full Name",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.FullName"
+        },
+        {
+          "id": "applicantDob",
+          "label": "Date of Birth",
+          "type": "date",
+          "required": true,
+          "bindingProperty": "Applicant.DateOfBirth"
+        },
+        {
+          "id": "applicantGender",
+          "label": "Gender",
+          "type": "select",
+          "required": true,
+          "bindingProperty": "Applicant.Gender",
+          "options": [
+            { "value": "Male", "text": "Male" },
+            { "value": "Female", "text": "Female" }
+          ]
+        },
+        {
+          "id": "passportType",
+          "label": "Passport Booklet Type",
+          "type": "select",
+          "required": true,
+          "bindingProperty": "Applicant.PassportType",
+          "options": [
+            { "value": "Standard 32-Pages", "text": "Standard 32-Pages (K500)" },
+            { "value": "Executive 64-Pages", "text": "Executive 64-Pages (K1,000)" }
+          ]
+        }
+      ]
+    }
+  ]
+}

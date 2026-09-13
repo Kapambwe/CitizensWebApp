@@ -1,0 +1,49 @@
+{
+  "formId": "FORM-TAX-PIT-001",
+  "formName": "Personal Income Tax (PIT) Return Filing Form",
+  "sections": [
+    {
+      "sectionTitle": "Taxpayer Identification",
+      "fields": [
+        { "id": "tpin", "label": "Taxpayer Identification Number (TPIN)", "type": "text", "placeholder": "Enter TPIN", "required": true, "bindingProperty": "Taxpayer.Tpin" },
+        { "id": "fullName", "label": "Full Name", "type": "text", "placeholder": "Enter full name", "required": true, "bindingProperty": "Citizen.FullName" },
+        { "id": "nrc", "label": "NRC Number", "type": "text", "placeholder": "Enter NRC", "required": true, "bindingProperty": "Citizen.NationalId" },
+        { "id": "taxYear", "label": "Tax Assessment Year", "type": "select", "placeholder": "Select tax year", "required": true, "bindingProperty": "Tax.Year", "options": [
+          { "value": "2025", "text": "Tax Year 2025" },
+          { "value": "2024", "text": "Tax Year 2024" },
+          { "value": "2023", "text": "Tax Year 2023" }
+        ]}
+      ]
+    },
+    {
+      "sectionTitle": "Annual Taxable Income Declarations",
+      "fields": [
+        { "id": "grossEmploymentIncome", "label": "Gross Employment Income (Salary/Wages) (ZMW)", "type": "number", "placeholder": "0.00", "required": true, "bindingProperty": "TaxReturn.GrossIncome" },
+        { "id": "businessIncome", "label": "Net Business Income (Profit) (ZMW)", "type": "number", "placeholder": "0.00", "required": false, "bindingProperty": "TaxReturn.BusinessIncome" },
+        { "id": "otherIncome", "label": "Other Income (Rent, Interest, etc.) (ZMW)", "type": "number", "placeholder": "0.00", "required": false, "bindingProperty": "TaxReturn.OtherIncome" }
+      ]
+    },
+    {
+      "sectionTitle": "Allowable Deductions & Reliefs",
+      "fields": [
+        { "id": "napsaDeductions", "label": "Pension Contributions (e.g. NAPSA) (ZMW)", "type": "number", "placeholder": "0.00", "required": false, "bindingProperty": "TaxReturn.PensionDeductions" },
+        { "id": "otherDeductions", "label": "Other Allowable Deductions (ZMW)", "type": "number", "placeholder": "0.00", "required": false, "bindingProperty": "TaxReturn.AllowableDeductions" }
+      ]
+    },
+    {
+      "sectionTitle": "Tax Due Summary",
+      "fields": [
+        { "id": "taxableIncome", "label": "Net Taxable Income (ZMW)", "type": "number", "placeholder": "0.00", "required": true, "bindingProperty": "TaxReturn.TaxableIncome" },
+        { "id": "taxDue", "label": "Computed Tax Liability (ZMW)", "type": "number", "placeholder": "0.00", "required": true, "bindingProperty": "TaxReturn.TaxDue" },
+        { "id": "taxPaid", "label": "Tax Paid under PAYE / Withheld (ZMW)", "type": "number", "placeholder": "0.00", "required": true, "bindingProperty": "TaxReturn.TaxPaid" }
+      ]
+    },
+    {
+      "sectionTitle": "Declaration & Submission",
+      "fields": [
+        { "id": "declarationDate", "label": "Date of Declaration", "type": "date", "required": true, "bindingProperty": "Declaration.Date" },
+        { "id": "signature", "label": "Taxpayer Digital Signature", "type": "signature", "required": true, "bindingProperty": "Declaration.Signature" }
+      ]
+    }
+  ]
+}

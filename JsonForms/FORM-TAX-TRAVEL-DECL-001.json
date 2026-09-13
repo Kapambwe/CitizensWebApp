@@ -1,0 +1,46 @@
+{
+  "formId": "FORM-TAX-TRAVEL-DECL-001",
+  "formName": "Traveller Customs & Travel Declaration Form",
+  "sections": [
+    {
+      "sectionTitle": "Traveller Personal Details",
+      "fields": [
+        { "id": "fullName", "label": "Full Name", "type": "text", "placeholder": "Enter full name as in passport", "required": true, "bindingProperty": "Citizen.FullName" },
+        { "id": "passportNumber", "label": "Passport Number", "type": "text", "placeholder": "Enter passport number", "required": true, "bindingProperty": "Traveller.PassportNumber" },
+        { "id": "nationality", "label": "Nationality", "type": "text", "placeholder": "e.g. Zambian", "required": true, "bindingProperty": "Traveller.Nationality" },
+        { "id": "dob", "label": "Date of Birth", "type": "date", "required": true, "bindingProperty": "Citizen.DateOfBirth" }
+      ]
+    },
+    {
+      "sectionTitle": "Travel & Voyage Details",
+      "fields": [
+        { "id": "flightNumber", "label": "Flight / Vessel / Vehicle Number", "type": "text", "placeholder": "e.g. KQ704 or Registration", "required": true, "bindingProperty": "Travel.VesselNumber" },
+        { "id": "travelDate", "label": "Date of Travel", "type": "date", "required": true, "bindingProperty": "Travel.Date" },
+        { "id": "pointOfEntry", "label": "Point of Entry / Exit (Port)", "type": "select", "placeholder": "Select port", "required": true, "bindingProperty": "Travel.PortOfEntry", "options": [
+          { "value": "KKIA", "text": "Kenneth Kaunda International Airport (Lusaka)" },
+          { "value": "HHI", "text": "Harry Mwaanga Nkumbula Airport (Livingstone)" },
+          { "value": "SMIA", "text": "Simon Mwansa Kapwepwe Airport (Ndola)" },
+          { "value": "Chirundu", "text": "Chirundu Border Post" },
+          { "value": "VictoriaFalls", "text": "Victoria Falls Border Post" }
+        ]},
+        { "id": "countryOfOrigin", "label": "Country of Origin / Destination", "type": "text", "placeholder": "e.g. South Africa", "required": true, "bindingProperty": "Travel.CountryOriginDest" }
+      ]
+    },
+    {
+      "sectionTitle": "Customs Declaration (Baggage & Currency)",
+      "fields": [
+        { "id": "declareCurrency", "label": "Are you carrying cash or monetary instruments exceeding USD 10,000 (or equivalent)?", "type": "checkbox", "required": false, "bindingProperty": "Customs.DeclareCurrency" },
+        { "id": "currencyDetails", "label": "If yes, specify amount and currency", "type": "text", "placeholder": "e.g. USD 12,500", "required": false, "bindingProperty": "Customs.CurrencyDetails" },
+        { "id": "commercialGoods", "label": "Are you carrying any commercial goods or items intended for sale?", "type": "checkbox", "required": false, "bindingProperty": "Customs.CommercialGoods" },
+        { "id": "restrictedItems", "label": "Are you carrying weapons, ammunition, narcotics, plants, animals, or food items?", "type": "checkbox", "required": false, "bindingProperty": "Customs.RestrictedItems" }
+      ]
+    },
+    {
+      "sectionTitle": "Declaration",
+      "fields": [
+        { "id": "declarationDate", "label": "Declaration Date", "type": "date", "required": true, "bindingProperty": "Declaration.Date" },
+        { "id": "signature", "label": "Traveller Signature", "type": "signature", "required": true, "bindingProperty": "Declaration.Signature" }
+      ]
+    }
+  ]
+}

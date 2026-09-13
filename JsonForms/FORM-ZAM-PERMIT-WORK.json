@@ -1,0 +1,60 @@
+{
+  "formId": "FORM-ZAM-PERMIT-WORK",
+  "formName": "Work Permit Form",
+  "sections": [
+    {
+      "sectionTitle": "Employment & Professional Details",
+      "fields": [
+        {
+          "id": "passportNumber",
+          "label": "Passport Number",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.PassportNumber"
+        },
+        {
+          "id": "workerName",
+          "label": "Full Name",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.FullName"
+        },
+        {
+          "id": "nationality",
+          "label": "Nationality",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.Nationality"
+        },
+        {
+          "id": "employerName",
+          "label": "Employer Name",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.EmployerName"
+        },
+        {
+          "id": "jobTitle",
+          "label": "Job Title",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.JobTitle"
+        },
+        {
+          "id": "sector",
+          "label": "Industry Sector",
+          "type": "select",
+          "required": true,
+          "bindingProperty": "Applicant.Sector",
+          "options": [
+            { "value": "Mining", "text": "Mining" },
+            { "value": "Agriculture", "text": "Agriculture" },
+            { "value": "ICT", "text": "ICT" },
+            { "value": "Education", "text": "Education" },
+            { "value": "Healthcare", "text": "Healthcare" }
+          ]
+        }
+      ]
+    }
+  ]
+}

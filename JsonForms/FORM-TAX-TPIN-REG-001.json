@@ -1,0 +1,53 @@
+{
+  "formId": "FORM-TAX-TPIN-REG-001",
+  "formName": "Taxpayer Identification Number (TPIN) Registration Form",
+  "sections": [
+    {
+      "sectionTitle": "Personal Details",
+      "fields": [
+        { "id": "firstName", "label": "First Name", "type": "text", "placeholder": "Enter first name", "required": true, "bindingProperty": "Citizen.FirstName" },
+        { "id": "lastName", "label": "Last Name / Surname", "type": "text", "placeholder": "Enter last name", "required": true, "bindingProperty": "Citizen.LastName" },
+        { "id": "nrcNumber", "label": "National Registration Card (NRC)", "type": "text", "placeholder": "Format: 123456/78/9", "required": true, "bindingProperty": "Citizen.NationalId" },
+        { "id": "dob", "label": "Date of Birth", "type": "date", "required": true, "bindingProperty": "Citizen.DateOfBirth" },
+        { "id": "gender", "label": "Gender", "type": "select", "placeholder": "Select gender", "required": true, "bindingProperty": "Citizen.Gender", "options": [
+          { "value": "Male", "text": "Male" },
+          { "value": "Female", "text": "Female" }
+        ]},
+        { "id": "maritalStatus", "label": "Marital Status", "type": "select", "placeholder": "Select marital status", "required": true, "bindingProperty": "Citizen.MaritalStatus", "options": [
+          { "value": "Single", "text": "Single" },
+          { "value": "Married", "text": "Married" },
+          { "value": "Divorced", "text": "Divorced" },
+          { "value": "Widowed", "text": "Widowed" }
+        ]}
+      ]
+    },
+    {
+      "sectionTitle": "Contact & Residential Information",
+      "fields": [
+        { "id": "phone", "label": "Phone Number", "type": "tel", "placeholder": "e.g. +260 97X XXX XXX", "required": true, "bindingProperty": "Citizen.PhoneNumber" },
+        { "id": "email", "label": "Email Address", "type": "email", "placeholder": "Enter email address", "required": true, "bindingProperty": "Citizen.Email" },
+        { "id": "residentialAddress", "label": "Residential Address", "type": "textarea", "placeholder": "Enter physical home address", "required": true, "bindingProperty": "Address.PhysicalAddress" },
+        { "id": "town", "label": "Town / City", "type": "text", "placeholder": "e.g. Lusaka", "required": true, "bindingProperty": "Address.City" }
+      ]
+    },
+    {
+      "sectionTitle": "Taxpayer Categorization",
+      "fields": [
+        { "id": "employmentStatus", "label": "Employment Status", "type": "select", "placeholder": "Select status", "required": true, "bindingProperty": "Employment.Status", "options": [
+          { "value": "Employed", "text": "Employed (Salaried)" },
+          { "value": "SelfEmployed", "text": "Self-Employed (Business Owner)" },
+          { "value": "Unemployed", "text": "Unemployed / Student" },
+          { "value": "Retired", "text": "Retired" }
+        ]},
+        { "id": "incomeSource", "label": "Primary Source of Income", "type": "text", "placeholder": "e.g. Salary, Trading, Farming", "required": true, "bindingProperty": "Taxpayer.IncomeSource" }
+      ]
+    },
+    {
+      "sectionTitle": "Declaration",
+      "fields": [
+        { "id": "declarationDate", "label": "Declaration Date", "type": "date", "required": true, "bindingProperty": "Declaration.Date" },
+        { "id": "signature", "label": "Applicant Signature", "type": "signature", "required": true, "bindingProperty": "Declaration.Signature" }
+      ]
+    }
+  ]
+}

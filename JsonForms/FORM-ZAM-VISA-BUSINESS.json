@@ -1,0 +1,50 @@
+{
+  "formId": "FORM-ZAM-VISA-BUSINESS",
+  "formName": "Business Entry Visa Form",
+  "sections": [
+    {
+      "sectionTitle": "Visa Details",
+      "fields": [
+        {
+          "id": "passportNumber",
+          "label": "Passport Number",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.PassportNumber"
+        },
+        {
+          "id": "holderName",
+          "label": "Full Name",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.FullName"
+        },
+        {
+          "id": "nationality",
+          "label": "Nationality",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.Nationality"
+        },
+        {
+          "id": "visaType",
+          "label": "Visa Type",
+          "type": "select",
+          "required": true,
+          "bindingProperty": "Applicant.VisaType",
+          "options": [
+            { "value": "Business Multiple Entry", "text": "Business Multiple Entry (K1,000)" },
+            { "value": "Tourist Single Entry", "text": "Tourist Single Entry (K500)" }
+          ]
+        },
+        {
+          "id": "durationDays",
+          "label": "Duration of Visit (Days)",
+          "type": "number",
+          "required": true,
+          "bindingProperty": "Applicant.DurationDays"
+        }
+      ]
+    }
+  ]
+}

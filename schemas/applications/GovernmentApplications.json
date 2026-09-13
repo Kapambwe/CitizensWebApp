@@ -74,6 +74,28 @@
         "Agriculture",
         "Business"
       ]
+    },
+    {
+      "TenantId": "ZRA-ZM",
+      "TenantName": "Zambia Revenue Authority (ZRA)",
+      "TenantType": "Agency",
+      "DefaultQueueId": "ZRA-INTAKE-QUEUE",
+      "DefaultQueueName": "ZRA Tax Forms Intake",
+      "SupportedCategories": [
+        "Taxes"
+      ]
+    },
+    {
+      "TenantId": "DEPARTMENT-OF-IDENTITY",
+      "TenantName": "Department of National Registration, Passports and Immigration",
+      "TenantType": "Department",
+      "DefaultQueueId": "IDENTITY-INTAKE-QUEUE",
+      "DefaultQueueName": "National Identity & Immigration Intake",
+      "SupportedCategories": [
+        "General Licensing",
+        "Identity",
+        "Immigration"
+      ]
     }
   ],
   "Services": [
@@ -613,6 +635,121 @@
       { "Id": "REQ-MINUTES", "Label": "Community Meeting Minutes", "IsMandatory": true, "AllowedFileTypes": ["pdf"] },
       { "Id": "REQ-NRC", "Label": "Proposer NRC", "IsMandatory": true, "CredentialType": "NationalIDCredential" }
     ]
+  },
+  {
+    "ServiceId": "tax-tpin-registration",
+    "ServiceName": "TPIN Registration",
+    "AgencyName": "Zambia Revenue Authority (ZRA)",
+    "Category": "Taxes",
+    "TenantId": "ZRA-ZM",
+    "FormId": "FORM-TAX-TPIN-REG-001",
+    "FormName": "Taxpayer Identification Number (TPIN) Registration Form",
+    "ApplicationFee": 0.0,
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "National ID (NRC)", "IsMandatory": true, "CredentialType": "NationalIDCredential" }
+    ]
+  },
+  {
+    "ServiceId": "tax-personal-income",
+    "ServiceName": "Personal Income Tax Return",
+    "AgencyName": "Zambia Revenue Authority (ZRA)",
+    "Category": "Taxes",
+    "TenantId": "ZRA-ZM",
+    "FormId": "FORM-TAX-PIT-001",
+    "FormName": "Personal Income Tax (PIT) Return Filing Form",
+    "ApplicationFee": 0.0,
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "National ID (NRC)", "IsMandatory": true, "CredentialType": "NationalIDCredential" },
+      { "Id": "REQ-TPIN", "Label": "TPIN Certificate", "IsMandatory": true, "CredentialType": "TpinCredential" }
+    ]
+  },
+  {
+    "ServiceId": "tax-assessment",
+    "ServiceName": "Tax Assessment Declaration",
+    "AgencyName": "Zambia Revenue Authority (ZRA)",
+    "Category": "Taxes",
+    "TenantId": "ZRA-ZM",
+    "FormId": "FORM-TAX-ASSESSMENT-001",
+    "FormName": "Tax Assessment Declaration & Application Form",
+    "ApplicationFee": 0.0,
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "National ID (NRC)", "IsMandatory": true, "CredentialType": "NationalIDCredential" },
+      { "Id": "REQ-TPIN", "Label": "TPIN Certificate", "IsMandatory": true, "CredentialType": "TpinCredential" }
+    ]
+  },
+  {
+    "ServiceId": "tax-travel-declaration",
+    "ServiceName": "Traveller Customs Declaration",
+    "AgencyName": "Zambia Revenue Authority (ZRA)",
+    "Category": "Taxes",
+    "TenantId": "ZRA-ZM",
+    "FormId": "FORM-TAX-TRAVEL-DECL-001",
+    "FormName": "Traveller Customs & Travel Declaration Form",
+    "ApplicationFee": 0.0,
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "National ID (NRC) or Passport", "IsMandatory": true, "CredentialType": "NationalIDCredential" }
+    ]
+  },
+  {
+    "ServiceId": "ZAM-NRC-STANDARD",
+    "ServiceName": "National Registration Card (NRC) Application",
+    "AgencyName": "Department of National Registration",
+    "Category": "General Licensing",
+    "TenantId": "DEPARTMENT-OF-IDENTITY",
+    "FormId": "FORM-ZAM-NRC-STANDARD",
+    "FormName": "National Registration Card (NRC) Form",
+    "ApplicationFee": 0.0,
+    "ComplianceDetails": "Verification of birth record and biometrics is mandatory under Section 10 of the National Registration Act.",
+    "Requirements": [
+      { "Id": "REQ-BIRTH-CERT", "Label": "Birth Certificate PDF", "Description": "Authentic copy of your birth record.", "IsMandatory": true, "AllowedFileTypes": ["pdf"] }
+    ]
+  },
+  {
+    "ServiceId": "ZAM-PASSPORT-STANDARD",
+    "ServiceName": "Standard Passport Application",
+    "AgencyName": "Passport Office",
+    "Category": "General Licensing",
+    "TenantId": "DEPARTMENT-OF-IDENTITY",
+    "FormId": "FORM-ZAM-PASSPORT-STANDARD",
+    "FormName": "Standard Passport Application Form",
+    "ApplicationFee": 500.0,
+    "ComplianceDetails": "Passports require cryptographically verified identity proof and digital photographs compliant with ICAO standards.",
+    "Requirements": [
+      { "Id": "REQ-NRC", "Label": "National ID (NRC)", "Description": "Verifiable National Identity Card", "IsMandatory": true, "CredentialType": "NationalIDCredential", "FieldMapping": "fullName:ApplicantName,nrcNumber:ApplicantNrc" },
+      { "Id": "REQ-PHOTO", "Label": "Digital Photograph", "Description": "Recent colored portrait photograph", "IsMandatory": true, "AllowedFileTypes": ["jpg", "png"] }
+    ]
+  },
+  {
+    "ServiceId": "ZAM-VISA-BUSINESS",
+    "ServiceName": "Business Entry Visa Application",
+    "AgencyName": "Department of Immigration",
+    "Category": "General Licensing",
+    "TenantId": "DEPARTMENT-OF-IDENTITY",
+    "FormId": "FORM-ZAM-VISA-BUSINESS",
+    "FormName": "Business Entry Visa Form",
+    "ApplicationFee": 1000.0,
+    "ComplianceDetails": "Visas require a valid passport and travel details in accordance with Zambia Immigration Regulations.",
+    "Requirements": [
+      { "Id": "REQ-PASSPORT", "Label": "Passport Digital Proof", "Description": "Digital copy of your passport bio-page.", "IsMandatory": true, "AllowedFileTypes": ["pdf", "jpg"] },
+      { "Id": "REQ-FLIGHT", "Label": "Flight Itinerary PDF", "Description": "Confirmed roundtrip travel itinerary.", "IsMandatory": true, "AllowedFileTypes": ["pdf"] },
+      { "Id": "REQ-HOTEL", "Label": "Hotel Booking PDF", "Description": "Proof of accommodation reservation.", "IsMandatory": true, "AllowedFileTypes": ["pdf"] }
+    ]
+  },
+  {
+    "ServiceId": "ZAM-PERMIT-WORK",
+    "ServiceName": "Work Permit Application",
+    "AgencyName": "Department of Immigration",
+    "Category": "General Licensing",
+    "TenantId": "DEPARTMENT-OF-IDENTITY",
+    "FormId": "FORM-ZAM-PERMIT-WORK",
+    "FormName": "Work Permit Form",
+    "ApplicationFee": 1500.0,
+    "ComplianceDetails": "Work permits require employment verification and local tax compliance registration.",
+    "Requirements": [
+      { "Id": "REQ-PASSPORT", "Label": "Passport Digital Proof", "Description": "Digital copy of passport bio-page.", "IsMandatory": true, "AllowedFileTypes": ["pdf"] },
+      { "Id": "REQ-CONTRACT", "Label": "Employment Contract PDF", "Description": "Signed employment agreement.", "IsMandatory": true, "AllowedFileTypes": ["pdf"] },
+      { "Id": "REQ-TAX-CLEARANCE", "Label": "Tax Clearance Certificate", "Description": "Employer's active ZRA tax clearance.", "IsMandatory": true, "AllowedFileTypes": ["pdf"] }
+    ]
   }
-  ]
+]
 }

@@ -1,0 +1,45 @@
+{
+  "formId": "FORM-TAX-ASSESSMENT-001",
+  "formName": "Tax Assessment Declaration & Application Form",
+  "sections": [
+    {
+      "sectionTitle": "Taxpayer Identity",
+      "fields": [
+        { "id": "tpin", "label": "Taxpayer Identification Number (TPIN)", "type": "text", "placeholder": "Enter TPIN", "required": true, "bindingProperty": "Taxpayer.Tpin" },
+        { "id": "taxpayerName", "label": "Taxpayer Full Name / Business Name", "type": "text", "placeholder": "Enter name", "required": true, "bindingProperty": "Taxpayer.Name" },
+        { "id": "email", "label": "Contact Email Address", "type": "email", "placeholder": "Enter email address", "required": true, "bindingProperty": "Taxpayer.Email" }
+      ]
+    },
+    {
+      "sectionTitle": "Assessment Parameters",
+      "fields": [
+        { "id": "assessmentYear", "label": "Tax Year of Assessment", "type": "select", "placeholder": "Select year", "required": true, "bindingProperty": "Assessment.Year", "options": [
+          { "value": "2025", "text": "Tax Year 2025" },
+          { "value": "2024", "text": "Tax Year 2024" },
+          { "value": "2023", "text": "Tax Year 2023" }
+        ]},
+        { "id": "assessmentType", "label": "Type of Assessment Requested", "type": "select", "placeholder": "Select type", "required": true, "bindingProperty": "Assessment.Type", "options": [
+          { "value": "Self", "text": "Self-Assessment Declaration" },
+          { "value": "Provisional", "text": "Provisional Tax Assessment" },
+          { "value": "Amended", "text": "Amended Return Assessment" }
+        ]},
+        { "id": "assessmentReason", "label": "Reason / Explanation for Request", "type": "textarea", "placeholder": "Describe the purpose of this assessment declaration...", "required": true, "bindingProperty": "Assessment.Reason" }
+      ]
+    },
+    {
+      "sectionTitle": "Financial Declaration",
+      "fields": [
+        { "id": "declaredRevenue", "label": "Total Declared Annual Revenue (ZMW)", "type": "number", "placeholder": "0.00", "required": true, "bindingProperty": "Assessment.DeclaredRevenue" },
+        { "id": "declaredAssets", "label": "Estimated Value of Capital Assets (ZMW)", "type": "number", "placeholder": "0.00", "required": false, "bindingProperty": "Assessment.DeclaredAssets" },
+        { "id": "estimatedLiability", "label": "Estimated Tax Liability (ZMW)", "type": "number", "placeholder": "0.00", "required": true, "bindingProperty": "Assessment.EstimatedLiability" }
+      ]
+    },
+    {
+      "sectionTitle": "Declaration",
+      "fields": [
+        { "id": "declarationDate", "label": "Declaration Date", "type": "date", "required": true, "bindingProperty": "Declaration.Date" },
+        { "id": "signature", "label": "Authorized Digital Signature", "type": "signature", "required": true, "bindingProperty": "Declaration.Signature" }
+      ]
+    }
+  ]
+}

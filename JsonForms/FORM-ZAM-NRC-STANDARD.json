@@ -1,0 +1,50 @@
+{
+  "formId": "FORM-ZAM-NRC-STANDARD",
+  "formName": "National Registration Card (NRC) Form",
+  "sections": [
+    {
+      "sectionTitle": "Personal Details",
+      "fields": [
+        {
+          "id": "fullName",
+          "label": "Full Name (As on Birth Certificate)",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.FullName"
+        },
+        {
+          "id": "dateOfBirth",
+          "label": "Date of Birth",
+          "type": "date",
+          "required": true,
+          "bindingProperty": "Applicant.DateOfBirth"
+        },
+        {
+          "id": "gender",
+          "label": "Gender",
+          "type": "select",
+          "required": true,
+          "bindingProperty": "Applicant.Gender",
+          "options": [
+            { "value": "Male", "text": "Male" },
+            { "value": "Female", "text": "Female" }
+          ]
+        },
+        {
+          "id": "placeOfBirth",
+          "label": "Place of Birth (District)",
+          "type": "text",
+          "required": true,
+          "bindingProperty": "Applicant.PlaceOfBirth"
+        },
+        {
+          "id": "residentialAddress",
+          "label": "Residential Address",
+          "type": "textarea",
+          "required": true,
+          "bindingProperty": "Applicant.Address"
+        }
+      ]
+    }
+  ]
+}
