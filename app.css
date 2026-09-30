@@ -2,6 +2,31 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.offline-status-banner {
+    background: #fff3cd;
+    border-bottom: 1px solid #ffda6a;
+    color: #664d03;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+}
+
+.offline-file-upload {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.offline-file-upload input[type="file"] {
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}
+
 h1:focus {
     outline: none;
 }
@@ -165,4 +190,68 @@ code {
     .row > div {
         padding: 0 10px;
     }
+}
+.plain-language-intro {
+    margin-bottom: 1.5rem;
+}
+
+.plain-language-intro .plain-language-purpose {
+    max-width: 72ch;
+    margin: 0.25rem 0 0;
+    color: var(--rz-text-secondary-color);
+}
+
+.plain-language-time {
+    display: block;
+    margin-top: 0.35rem;
+    color: var(--rz-text-secondary-color);
+}
+
+.technical-details {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--rz-border-color);
+    border-radius: 0.5rem;
+}
+
+.technical-details summary {
+    cursor: pointer;
+    font-weight: 600;
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0;
+}
+
+/* Identity journeys must remain usable without a mouse or colour-only cues. */
+.rz-button:focus-visible,
+.rz-checkbox-box:focus-visible,
+.rz-dropdown:focus-visible,
+.rz-textbox:focus-visible,
+.rz-textarea:focus-visible,
+.technical-details summary:focus-visible,
+[role="button"]:focus-visible {
+    outline: 3px solid #1d4ed8;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 2px #ffffff;
+}
+
+.technical-details summary::marker {
+    color: #1d4ed8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
+.technical-details-content {
+    margin-top: 0.75rem;
+    overflow-wrap: anywhere;
 }

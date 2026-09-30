@@ -1,4 +1,4 @@
-/* Manifest version: 6uOU4P/g */
+/* Manifest version: E26oXbp0 */
 // Caution! Be sure you understand the caveats before publishing an application with
 // offline support. See https://aka.ms/blazor-offline-considerations
 
@@ -6,6 +6,9 @@ self.importScripts('./service-worker-assets.js');
 self.addEventListener('install', event => event.waitUntil(onInstall(event)));
 self.addEventListener('activate', event => event.waitUntil(onActivate(event)));
 self.addEventListener('fetch', event => event.respondWith(onFetch(event)));
+self.addEventListener('message', event => {
+    if (event.data === 'SKIP_WAITING') self.skipWaiting();
+});
 
 const cacheNamePrefix = 'offline-cache-';
 const cacheName = `${cacheNamePrefix}${self.assetsManifest.version}`;
@@ -46,5 +49,18 @@ async function onFetch(event) {
         cachedResponse = await cache.match(request);
     }
 
-    return cachedResponse || fetch(event.request);
+    if (cachedResponse) return cachedResponse;
+
+    try {
+        return await fetch(event.request);
+    } catch (error) {
+        if (event.request.mode === 'navigate') {
+            const cache = await caches.open(cacheName);
+            return await cache.match('offline.html') || new Response('Offline', {
+                status: 503,
+                headers: { 'Content-Type': 'text/plain' }
+            });
+        }
+        throw error;
+    }
 }
