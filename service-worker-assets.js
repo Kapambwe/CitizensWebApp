@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "YFeKKavn",
+  "version": "vrd18pYf",
   "assets": [
     {
       "hash": "sha256-7bVUOOUCTnYwFHg6WBtpFWp62opstjLiervmblJqWK0=",
@@ -394,8 +394,8 @@ self.assetsManifest = {
       "url": "_framework/Blazored.Typeahead.5g65vcuhxb.wasm"
     },
     {
-      "hash": "sha256-63zHsSrmVOyxW8ljcIFoEXmdKhCkAx51a1yJPIFV1E8=",
-      "url": "_framework/CompanyApp.Client.Customer.9n134hf831.wasm"
+      "hash": "sha256-sXaIUcs0delPqG4kKq/Sqy5lYBpKSqnmmOrKePv2wWA=",
+      "url": "_framework/CompanyApp.Client.Customer.5nz96xrzfw.wasm"
     },
     {
       "hash": "sha256-1RYZeF0yVCQu19w+dCNPiyEG1xqkCpZfaEWXONtZVKw=",
@@ -730,8 +730,8 @@ self.assetsManifest = {
       "url": "_framework/de/Radzen.Blazor.resources.dxelnbfurb.wasm"
     },
     {
-      "hash": "sha256-QaCYLyvnv+w02JxLZFlIAfg4eV3ZVr+FcaXCQlU1IRg=",
-      "url": "_framework/dotnet.1kn8nk3w79.js"
+      "hash": "sha256-WL+Q6+8NoZLpIqjhwWGYQUFJUGm9NCq0310YtKNA9+I=",
+      "url": "_framework/dotnet.0mpo9c5w44.js"
     },
     {
       "hash": "sha256-CPyIwqI4Wkl/JrAL4KMmwosT7pskNJovtURZ03tQS1U=",
@@ -970,7 +970,7 @@ self.assetsManifest = {
       "url": "fixtures/wallet/credentials.json"
     },
     {
-      "hash": "sha256-GGh7hrwKCUCnXiNesEQWC5pNCBlgp6cdbL8bRbzypWg=",
+      "hash": "sha256-/Jv0O3sm4HeHfYCsb1K/MvlIZC81qfeUml3wwglwjWI=",
       "url": "index.html"
     },
     {
