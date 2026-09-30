@@ -2,74 +2,320 @@
   "consultations": [
     {
       "id": "0d36f43e-e724-42db-b811-6f9586fbe676",
-      "title": "Kanyama Drainage Upgrade Project Consultation",
-      "summary": "Lusaka City Council is collecting public input on flood-control design, relocation support, and construction phasing for Kanyama drainage upgrades.",
+      "title": "Kanyama Drainage and Flood Resilience Project",
+      "summary": "Lusaka City Council is seeking resident input on drainage improvements, safe pedestrian crossings and support for households affected by construction.",
       "issuerName": "Lusaka City Council",
       "scope": "LocalityProject",
       "locality": "Kanyama, Lusaka",
-      "opensAt": "2026-05-15T08:00:00Z",
-      "closesAt": "2026-06-20T17:00:00Z",
+      "opensAt": "2026-09-01T08:00:00Z",
+      "closesAt": "2026-10-31T17:00:00Z",
       "isActive": true,
-      "feedbackPrompt": "What is your overall view on this project?",
-      "feedbackOptions": [
-        "Strongly Support",
-        "Support",
-        "Neutral",
-        "Oppose",
-        "Strongly Oppose"
-      ],
-      "topics": [
-        "Drainage design",
-        "Relocation planning",
-        "Construction schedule"
-      ]
+      "feedbackPrompt": "What is your overall view of the proposed project?",
+      "feedbackOptions": ["Strongly support", "Support", "Not sure yet", "Oppose", "Strongly oppose"],
+      "topics": ["Flood prevention", "Road and pedestrian access", "Construction disruption", "Household support"],
+      "privacyNotice": "Your response will be reported in summary form to Lusaka City Council. Your name and contact details will not be published with your comments.",
+      "formDefinition": {
+        "formId": "lusaka-kanyama-drainage-2026",
+        "version": "1.0",
+        "formName": "Kanyama drainage project response",
+        "purpose": "Help the council improve the project design and construction plan.",
+        "estimatedMinutes": 5,
+        "sections": [
+          {
+            "sectionTitle": "Your experience",
+            "fields": [
+              {
+                "id": "drainage-experience",
+                "label": "How does flooding currently affect your household or business?",
+                "type": "select",
+                "bindingProperty": "DrainageExperience",
+                "required": true,
+                "options": [{"value":"Frequently","text":"Frequently"},{"value":"Sometimes","text":"Sometimes"},{"value":"Rarely","text":"Rarely"},{"value":"NotAffected","text":"Not affected"}]
+              },
+              {
+                "id": "priority-location",
+                "label": "Which location should receive attention first?",
+                "type": "textarea",
+                "placeholder": "For example, a road, crossing, school or market area",
+                "bindingProperty": "PriorityLocation",
+                "required": true,
+                "validation": {"maxLength":500,"errorMessage":"Please use no more than 500 characters."}
+              }
+            ]
+          },
+          {
+            "sectionTitle": "Project priorities",
+            "fields": [
+              {
+                "id": "preferred-priority",
+                "label": "What should the project prioritise?",
+                "type": "select",
+                "bindingProperty": "PreferredPriority",
+                "required": true,
+                "options": [{"value":"DrainageCapacity","text":"Larger or improved drains"},{"value":"SafeCrossings","text":"Footbridges and safe crossings"},{"value":"RoadAccess","text":"Keeping roads usable during rain"},{"value":"Maintenance","text":"Long-term cleaning and maintenance"}]
+              },
+              {
+                "id": "additional-comments",
+                "label": "What else should the council know?",
+                "type": "textarea",
+                "bindingProperty": "AdditionalComments",
+                "required": false,
+                "validation": {"maxLength":1000,"errorMessage":"Please use no more than 1,000 characters."}
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "6190272c-2d40-4f4b-ab7f-a0fc04c3f8f5",
-      "title": "Public Notice: Agricultural to Residential Land Use Conversion",
-      "summary": "The Council and Ministry seek comments on converting a designated agricultural tract to mixed residential use with utilities and roads.",
+      "title": "Chongwe Growth Area Land-Use Plan",
+      "summary": "The Ministry of Lands and Natural Resources is consulting residents, farmers and businesses on a proposed mixed residential and public-service growth area east of Chongwe.",
       "issuerName": "Ministry of Lands and Natural Resources",
       "scope": "LandTypeConversion",
       "locality": "Chongwe District",
-      "opensAt": "2026-05-10T08:00:00Z",
-      "closesAt": "2026-06-05T17:00:00Z",
+      "opensAt": "2026-08-15T08:00:00Z",
+      "closesAt": "2026-10-15T17:00:00Z",
       "isActive": true,
-      "feedbackPrompt": "How do you feel about the proposed land-use conversion?",
-      "feedbackOptions": [
-        "Approve conversion",
-        "Approve with conditions",
-        "Need more studies",
-        "Reject conversion"
-      ],
-      "topics": [
-        "Zoning impact",
-        "Environmental assessment",
-        "Compensation policy"
-      ]
+      "feedbackPrompt": "How should the proposed land-use change be improved?",
+      "feedbackOptions": ["Support the proposal", "Support with conditions", "Need more information", "Do not support the proposal"],
+      "topics": ["Land-use planning", "Agricultural land protection", "Compensation and livelihoods", "Roads and public services"],
+      "privacyNotice": "Comments will be shared with the planning team and summarised in the public consultation report. Personal information is used only to verify participation.",
+      "formDefinition": {
+        "formId": "chongwe-growth-area-plan-2026",
+        "version": "1.1",
+        "formName": "Chongwe growth area response",
+        "purpose": "Collect local knowledge before the draft land-use plan is finalised.",
+        "estimatedMinutes": 6,
+        "sections": [
+          {
+            "sectionTitle": "About the area",
+            "fields": [
+              {
+                "id": "relationship-to-area",
+                "label": "How are you connected to the proposed area?",
+                "type": "select",
+                "bindingProperty": "RelationshipToArea",
+                "required": true,
+                "options": [{"value":"Resident","text":"I live nearby"},{"value":"Farmer","text":"I farm or keep livestock nearby"},{"value":"Business","text":"I operate a business nearby"},{"value":"ServiceProvider","text":"I provide a community service"},{"value":"Other","text":"Other"}]
+              },
+              {
+                "id": "affected-livelihood",
+                "label": "Would the proposal affect your land, home or livelihood?",
+                "type": "select",
+                "bindingProperty": "AffectedLivelihood",
+                "required": true,
+                "options": [{"value":"Yes","text":"Yes"},{"value":"No","text":"No"},{"value":"Unsure","text":"I am not sure"}]
+              },
+              {
+                "id": "impact-details",
+                "label": "Please explain the possible impact",
+                "type": "textarea",
+                "bindingProperty": "ImpactDetails",
+                "dependsOnBindingProperty": "AffectedLivelihood",
+                "dependsOnValue": "Yes",
+                "required": true,
+                "validation": {"maxLength":1000,"errorMessage":"Please use no more than 1,000 characters."}
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "f7f188f4-9a51-4f5f-a5d8-56c6d2fdbe94",
-      "title": "National Citizen Input: eGovernment Service Charter 2027",
-      "summary": "Cabinet Office is gathering citizen feedback on service standards, turnaround times, and grievance handling across ministries and councils.",
+      "title": "National Citizen Service Charter 2027",
+      "summary": "The Cabinet Office is gathering citizen feedback on service standards, turnaround times, digital access and complaint handling across ministries, provinces and local authorities.",
       "issuerName": "Cabinet Office",
       "scope": "NationalPolicy",
       "locality": "National",
-      "opensAt": "2026-05-01T08:00:00Z",
-      "closesAt": "2026-07-01T17:00:00Z",
+      "opensAt": "2026-09-10T08:00:00Z",
+      "closesAt": "2026-11-30T17:00:00Z",
       "isActive": true,
-      "feedbackPrompt": "Which direction should the 2027 charter prioritize?",
-      "feedbackOptions": [
-        "Faster service turnaround",
-        "Lower cost of access",
-        "Better digital inclusion",
-        "Stronger accountability",
-        "No opinion"
-      ],
-      "topics": [
-        "Service turnaround times",
-        "Digital inclusion",
-        "Complaints resolution"
-      ]
+      "feedbackPrompt": "Which improvement should the 2027 charter prioritise?",
+      "feedbackOptions": ["Faster service turnaround", "Lower cost of access", "Better digital inclusion", "Stronger accountability", "No preference"],
+      "topics": ["Public service standards", "Digital inclusion", "Waiting times", "Complaints and accountability"],
+      "privacyNotice": "Your feedback will help shape national service standards. Results will be published as anonymised statistics and themes.",
+      "formDefinition": {
+        "formId": "national-service-charter-2027",
+        "version": "2.0",
+        "formName": "National service charter response",
+        "purpose": "Identify the service improvements that matter most to people across Zambia.",
+        "estimatedMinutes": 4,
+        "sections": [
+          {
+            "sectionTitle": "Your service experience",
+            "fields": [
+              {
+                "id": "recent-service",
+                "label": "Which public service have you used most recently?",
+                "type": "select",
+                "bindingProperty": "RecentService",
+                "required": true,
+                "options": [{"value":"LocalAuthority","text":"Local council service"},{"value":"Health","text":"Health service"},{"value":"Education","text":"Education service"},{"value":"Identity","text":"Identity or civil registration"},{"value":"SocialProtection","text":"Social protection"},{"value":"Other","text":"Other government service"}]
+              },
+              {
+                "id": "service-priority",
+                "label": "What single change would make services easier to use?",
+                "type": "select",
+                "bindingProperty": "ServicePriority",
+                "required": true,
+                "options": [{"value":"ShorterWait","text":"Shorter waiting times"},{"value":"ClearInformation","text":"Clearer information"},{"value":"OnlineAccess","text":"More services online"},{"value":"LocalAccess","text":"More service points nearby"},{"value":"Affordable","text":"Lower fees and travel costs"}]
+              },
+              {
+                "id": "charter-suggestion",
+                "label": "Tell us about a service improvement you would like to see",
+                "type": "textarea",
+                "bindingProperty": "CharterSuggestion",
+                "required": true,
+                "validation": {"minLength":10,"maxLength":1000,"errorMessage":"Please provide between 10 and 1,000 characters."}
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "a6b83b67-95cf-4f91-a2c6-cc53b4b3b4ed",
+      "title": "Ndola Solid Waste Collection Service Standards",
+      "summary": "Ndola City Council is asking households, markets and businesses what reliable waste collection should look like, including collection frequency, missed collections and neighbourhood cleanliness.",
+      "issuerName": "Ndola City Council",
+      "scope": "CityWide",
+      "locality": "Ndola",
+      "opensAt": "2026-09-20T08:00:00Z",
+      "closesAt": "2026-12-05T17:00:00Z",
+      "isActive": true,
+      "feedbackPrompt": "What should be improved first?",
+      "feedbackOptions": ["More frequent collection", "Reliable collection days", "More public bins", "Better enforcement", "Community clean-up support"],
+      "topics": ["Waste collection", "Public health", "Illegal dumping", "Neighbourhood services"],
+      "privacyNotice": "The council will use responses to review service standards and contractor performance. Individual comments will not be published with your identity.",
+      "formDefinition": {
+        "formId": "ndola-waste-standards-2026",
+        "version": "1.0",
+        "formName": "Ndola waste service response",
+        "purpose": "Help set practical and measurable waste collection standards.",
+        "estimatedMinutes": 4,
+        "sections": [
+          {
+            "sectionTitle": "Your local service",
+            "fields": [
+              {
+                "id": "customer-type",
+                "label": "Which best describes you?",
+                "type": "select",
+                "bindingProperty": "CustomerType",
+                "required": true,
+                "options": [{"value":"Household","text":"Household"},{"value":"Business","text":"Business"},{"value":"MarketTrader","text":"Market trader"},{"value":"CommunityGroup","text":"Community group"}]
+              },
+              {
+                "id": "missed-collections",
+                "label": "How often is a scheduled collection missed?",
+                "type": "select",
+                "bindingProperty": "MissedCollections",
+                "required": true,
+                "options": [{"value":"Never","text":"Never or almost never"},{"value":"Monthly","text":"About once a month"},{"value":"Weekly","text":"Most weeks"},{"value":"NoSchedule","text":"There is no reliable schedule"}]
+              },
+              {
+                "id": "waste-location",
+                "label": "Where is the main problem?",
+                "type": "textarea",
+                "bindingProperty": "WasteLocation",
+                "required": false,
+                "placeholder": "Name your neighbourhood, market or nearby landmark",
+                "validation": {"maxLength":500,"errorMessage":"Please use no more than 500 characters."}
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "5a1ae3c1-b18e-4c6e-8a28-4b8b9d2b4f4a",
+      "title": "Public Transport Improvement Plan for Lusaka",
+      "summary": "The Ministry of Transport and Logistics is inviting views on safer bus stops, route information, commuter affordability and access for people with disabilities.",
+      "issuerName": "Ministry of Transport and Logistics",
+      "scope": "NationalPolicy",
+      "locality": "Lusaka Province",
+      "opensAt": "2026-09-25T08:00:00Z",
+      "closesAt": "2026-12-20T17:00:00Z",
+      "isActive": true,
+      "feedbackPrompt": "Which public transport improvement would help you most?",
+      "feedbackOptions": ["Safer stops and stations", "More reliable routes", "Affordable fares", "Accessible transport", "Better passenger information"],
+      "topics": ["Public transport", "Road safety", "Commuter affordability", "Accessibility"],
+      "privacyNotice": "Feedback will inform the transport planning process. Responses may be grouped by area and travel needs, but personal details will not be published.",
+      "formDefinition": {
+        "formId": "lusaka-transport-plan-2026",
+        "version": "1.0",
+        "formName": "Lusaka transport plan response",
+        "purpose": "Understand daily travel needs and practical transport improvements.",
+        "estimatedMinutes": 5,
+        "sections": [
+          {
+            "sectionTitle": "Daily travel",
+            "fields": [
+              {
+                "id": "main-mode",
+                "label": "How do you usually travel in Lusaka?",
+                "type": "select",
+                "bindingProperty": "MainMode",
+                "required": true,
+                "options": [{"value":"Bus","text":"Bus or minibus"},{"value":"Taxi","text":"Taxi or ride-hailing"},{"value":"Walk","text":"Walking"},{"value":"PrivateVehicle","text":"Private vehicle"},{"value":"Bicycle","text":"Bicycle or motorcycle"}]
+              },
+              {
+                "id": "accessibility-needs",
+                "label": "Do you or someone you travel with need accessibility support?",
+                "type": "select",
+                "bindingProperty": "AccessibilityNeeds",
+                "required": true,
+                "options": [{"value":"Yes","text":"Yes"},{"value":"No","text":"No"},{"value":"PreferNotToSay","text":"Prefer not to say"}]
+              },
+              {
+                "id": "accessibility-detail",
+                "label": "What support would make travel easier?",
+                "type": "textarea",
+                "bindingProperty": "AccessibilityDetail",
+                "dependsOnBindingProperty": "AccessibilityNeeds",
+                "dependsOnValue": "Yes",
+                "required": true,
+                "validation": {"maxLength":500,"errorMessage":"Please use no more than 500 characters."}
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b9ca4d3a-891b-4b0c-9761-9edc74f90f86",
+      "title": "Lusaka Market Redevelopment and Trader Support",
+      "summary": "Lusaka City Council has completed the first round of consultation on market redevelopment, trader relocation and improved sanitation at selected markets.",
+      "issuerName": "Lusaka City Council",
+      "scope": "CityWide",
+      "locality": "Lusaka",
+      "opensAt": "2026-05-01T08:00:00Z",
+      "closesAt": "2026-06-30T17:00:00Z",
+      "isActive": false,
+      "feedbackPrompt": "What should be considered in future market upgrades?",
+      "feedbackOptions": ["Affordable trading space", "Sanitation and water", "Safety and lighting", "Storage and loading areas"],
+      "topics": ["Markets", "Small businesses", "Sanitation", "Trader livelihoods"],
+      "privacyNotice": "This consultation is closed. Historical responses are retained for the council's consultation record.",
+      "formDefinition": {
+        "formId": "lusaka-market-redevelopment-2026",
+        "version": "1.0",
+        "formName": "Market redevelopment response",
+        "purpose": "Record feedback received during the completed market consultation.",
+        "estimatedMinutes": 3,
+        "sections": [{
+          "sectionTitle": "Your feedback",
+          "fields": [{
+            "id": "market-priority",
+            "label": "Which market improvement mattered most to you?",
+            "type": "select",
+            "bindingProperty": "MarketPriority",
+            "required": true,
+            "options": [{"value":"TradingSpace","text":"Affordable trading space"},{"value":"Sanitation","text":"Sanitation and water"},{"value":"Safety","text":"Safety and lighting"},{"value":"Storage","text":"Storage and loading areas"}]
+          }]
+        }]
+      }
     }
   ]
 }
