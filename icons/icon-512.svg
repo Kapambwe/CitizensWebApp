@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">eCitizen Zambia</title>
+  <rect width="512" height="512" rx="106" fill="#198754"/>
+  <path fill="#fff" d="M112 154h288v48H112zM141 218h48v128h-48zM229 218h48v128h-48zM317 218h48v128h-48zM93 362h326v43H93z"/>
+  <path fill="#f9c74f" d="m256 90 163 64H93z"/>
+</svg>

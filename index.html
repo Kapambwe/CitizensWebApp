@@ -9,6 +9,9 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="eCitizen" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg" />
+    <link rel="apple-touch-icon" href="icons/icon-192.svg" />
     <title>eCitizen</title>
     <base href="/CitizensWebApp/" />
     <link href="_framework/dotnet.0mpo9c5w44.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-WL+Q6+8NoZLpIqjhwWGYQUFJUGm9NCq0310YtKNA9+I=" />
@@ -56,6 +59,23 @@
     <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
     <script src="js/indexedDb.js"></script>
     <script src="js/connectivity.js"></script>
+    <script>
+        (function () {
+            if (!('serviceWorker' in navigator) || /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+                return;
+            }
+
+            window.addEventListener('load', function () {
+                var base = document.querySelector('base');
+                var baseUrl = base ? base.href : new URL('./', location.href).href;
+                navigator.serviceWorker.register(new URL('service-worker.published.js', baseUrl), {
+                    scope: new URL('./', baseUrl).pathname
+                }).catch(function (error) {
+                    console.warn('eCitizen service worker registration failed.', error);
+                });
+            });
+        })();
+    </script>
     <script>
         window.ecitizen = window.ecitizen || {};
         window.ecitizen.isMobile = function (breakpointPx) {

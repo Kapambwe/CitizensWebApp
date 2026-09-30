@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "vrd18pYf",
+  "version": "aKhcCoPo",
   "assets": [
     {
       "hash": "sha256-7bVUOOUCTnYwFHg6WBtpFWp62opstjLiervmblJqWK0=",
@@ -970,7 +970,15 @@ self.assetsManifest = {
       "url": "fixtures/wallet/credentials.json"
     },
     {
-      "hash": "sha256-/Jv0O3sm4HeHfYCsb1K/MvlIZC81qfeUml3wwglwjWI=",
+      "hash": "sha256-AcmiZiUmG9i/J7Jm1EzscsTBf6nEle+61F1gRTJLJmI=",
+      "url": "icons/icon-192.svg"
+    },
+    {
+      "hash": "sha256-3cAzrpwJ0G8Q3ieFhN0hem+hhcl83JYB2BUN09Ic2vA=",
+      "url": "icons/icon-512.svg"
+    },
+    {
+      "hash": "sha256-AZJcW0scwEfwgZm4DDmJIL1eagrpsBT6doJ5rget6Fw=",
       "url": "index.html"
     },
     {
@@ -980,6 +988,10 @@ self.assetsManifest = {
     {
       "hash": "sha256-qk6Z/sN3UU2iDVqgNk9FmVlFunIK3eFwDpKwq/VTgeI=",
       "url": "js/indexedDb.js"
+    },
+    {
+      "hash": "sha256-7ZviESJNVo1DHDrDBXopyiQLkm3GpBv4vKf1MjsjME4=",
+      "url": "manifest.json"
     },
     {
       "hash": "sha256-jzVxeAsMvXZqzTfMp2onQoNJhDdvFIsRXD2E+MyvgDI=",
